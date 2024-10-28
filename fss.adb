@@ -207,11 +207,15 @@ end altitud_cabeceo;
 
 task body colision is
    golondrina : Distance_Samples_Type;
-   tiempo_colision : Float := Float(Read_Distance(golondrina)) / Shared_Velocidad;
+   tiempo_colision : Float;
    siguiente_instante : Time := Big_Bang + Milliseconds(250);
    visual_piloto : Light_Samples_Type;
 begin
    loop
+      Read_Distance(golondrina);
+      if(Shared_Velocidad /= 0.0) then
+         tiempo_colision := Float(golondrina) / Shared_Velocidad;
+      end if;
       Read_Light_Intensity(visual_piloto);
       if(tiempo_colision <= 10.0) then
          Alarm(4);
