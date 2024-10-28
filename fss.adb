@@ -22,6 +22,8 @@ package body fss is
       Roll_Value : Roll_Samples_Type := 0;
    end Attitude_Data;
 
+   
+
    protected body Attitude_Data is
       procedure Get_Attitude (Pitch : out Pitch_Samples_Type; Roll : out Roll_Samples_Type) is
       begin
