@@ -3,18 +3,16 @@ A -g
 P LC TF
 R nnvvrnvvnnnnvvvvnvvvnnnnvnnnnnvnnnnnnnnnnnn
 
-U fss%b			fss.adb			4142753A PK IL
+U fss%b			fss.adb			4066C718 PK IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W ada.real_time.delays%s  a-retide.adb		a-retide.ali
 W devicesfss_v1%s	devicesfss_v1.adb	devicesfss_v1.ali  ED
 W kernel%s		kernel.ads		kernel.ali
-W kernel.serial_output%s  kernel-serial_output.adb  kernel-serial_output.ali  ED
+W kernel.serial_output%s  kernel-serial_output.adb  kernel-serial_output.ali
 W system%s		system.ads		system.ali
-W system.img_int%s	s-imgint.adb		s-imgint.ali
 W system.parameters%s	s-parame.adb		s-parame.ali
-W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 W system.soft_links%s	s-soflin.adb		s-soflin.ali
 W system.task_info%s	s-tasinf.adb		s-tasinf.ali
 W system.tasking%s	s-taskin.adb		s-taskin.ali
@@ -32,9 +30,9 @@ D a-reatim.ads		20000718095948 5DBAB303
 D a-retide.ads		20000718095948 7F3C479C
 D a-stream.ads		20000718095948 5F7C277B
 D a-tags.ads		20000718095948 45EF7E4E
-D devicesfss_v1.ads	20240930123456 65131FAE
-D fss.ads		20240921223654 40408672
-D fss.adb		20241028154359 4549FB08
+D devicesfss_v1.ads	20241107153758 65131FAE
+D fss.ads		20241107153758 40408672
+D fss.adb		20241107210011 446D492A
 D kernel.ads		20010312182047 56BBE4F1
 D kernel-cpu_primitives.ads  20010312182047 5746D7AD
 D kernel-interrupts.ads	20010312182047 72CD7AA3
@@ -47,7 +45,6 @@ D system.ads		20010312182047 2AE5BAFE
 D s-exctab.ads		20000718095948 7A25F5F9
 D s-finimp.ads		20000718095949 1C201C0F
 D s-finroo.ads		20000718095949 166D4EDA
-D s-imgint.ads		20000718095949 21B5CB31
 D s-osinte.ads		20010312182047 7BFC1094
 D s-parame.ads		20000718095949 25FE086A
 D s-secsta.ads		20000718095949 60A2A5CD
@@ -64,95 +61,124 @@ D s-taprob.ads		20000718095949 1D5668B3
 D s-tasres.ads		20000718095949 62B4C0AB
 D s-tarest.ads		20000718095949 1D177686
 D s-unstyp.ads		20000718095949 78AFB91D
-D tools.ads		20240928193923 40AA26E7
+D tools.ads		20241107153758 40AA26E7
 D unchconv.ads		20000718095949 72DC4539
 X 1 ada.ads
 18U9*Ada 11|2r6 2r32
 X 5 a-reatim.ads
 43U13*Real_Time 11|2r10 2r36
-45O9*Time 11|84r25 112r25 158r25 187r25 209r25
-59U13*"+" 11|84r42 102r48 112r42 150r48 158r42 180r48 187r42 202r48 209r42
-. 230r48
-89U13*Milliseconds 11|84r44 102r50 112r44 150r50 158r44 180r50 187r44 202r50
-. 209r44 230r50
+45O9*Time 11|122r25 149r25 193r25 219r25 241r25 270r25
+59U13*"+" 11|122r42 140r48 149r42 185r48 193r42 212r48 219r42 234r48 241r42
+. 265r48 270r42 295r48
+89U13*Milliseconds 11|122r44 140r50 149r44 185r50 193r44 212r50 219r44 234r50
+. 241r44 265r50 270r44 295r50
 X 9 devicesfss_v1.ads
 4U9*devicesFSS_V1 11|6r6 6r25
-11I10*Distance_Samples_Type 11|207r17
-15I10*Light_Samples_Type 11|210r20
-16U15*Read_Light_Intensity 11|214r7
-24I10*Altitude_Samples_Type 11|44r14 155r14 177r11
-26U14*Read_Altitude 11|44r39 162r18
-31I10*Speed_Samples_Type 11|91r20 111r8 124r23 136r26
-34U15*Set_Speed 11|91r10 93r10 96r10 124r13 127r13 136r16 138r16 142r13
-39I10*Pitch_Samples_Type 11|18r43 19r39 21r21 26r43 32r39 45r14 108r14 156r14
-. 185r14
-44I10*Roll_Samples_Type 11|18r74 19r66 22r20 26r74 32r66 46r13 109r13 157r13
-. 186r13
-54I10*Power_Samples_Type 11|82r22 110r15 147r14
-55U15*Read_Power 11|87r7 117r7 135r16
-69U14*Read_PilotPresence 11|221r11
-80N27*On 11|120r18 171r18
-81U15*Light_1 11|171r10
-82U15*Light_2 11|120r10
-86U15*Alarm 11|216r10 223r13
-94U15*Display_Roll 11|201r7
-100U15*Display_Message 11|192r10
+11I10*Distance_Samples_Type 11|239r17
+12U15*Read_Distance 11|245r7
+15I10*Light_Samples_Type 11|242r20
+16U15*Read_Light_Intensity 11|249r7
+24I10*Altitude_Samples_Type 11|26r45 48r45 82r14 190r14 271r14
+26U14*Read_Altitude 11|50r22 82r39 197r18
+31I10*Speed_Samples_Type 11|29r39 63r39 129r20 161r23 173r26 272r16
+33U14*Read_Speed 11|65r19
+34U15*Set_Speed 11|129r10 131r10 134r10 161r13 164r13 173r16 175r16 179r13
+39I10*Pitch_Samples_Type 11|18r43 19r39 21r21 30r45 34r43 40r39 68r45 83r14
+. 146r14 191r14 217r14 274r12
+41U14*Read_Pitch 11|36r19 70r16
+44I10*Roll_Samples_Type 11|18r74 19r66 22r20 30r74 34r74 40r66 68r74 84r13
+. 147r13 192r13 218r13 275r11
+46U14*Read_Roll 11|37r18 71r16
+54I10*Power_Samples_Type 11|28r39 58r39 120r22 148r15 273r12
+55U15*Read_Power 11|60r10 125r7 154r7 172r16
+60A10*Joystick_Samples_Type 11|27r38 53r38 276r7
+62U15*Read_Joystick 11|55r10
+69U14*Read_PilotPresence 11|256r11
+80N27*On 11|157r18 206r18
+81U15*Light_1 11|206r10
+82U15*Light_2 11|157r10
+86U15*Alarm 11|251r10 258r13
+90U15*Display_Altitude 11|286r4
+91U15*Display_Speed 11|288r4
+93U15*Display_Pitch 11|290r4
+94U15*Display_Roll 11|233r7 291r4
+96U15*Display_Pilot_Power 11|287r4
+97U15*Display_Joystick 11|289r4
+100U15*Display_Message 11|224r10 285r4
 X 10 fss.ads
 1U9*fss 11|8b14
 2U13*Background 11|10b14
 X 11 fss.adb
-17W19 Attitude_Data 25b19 39r15
-18U17 Get_Attitude 26b17 48r16 115r16 161r16 190r16
-18i31 Pitch 26b31 28r10
-18i63 Roll 26b63 29r10
-19U17 Set_Attitude 32b17 51r22 53r22 56r22 164r19 167r19 174r19 195r19 198r19
-19i31 Pitch 32b31 34r25
-19i59 Roll 32b59 35r24
-21i7 Pitch_Value 28r19 34r10
-22i7 Roll_Value 29r18 35r10
-39w4 Attitude 48r7 51r13 53r13 56r13 115r7 161r7 164r10 167r10 174r10 190r7
-. 195r10 198r10
-40f4 Shared_Velocidad 100m7 116r20 146m7 213r32
-41i4 contador_colisiones 49r10 57m13
-43U14 desvio_automatico 218r13 225r16
-44i4 altitud 50r21
-45i4 cabeceo 48m29 53r35
-46i4 alabeo 48m38 51r39
-62t9 control_velocidad
-65t9 riesgos
-68t9 altitud_cabeceo
-71t9 alabeo
-74t9 colision
-82i4 potencia_actual 87m18 88r33
-83f4 velocidad_actual 88m7 90r11 90r43 91r39 92r14 94m10 97m10 100r27
-84O4 siguiente_instante 101r19 102m7 102r29
-107f4 velocidad 116m7 119r11 119r33 122r27 123r14 124r42 125m13 125r26 128m13
-. 139m16 143m13 146r27
-108i4 cabeceo 115m29 122r11
-109i4 alabeo 115m38 132r11
-110i4 potencia 117m18 132r26 133r14 134r24 135m27 136r52 147r39
-111i4 a
-112O4 siguiente_instante 149r19 150m7 150r29
-155i4 altitud 162m7 170r16 170r43 173r16 173r44 177r39
-156i4 cabeceo 161m29 163r10 166r10
-157i4 alabeo 161m38 164r37 167r36
-158O4 siguiente_instante 179r19 180m7 180r29
-185i4 cabeceo 190m29 195r32 198r32
-186i4 alabeo 190m38 191r10 191r26 194r10 197r10 201r20
-187O4 siguiente_instante 200r19 202m7 202r29
-207i4 golondrina
-208f4 tiempo_colision 213m7 215r10 217r13 222r13 224r16
-209O4 siguiente_instante 229r19 230m7 230r29
-210i4 visual_piloto 214m28 221r47
+17W19 Attitude_Data 33b19 76r15
+18U17 Get_Attitude 34b17 86r16 152r16 196r16 222r16
+18i31 Pitch 34b31 36r10
+18i63 Roll 34b63 37r10
+19U17 Set_Attitude 40b17 89r22 91r22 199r19 202r19 209r19 227r19 230r19
+19i31 Pitch 40b31 42r25
+19i59 Roll 40b59 43r24
+21i7 Pitch_Value 42r10
+22i7 Roll_Value 43r10
+25W19 Status_Record 47b19 77r14
+26U17 Get_Altitude 48b17 279r12
+26i30 Altitude 48b30 50r10
+27U17 Get_Joystick 53b17 283r12
+27a30 J 53b30 55r24
+28U17 Get_Power 58b17 281r12
+28i27 Power 58b27 60r21
+29U17 Get_Speed 63b17 280r12
+29i27 Speed 63b27 65r10
+30U17 Get_Plane_Position 68b17 282r12
+30i36 Nx 68b36 70r10
+30i65 Ny 68b65 71r10
+76w4 Attitude 86r7 89r13 91r13 152r7 196r7 199r10 202r10 209r10 222r7 227r10
+. 230r10
+77w4 Display 279r4 280r4 281r4 282r4 283r4
+78f4 Shared_Velocidad 138m7 153r20 183m7 246r10 247r47
+79i4 contador_colisiones 87r10 95m13
+81U14 desvio_automatico 253r13 260r16
+82i4 altitud 88r21
+83i4 cabeceo 86m29 91r35
+84i4 alabeo 86m38 89r39
+100t9 control_velocidad
+103t9 riesgos
+106t9 altitud_cabeceo
+109t9 alabeo
+112t9 colision
+115t9 visualizacion
+120i4 potencia_actual 125m18 126r33
+121f4 velocidad_actual 126m7 128r11 128r43 129r39 130r14 132m10 135m10 138r27
+122O4 siguiente_instante 139r19 140m7 140r29
+145f4 velocidad 153m7 156r11 156r33 159r27 160r14 161r42 162m13 162r26 165m13
+. 176m16 180m13 183r27
+146i4 cabeceo 152m29 159r11
+147i4 alabeo 152m38 169r11
+148i4 potencia 154m18 169r26 170r14 171r24 172m27 173r52
+149O4 siguiente_instante 184r19 185m7 185r29
+190i4 altitud 197m7 205r16 205r43 208r16 208r44
+191i4 cabeceo 196m29 198r10 201r10
+192i4 alabeo 196m38 199r37 202r36
+193O4 siguiente_instante 211r19 212m7 212r29
+217i4 cabeceo 222m29 227r32 230r32
+218i4 alabeo 222m38 223r10 223r26 226r10 229r10 233r20
+219O4 siguiente_instante 232r19 234m7 234r29
+239i4 golondrina 245m21 247r35
+240f4 tiempo_colision 247m10 250r10 252r13 257r13 259r16
+241O4 siguiente_instante 264r19 265m7 265r29
+242i4 visual_piloto 249m28 256r47
+270O4 siguiente_instante 294r19 295m7 295r29
+271i4 altitud 279m25 286r21
+272i4 velocidad 280m22 288r18
+273i4 power 281m22 287r24
+274i4 pitch 282m31 290r18
+275i4 roll 282m37 291r17
+276a4 j 283m25 289r21
 X 12 kernel.ads
 36U9*Kernel 11|1r6 1r32
 X 17 kernel-serial_output.ads
 36U16*Serial_Output 11|1r13 1r39
-41U14*Put 11|147r10 177r7
-43U14*New_Line 11|148r10 176r7 178r7
 X 20 system.ads
 46U9*System 11|3r6 3r32
-X 41 tools.ads
+X 40 tools.ads
 6U9*tools 11|5r6 5r25
-8O5*Big_Bang 11|84r33 112r33 158r33 187r33 209r33
+8O5*Big_Bang 11|122r33 149r33 193r33 219r33 241r33 270r33
 
