@@ -125,6 +125,9 @@ package body fss is
       potencia_actual : Power_Samples_Type;
       velocidad_actual : Float;
       siguiente_instante : Time := Clock + Milliseconds(300);
+      altitud : Altitude_Samples_Type;
+      cabeceo : Pitch_Samples_Type;
+      alabeo : Roll_Samples_Type;
    begin
       loop
          Read_Power(potencia_actual);
@@ -141,7 +144,9 @@ package body fss is
          end if;
 
          Shared_Velocidad := velocidad_actual;
-         Status.Update_Status(Read_Altitude, Speed_Samples_Type(velocidad_actual), 
+         Attitude.Get_Attitude(cabeceo, alabeo);
+         altitud := Read_Altitude;
+         Status.Update_Status(altitud, Speed_Samples_Type(velocidad_actual), 
                               cabeceo, alabeo, potencia_actual);
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
@@ -154,11 +159,13 @@ package body fss is
       alabeo : Roll_Samples_Type;
       potencia : Power_Samples_Type;
       siguiente_instante : Time := Clock + Milliseconds(300);
+      altitud : Altitude_Samples_Type;
    begin
       loop
          Attitude.Get_Attitude(cabeceo, alabeo);
          velocidad := Shared_Velocidad;
          Read_Power(potencia);
+         altitud := Read_Altitude;
 
          if (velocidad = 1000.0 or velocidad <= 300.0) then
             Light_2(On);
@@ -185,7 +192,7 @@ package body fss is
          end if;
 
          Shared_Velocidad := velocidad;
-         Status.Update_Status(Read_Altitude, Speed_Samples_Type(velocidad), 
+         Status.Update_Status(altitud, Speed_Samples_Type(velocidad), 
                               cabeceo, alabeo, potencia);
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
@@ -216,7 +223,7 @@ package body fss is
             Attitude.Set_Attitude(0, 0);
          end if;
 
-         Status.Update_Status(altitud, Status.Current_Speed, cabeceo, alabeo, Status.Current_Power);
+         Status.Update_Status(altitud, 0, cabeceo, alabeo, 0);
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(200);
       end loop;
@@ -240,7 +247,7 @@ package body fss is
             Attitude.Set_Attitude(cabeceo, 45);
          end if;
 
-         Status.Update_Status(Status.Current_Altitude, Status.Current_Speed, cabeceo, alabeo, Status.Current_Power);
+         Status.Update_Status(0, 0, cabeceo, alabeo, 0);
          Display_Roll(alabeo);
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(200);
@@ -277,8 +284,7 @@ package body fss is
             end if;
          end if;
 
-         Status.Update_Status(Status.Current_Altitude, Status.Current_Speed, Status.Current_Pitch, 
-                              Status.Current_Roll, Status.Current_Power);
+         Status.Update_Status(0, 0, 0, 0, 0);
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(250);
       end loop;
