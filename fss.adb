@@ -7,6 +7,14 @@ with devicesFSS_V1; use devicesFSS_V1;
 
 package body fss is
 
+   -- Implementación de la tarea Background
+   procedure Background is
+   begin
+      loop
+         null; -- Tarea de ejemplo, implementa la lógica según tus necesidades
+      end loop;
+   end Background;
+
    -- Objeto protegido para gestionar el estado de la aeronave
    protected type Status_Record is
       procedure Update_Status (Alt : Altitude_Samples_Type; Speed : Speed_Samples_Type; 
@@ -72,13 +80,13 @@ package body fss is
    contador_colisiones : Integer := 0;
 
    procedure desvio_automatico is
-   altitud : Altitude_Samples_Type := Read_Altitude;
-   cabeceo : Pitch_Samples_Type;
-   alabeo : Roll_Samples_Type;
+      altitud : Altitude_Samples_Type := Read_Altitude;
+      cabeceo : Pitch_Samples_Type;
+      alabeo : Roll_Samples_Type;
    begin
       Attitude.Get_Attitude(cabeceo, alabeo);
-      if(contador_colisiones < 12) then
-         if(Integer(altitud) <= 8500) then
+      if (contador_colisiones < 12) then
+         if (Integer(altitud) <= 8500) then
             Attitude.Set_Attitude(20, alabeo);
          else
             Attitude.Set_Attitude(cabeceo, 45);
@@ -106,12 +114,12 @@ package body fss is
    end alabeo;
 
    task colision is
-      pragma Priority(10);
+      pragma Priority(3);
    end colision;
 
-   task display is
-   pragma Priority(2);
-   end display;
+   task visualizacion is
+      pragma Priority(2);
+   end visualizacion;
 
    task body control_velocidad is
       potencia_actual : Power_Samples_Type;
@@ -134,7 +142,7 @@ package body fss is
 
          Shared_Velocidad := velocidad_actual;
          Status.Update_Status(Read_Altitude, Speed_Samples_Type(velocidad_actual), 
-                              Status.Current_Pitch, Status.Current_Roll, potencia_actual);
+                              cabeceo, alabeo, potencia_actual);
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
       end loop;
@@ -277,34 +285,38 @@ package body fss is
    end colision;
 
    task body visualizacion is
-   siguiente_instante : Time := Clock + Seconds(1);
-   altitud : Altitude_Samples_Type;
-   velocidad : Speed_Samples_Type;
-   cabeceo : Pitch_Samples_Type;
-   alabeo : Roll_Samples_Type;
-   potencia : Power_Samples_Type;
+      siguiente_instante : Time := Clock + Seconds(1);
+      altitud : Altitude_Samples_Type;
+      velocidad : Speed_Samples_Type;
+      cabeceo : Pitch_Samples_Type;
+      alabeo : Roll_Samples_Type;
+      potencia : Power_Samples_Type;
+   begin
+      loop
+         -- Obtener el estado actual de la aeronave
+         Status.Get_Status(altitud, velocidad, cabeceo, alabeo, potencia);
+
+         -- Mostrar los datos en el display
+         Display_Altitude(altitud);
+         Display_Speed(velocidad);
+         Display_Pitch(cabeceo);
+         Display_Roll(alabeo);
+         Display_Pilot_Power(potencia);
+
+         -- Mostrar la posición del joystick
+         declare
+            joystick_pos : Joystick_Samples_Type;
+         begin
+            Read_Joystick(joystick_pos);
+            Display_Joystick(joystick_pos);
+         end;
+
+         -- Retraso hasta la siguiente actualización de visualización
+         delay until siguiente_instante;
+         siguiente_instante := siguiente_instante + Seconds(1);
+      end loop;
+   end visualizacion;
+
 begin
-   loop
-      Status.Get_Status(altitud, velocidad, cabeceo, alabeo, potencia);
-
-      Display_Altitude(altitud);
-      Display_Speed(velocidad);
-      Display_Pitch(cabeceo);
-      Display_Roll(alabeo);
-      Display_Pilot_Power(potencia);
-
-      declare
-         joystick_pos : Joystick_Samples_Type;
-      begin
-         Read_Joystick(joystick_pos);
-         Display_Joystick(joystick_pos);
-      end;
-
-      delay until siguiente_instante;
-      siguiente_instante := siguiente_instante + Seconds(1);
-   end loop;
-end visualizacion;
-
-begin
-   null;
+   null; -- Cuerpo principal del paquete
 end fss;
