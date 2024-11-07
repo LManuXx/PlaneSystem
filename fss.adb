@@ -1,7 +1,6 @@
 with Kernel.Serial_Output; use Kernel.Serial_Output;
 with Ada.Real_Time;        use Ada.Real_Time;
 with System;               use System;
-
 with tools;         use tools;
 with devicesFSS_V1; use devicesFSS_V1;
 
@@ -14,29 +13,29 @@ package body fss is
       end loop;
    end Background;
 
-   protected type Attitude_Data is
-      procedure Get_Attitude (Pitch : out Pitch_Samples_Type; Roll : out Roll_Samples_Type);
-      procedure Set_Attitude (Pitch : Pitch_Samples_Type; Roll : Roll_Samples_Type);
+   protected type Altitude_Data is
+      procedure Get_Altitude (Pitch : out Pitch_Samples_Type; Roll : out Roll_Samples_Type);
+      procedure Set_Altitude (Pitch : Pitch_Samples_Type; Roll : Roll_Samples_Type);
    private
       Pitch_Value : Pitch_Samples_Type := 0;
       Roll_Value : Roll_Samples_Type := 0;
-   end Attitude_Data;
+   end Altitude_Data;
 
-   protected body Attitude_Data is
-      procedure Get_Attitude (Pitch : out Pitch_Samples_Type; Roll : out Roll_Samples_Type) is
+   protected body Altitude_Data is
+      procedure Get_Altitude (Pitch : out Pitch_Samples_Type; Roll : out Roll_Samples_Type) is
       begin
          Pitch := Pitch_Value;
          Roll := Roll_Value;
-      end Get_Attitude;
+      end Get_Altitude;
 
-      procedure Set_Attitude (Pitch : Pitch_Samples_Type; Roll : Roll_Samples_Type) is
+      procedure Set_Altitude (Pitch : Pitch_Samples_Type; Roll : Roll_Samples_Type) is
       begin
          Set_Aircraft_Pitch(Pitch);
          Set_Aircraft_Roll(Roll);
          Pitch_Value := Pitch;
          Roll_Value := Roll;
-      end Set_Attitude;
-   end Attitude_Data;
+      end Set_Altitude;
+   end Altitude_Data;
 
    protected type Status_Record is
       procedure Get_Altitude(Altitude : out Altitude_Samples_Type);
@@ -74,7 +73,7 @@ package body fss is
       end Get_Plane_Position;
    end Status_Record;
 
-   Attitude : Attitude_Data;
+   Altitude : Altitude_Data;
    Display : Status_Record;
    Shared_Velocidad : Float := 0.0;
    contador_colisiones : Integer := 0;
@@ -84,15 +83,15 @@ package body fss is
       cabeceo : Pitch_Samples_Type;
       alabeo : Roll_Samples_Type;
    begin
-      Attitude.Get_Attitude(cabeceo, alabeo);
+      Altitude.Get_Altitude(cabeceo, alabeo);
       if (contador_colisiones < 12) then
          if (Integer(altitud) <= 8500) then
-            Attitude.Set_Attitude(20, alabeo);
+            Altitude.Set_Altitude(20, alabeo);
          else
-            Attitude.Set_Attitude(cabeceo, 45);
+            Altitude.Set_Altitude(cabeceo, 45);
          end if;
       else
-         Attitude.Set_Attitude(0, 0);
+         Altitude.Set_Altitude(0, 0);
          contador_colisiones := 0;
       end if;
    end desvio_automatico;
@@ -102,15 +101,15 @@ package body fss is
    end control_velocidad;
 
    task riesgos is
-      pragma Priority(1);
+      pragma Priority(2);
    end riesgos;
 
    task altitud_cabeceo is
-      pragma Priority(4);
+      pragma Priority(8);
    end altitud_cabeceo;
 
    task alabeo is
-      pragma Priority(3);
+      pragma Priority(7);
    end alabeo;
 
    task colision is
@@ -154,7 +153,7 @@ package body fss is
       siguiente_instante : Time := Big_Bang + Milliseconds(300);
    begin
       loop
-         Attitude.Get_Attitude(cabeceo, alabeo);
+         Altitude.Get_Altitude(cabeceo, alabeo);
          velocidad := Shared_Velocidad;
          Read_Power(potencia);
 
@@ -198,19 +197,19 @@ package body fss is
       siguiente_instante : Time := Big_Bang + Milliseconds(200);
    begin
       loop
-         Attitude.Get_Attitude(cabeceo, alabeo);
+         Altitude.Get_Altitude(cabeceo, alabeo);
          altitud := Read_Altitude;
          if (cabeceo < -30) then
-            Attitude.Set_Attitude(-30, alabeo);
+            Altitude.Set_Altitude(-30, alabeo);
          elsif (cabeceo > 30) then
-            Attitude.Set_Attitude(30, alabeo);
+            Altitude.Set_Altitude(30, alabeo);
          end if;
 
          if (Float(altitud) < 2500.0 or Float(altitud) > 9500.0) then
             Light_1(On);
          end if;
          if (Float(altitud) <= 2000.0 or Float(altitud) >= 10000.0) then
-            Attitude.Set_Attitude(0, 0);
+            Altitude.Set_Altitude(0, 0);
          end if;
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(200);
@@ -223,14 +222,14 @@ package body fss is
       siguiente_instante : Time := Big_Bang + Milliseconds(200);
    begin
       loop
-         Attitude.Get_Attitude(cabeceo, alabeo);
+         Altitude.Get_Altitude(cabeceo, alabeo);
          if (alabeo < -35 or alabeo > 35) then
             Display_Message("ALERTA, ALABEO PELIGROSO");
          end if;
          if (alabeo < -45) then
-            Attitude.Set_Attitude(cabeceo, -45);
+            Altitude.Set_Altitude(cabeceo, -45);
          elsif (alabeo > 45) then
-            Attitude.Set_Attitude(cabeceo, 45);
+            Altitude.Set_Altitude(cabeceo, 45);
          end if;
          delay until siguiente_instante;
          Display_Roll(alabeo);
@@ -239,15 +238,15 @@ package body fss is
    end alabeo;
 
    task body colision is
-      golondrina : Distance_Samples_Type;
+      distancia : Distance_Samples_Type;
       tiempo_colision : Float;
       siguiente_instante : Time := Big_Bang + Milliseconds(250);
       visual_piloto : Light_Samples_Type;
    begin
       loop
-         Read_Distance(golondrina);
+         Read_Distance(distancia);
          if Shared_Velocidad > 0.0 then
-            tiempo_colision := Float(golondrina) / Shared_Velocidad;
+            tiempo_colision := Float(distancia) / Shared_Velocidad;
          end if;
          Read_Light_Intensity(visual_piloto);
          if (tiempo_colision <= 10.0) then

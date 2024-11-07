@@ -2620,9 +2620,9 @@ Linker script and memory map
  .stab          0x0224b4f0      0x624 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(frame.o)
                                 0x714 (size before relaxing)
 
-.stabstr        0x0224bb14    0x81514
+.stabstr        0x0224bb14    0x81513
  [.stabstr](*)
- .stabstr       0x0224bb14    0x81514 ./main.o
+ .stabstr       0x0224bb14    0x81513 ./main.o
                                   0x0 (size before relaxing)
                 0x0220ca24                heap_start=bss_end
                 0x02400000                heap_end=RAM_END
