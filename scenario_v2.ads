@@ -30,8 +30,8 @@ package Scenario_V2 is
               300,300,300,300,300, 200,200,200,200,200,    --7s
               100,100,100,100,100, 50,50,50,50,50,    --8s
               6000,6000,6000,6000,6000, 6000,6000,6000,6000,6000,  --9s
-              6000,6000,6000,6000,6000, 6000,6000,6000,6000,6000  --10s
-);
+              6000,6000,6000,6000,6000, 6000,6000,6000,6000,6000);  --10s
+
 
     cantidad_datos_Light: constant := 200;
     type Indice_Secuencia_Light is mod cantidad_datos_Light;
@@ -47,9 +47,9 @@ package Scenario_V2 is
                    1600,1600,1600,1600,1600, 1700,1700,1700,1700,1700,    --7s
                    1800,1800,1800,1800,1800, 1900,1900,1900,1900,1900,    --8s
                    2000,2000,2000,2000,2000, 2100,2100,2100,2100,2100,    --9s
-                   2200,2200,2200,2200,2200, 2300,2300,2300,2300,2300,    --10s
- );
-
+                   2200,2200,2200,2200,2200, 2300,2300,2300,2300,2300);
+    --10s
+ 
     cantidad_datos_Joystick: constant := 200;
     type Indice_Secuencia_Joystick is mod cantidad_datos_Joystick;
     type tipo_Secuencia_Joystick is array (Indice_Secuencia_Joystick) of Joystick_Samples_Type;
@@ -83,8 +83,7 @@ package Scenario_V2 is
                  (+50,+50),(+40,+40),(+30,+30),(+20,+20),(+10,+10), 
 
                  (+00,+00),(+00,+00),(-10,-10),(-20,-20),(-30,-30),  --10s
-                 (-40,-40),(-50,-50),(-60,-60),(-70,-70),(-80,-80), 
-                 );  
+                 (-40,-40),(-50,-50),(-60,-60),(-70,-70),(-80,-80));  
 
     cantidad_datos_Power: constant := 200;
     type Indice_Secuencia_Power is mod cantidad_datos_Power;
