@@ -3,7 +3,7 @@ A -g
 P LC TF
 R nnvvrnvvnnnnvvvvnvvvnnnnvnnnnnvnnnnnnnnnnnn
 
-U fss%b			fss.adb			40CC7A85 PK IL
+U fss%b			fss.adb			09FB4D2D PK IL
 W ada%s			ada.ads			ada.ali
 W ada.exceptions%s	a-except.adb		a-except.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
@@ -30,9 +30,9 @@ D a-reatim.ads		20000718095948 5DBAB303
 D a-retide.ads		20000718095948 7F3C479C
 D a-stream.ads		20000718095948 5F7C277B
 D a-tags.ads		20000718095948 45EF7E4E
-D devicesfss_v1.ads	20241107153758 65131FAE
-D fss.ads		20241107153758 40408672
-D fss.adb		20241107215419 44C7F4B7
+D devicesfss_v1.ads	20241111185451 65131FAE
+D fss.ads		20241111185451 40408672
+D fss.adb		20241111195704 0DF0C31F
 D kernel.ads		20010312182047 56BBE4F1
 D kernel-cpu_primitives.ads  20010312182047 5746D7AD
 D kernel-interrupts.ads	20010312182047 72CD7AA3
@@ -61,7 +61,7 @@ D s-taprob.ads		20000718095949 1D5668B3
 D s-tasres.ads		20000718095949 62B4C0AB
 D s-tarest.ads		20000718095949 1D177686
 D s-unstyp.ads		20000718095949 78AFB91D
-D tools.ads		20241107153758 40AA26E7
+D tools.ads		20241111185451 40AA26E7
 D unchconv.ads		20000718095949 72DC4539
 X 1 ada.ads
 18U9*Ada 11|2r6 2r32

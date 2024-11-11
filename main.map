@@ -1738,125 +1738,125 @@ Linker script and memory map
  *fill*         0x0202f5b4        0x4
  .rodata        0x0202f5b8       0x6c ./tools.o
  *fill*         0x0202f624        0x4
- .rodata        0x0202f628      0x10d ./fss.o
- *fill*         0x0202f735        0x3
- .rodata        0x0202f738        0x8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(a-reatim.o)
- .rodata        0x0202f740        0x8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(a-retide.o)
- .rodata        0x0202f748       0x24 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(s-taprob.o)
- *fill*         0x0202f76c        0x4
- .rodata        0x0202f770       0xd0 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(s-taprop.o)
- .rodata        0x0202f840       0x50 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(s-tarest.o)
- .rodata        0x0202f890      0x14a /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(s-tasdeb.o)
- *fill*         0x0202f9da        0x2
- .rodata        0x0202f9dc      0x300 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(s-taskin.o)
- .rodata        0x0202fcdc        0x8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-interrupts.o)
- .rodata        0x0202fce4        0x4 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-threads-queues.o)
- .rodata        0x0202fce8       0x7c /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-peripherals.o)
- *fill*         0x0202fd64        0x4
- .rodata        0x0202fd68      0x184 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-except.o)
- *fill*         0x0202feec        0x4
- .rodata        0x0202fef0        0xd /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-finali.o)
- *fill*         0x0202fefd        0x3
- .rodata        0x0202ff00      0x82c /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-nuelfu.o)
- *fill*         0x0203072c        0x4
- .rodata        0x02030730       0x42 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-tags.o)
- *fill*         0x02030772        0x6
- .rodata        0x02030778        0xd /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(g-except.o)
- *fill*         0x02030785        0x3
- .rodata        0x02030788       0xab /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(i-c.o)
- *fill*         0x02030833        0x5
- .rodata        0x02030838       0x24 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-arit64.o)
- *fill*         0x0203085c        0x4
- .rodata        0x02030860        0x5 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-exctab.o)
- *fill*         0x02030865        0x3
- .rodata        0x02030868       0x40 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-exnflt.o)
- .rodata        0x020308a8       0xd0 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-fatflt.o)
-                0x020308e0                system__fat_flt__fat_float__r_neg_power
-                0x020308a8                system__fat_flt__fat_float__log_power
-                0x020308c4                system__fat_flt__fat_float__r_power
- .rodata        0x02030978       0x68 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-finimp.o)
- .rodata        0x020309e0       0x47 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-finroo.o)
- *fill*         0x02030a27        0x1
- .rodata        0x02030a28        0x8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-imgint.o)
- .rodata        0x02030a30       0x58 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-imgrea.o)
- .rodata        0x02030a88        0x8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-imguns.o)
- .rodata        0x02030a90       0xb8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-powtab.o)
-                0x02030a90                system__powten_table__powten
- .rodata        0x02030b48       0x50 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-stache.o)
- .rodata        0x02030b98       0x70 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-stalib.o)
-                0x02030b98                system__standard_library__constraint_error_name
- .rodata        0x02030c08      0x158 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-stratt.o)
- .rodata        0x02030d60        0xb /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-cio.o)
- *fill*         0x02030d6b        0x5
- .rodata        0x02030d70       0x77 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-raise.o)
- *fill*         0x02030de7        0x1
- .rodata        0x02030de8       0x50 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-init.o)
- .rodata        0x02030e38      0x188 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-fatllf.o)
-                0x02030e38                system__fat_llf__fat_long_long_float__log_power
-                0x02030e58                system__fat_llf__fat_long_long_float__r_power
-                0x02030e90                system__fat_llf__fat_long_long_float__r_neg_power
- .rodata        0x02030fc0        0x8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-imgllu.o)
- .rodata        0x02030fc8       0x35 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-adaint.o)
- *fill*         0x02030ffd        0x3
- .rodata        0x02031000       0xd0 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_atan.o)
- .rodata        0x020310d0       0x30 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_tanh.o)
- .rodata        0x02031100       0x10 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(w_acos.o)
- .rodata        0x02031110       0x10 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(w_asin.o)
- .rodata        0x02031120       0x28 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(w_exp.o)
- .rodata        0x02031148       0x10 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(w_log.o)
- .rodata        0x02031158       0x18 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(w_pow.o)
- .rodata        0x02031170       0x10 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(w_sqrt.o)
- .rodata        0x02031180       0xf0 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_acos.o)
- .rodata        0x02031270       0xf8 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_asin.o)
- .rodata        0x02031368       0xf8 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_exp.o)
- .rodata        0x02031460       0xd8 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_log.o)
- .rodata        0x02031538      0x208 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_pow.o)
- .rodata        0x02031740      0x228 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_rem_pio2.o)
- .rodata        0x02031968       0x10 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_sqrt.o)
- .rodata        0x02031978       0x80 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(k_cos.o)
- .rodata        0x020319f8       0xa0 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(k_rem_pio2.o)
- .rodata        0x02031a98       0x70 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(k_sin.o)
- .rodata        0x02031b08       0xa8 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(k_tan.o)
- .rodata        0x02031bb0      0x110 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_expm1.o)
- .rodata        0x02031cc0       0x18 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_floor.o)
- .rodata        0x02031cd8        0x8 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_infconst.o)
-                0x02031cd8                __infinity
- .rodata        0x02031ce0        0x4 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_lib_ver.o)
-                0x02031ce0                __fdlib_version
- *fill*         0x02031ce4        0x4
- .rodata        0x02031ce8       0x10 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_rint.o)
- .rodata        0x02031cf8       0x38 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_scalbn.o)
- .rodata        0x02031d30      0x100 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_divdi3.o)
- .rodata        0x02031e30        0x4 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_fixsfdi.o)
- *fill*         0x02031e34        0x4
- .rodata        0x02031e38       0x18 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_fixunsdfdi.o)
- .rodata        0x02031e50       0x18 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_fixunssfdi.o)
- .rodata        0x02031e68       0x10 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_floatdidf.o)
- .rodata        0x02031e78       0x10 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_floatdisf.o)
- .rodata        0x02031e88      0x100 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_udivdi3.o)
- .rodata        0x02031f88      0x100 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_umoddi3.o)
- .rodata        0x02032088        0xb /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(frame.o)
- *fill*         0x02032093        0x5
- .rodata        0x02032098        0x2 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(impure.o)
- *fill*         0x0203209a        0x2
- .rodata        0x0203209c       0x68 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(lcltime_r.o)
- *fill*         0x02032104        0x4
- .rodata        0x02032108       0xa8 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(vfprintf.o)
- .rodata        0x020321b0       0x22 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(vfscanf.o)
- *fill*         0x020321d2        0x6
- .rodata        0x020321d8      0x101 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(ctype_.o)
-                0x020321d8                _ctype_
- *fill*         0x020322d9        0x7
- .rodata        0x020322e0       0x78 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(dtoa.o)
- .rodata        0x02032358       0x42 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(locale.o)
- *fill*         0x0203239a        0x6
- .rodata        0x020323a0      0x138 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(mprec.o)
-                0x020324a0                __mprec_tinytens
-                0x020323b0                __mprec_tens
-                0x02032478                __mprec_bigtens
- .rodata        0x020324d8       0x48 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(strtod.o)
- .rodata        0x02032520       0xb1 /usr/local/openravenscar/sparc-ork-elf/lib/libork.a(ada_exceptions.o)
- *fill*         0x020325d1        0xf
+ .rodata        0x0202f628      0x115 ./fss.o
+ *fill*         0x0202f73d        0x3
+ .rodata        0x0202f740        0x8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(a-reatim.o)
+ .rodata        0x0202f748        0x8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(a-retide.o)
+ .rodata        0x0202f750       0x24 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(s-taprob.o)
+ *fill*         0x0202f774        0x4
+ .rodata        0x0202f778       0xd0 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(s-taprop.o)
+ .rodata        0x0202f848       0x50 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(s-tarest.o)
+ .rodata        0x0202f898      0x14a /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(s-tasdeb.o)
+ *fill*         0x0202f9e2        0x2
+ .rodata        0x0202f9e4      0x300 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(s-taskin.o)
+ .rodata        0x0202fce4        0x8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-interrupts.o)
+ .rodata        0x0202fcec        0x4 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-threads-queues.o)
+ .rodata        0x0202fcf0       0x7c /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-peripherals.o)
+ *fill*         0x0202fd6c        0x4
+ .rodata        0x0202fd70      0x184 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-except.o)
+ *fill*         0x0202fef4        0x4
+ .rodata        0x0202fef8        0xd /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-finali.o)
+ *fill*         0x0202ff05        0x3
+ .rodata        0x0202ff08      0x82c /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-nuelfu.o)
+ *fill*         0x02030734        0x4
+ .rodata        0x02030738       0x42 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-tags.o)
+ *fill*         0x0203077a        0x6
+ .rodata        0x02030780        0xd /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(g-except.o)
+ *fill*         0x0203078d        0x3
+ .rodata        0x02030790       0xab /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(i-c.o)
+ *fill*         0x0203083b        0x5
+ .rodata        0x02030840       0x24 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-arit64.o)
+ *fill*         0x02030864        0x4
+ .rodata        0x02030868        0x5 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-exctab.o)
+ *fill*         0x0203086d        0x3
+ .rodata        0x02030870       0x40 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-exnflt.o)
+ .rodata        0x020308b0       0xd0 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-fatflt.o)
+                0x020308e8                system__fat_flt__fat_float__r_neg_power
+                0x020308b0                system__fat_flt__fat_float__log_power
+                0x020308cc                system__fat_flt__fat_float__r_power
+ .rodata        0x02030980       0x68 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-finimp.o)
+ .rodata        0x020309e8       0x47 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-finroo.o)
+ *fill*         0x02030a2f        0x1
+ .rodata        0x02030a30        0x8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-imgint.o)
+ .rodata        0x02030a38       0x58 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-imgrea.o)
+ .rodata        0x02030a90        0x8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-imguns.o)
+ .rodata        0x02030a98       0xb8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-powtab.o)
+                0x02030a98                system__powten_table__powten
+ .rodata        0x02030b50       0x50 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-stache.o)
+ .rodata        0x02030ba0       0x70 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-stalib.o)
+                0x02030ba0                system__standard_library__constraint_error_name
+ .rodata        0x02030c10      0x158 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-stratt.o)
+ .rodata        0x02030d68        0xb /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-cio.o)
+ *fill*         0x02030d73        0x5
+ .rodata        0x02030d78       0x77 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-raise.o)
+ *fill*         0x02030def        0x1
+ .rodata        0x02030df0       0x50 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-init.o)
+ .rodata        0x02030e40      0x188 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-fatllf.o)
+                0x02030e40                system__fat_llf__fat_long_long_float__log_power
+                0x02030e60                system__fat_llf__fat_long_long_float__r_power
+                0x02030e98                system__fat_llf__fat_long_long_float__r_neg_power
+ .rodata        0x02030fc8        0x8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-imgllu.o)
+ .rodata        0x02030fd0       0x35 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-adaint.o)
+ *fill*         0x02031005        0x3
+ .rodata        0x02031008       0xd0 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_atan.o)
+ .rodata        0x020310d8       0x30 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_tanh.o)
+ .rodata        0x02031108       0x10 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(w_acos.o)
+ .rodata        0x02031118       0x10 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(w_asin.o)
+ .rodata        0x02031128       0x28 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(w_exp.o)
+ .rodata        0x02031150       0x10 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(w_log.o)
+ .rodata        0x02031160       0x18 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(w_pow.o)
+ .rodata        0x02031178       0x10 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(w_sqrt.o)
+ .rodata        0x02031188       0xf0 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_acos.o)
+ .rodata        0x02031278       0xf8 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_asin.o)
+ .rodata        0x02031370       0xf8 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_exp.o)
+ .rodata        0x02031468       0xd8 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_log.o)
+ .rodata        0x02031540      0x208 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_pow.o)
+ .rodata        0x02031748      0x228 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_rem_pio2.o)
+ .rodata        0x02031970       0x10 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(e_sqrt.o)
+ .rodata        0x02031980       0x80 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(k_cos.o)
+ .rodata        0x02031a00       0xa0 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(k_rem_pio2.o)
+ .rodata        0x02031aa0       0x70 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(k_sin.o)
+ .rodata        0x02031b10       0xa8 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(k_tan.o)
+ .rodata        0x02031bb8      0x110 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_expm1.o)
+ .rodata        0x02031cc8       0x18 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_floor.o)
+ .rodata        0x02031ce0        0x8 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_infconst.o)
+                0x02031ce0                __infinity
+ .rodata        0x02031ce8        0x4 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_lib_ver.o)
+                0x02031ce8                __fdlib_version
+ *fill*         0x02031cec        0x4
+ .rodata        0x02031cf0       0x10 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_rint.o)
+ .rodata        0x02031d00       0x38 /usr/local/openravenscar/sparc-ork-elf/lib/libm.a(s_scalbn.o)
+ .rodata        0x02031d38      0x100 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_divdi3.o)
+ .rodata        0x02031e38        0x4 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_fixsfdi.o)
+ *fill*         0x02031e3c        0x4
+ .rodata        0x02031e40       0x18 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_fixunsdfdi.o)
+ .rodata        0x02031e58       0x18 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_fixunssfdi.o)
+ .rodata        0x02031e70       0x10 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_floatdidf.o)
+ .rodata        0x02031e80       0x10 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_floatdisf.o)
+ .rodata        0x02031e90      0x100 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_udivdi3.o)
+ .rodata        0x02031f90      0x100 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(_umoddi3.o)
+ .rodata        0x02032090        0xb /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(frame.o)
+ *fill*         0x0203209b        0x5
+ .rodata        0x020320a0        0x2 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(impure.o)
+ *fill*         0x020320a2        0x2
+ .rodata        0x020320a4       0x68 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(lcltime_r.o)
+ *fill*         0x0203210c        0x4
+ .rodata        0x02032110       0xa8 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(vfprintf.o)
+ .rodata        0x020321b8       0x22 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(vfscanf.o)
+ *fill*         0x020321da        0x6
+ .rodata        0x020321e0      0x101 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(ctype_.o)
+                0x020321e0                _ctype_
+ *fill*         0x020322e1        0x7
+ .rodata        0x020322e8       0x78 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(dtoa.o)
+ .rodata        0x02032360       0x42 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(locale.o)
+ *fill*         0x020323a2        0x6
+ .rodata        0x020323a8      0x138 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(mprec.o)
+                0x020324a8                __mprec_tinytens
+                0x020323b8                __mprec_tens
+                0x02032480                __mprec_bigtens
+ .rodata        0x020324e0       0x48 /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(strtod.o)
+ .rodata        0x02032528       0xb1 /usr/local/openravenscar/sparc-ork-elf/lib/libork.a(ada_exceptions.o)
+ *fill*         0x020325d9        0x7
                 0x020325e0                .=ALIGN(0x10)
                 0x020325e0                text_end=.
 
@@ -2620,9 +2620,9 @@ Linker script and memory map
  .stab          0x0224b4f0      0x624 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(frame.o)
                                 0x714 (size before relaxing)
 
-.stabstr        0x0224bb14    0x81513
+.stabstr        0x0224bb14    0x8151a
  [.stabstr](*)
- .stabstr       0x0224bb14    0x81513 ./main.o
+ .stabstr       0x0224bb14    0x8151a ./main.o
                                   0x0 (size before relaxing)
                 0x0220ca24                heap_start=bss_end
                 0x02400000                heap_end=RAM_END
