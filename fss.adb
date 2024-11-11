@@ -284,7 +284,7 @@ package body fss is
          Display.Get_Plane_Position(pitch, roll);
          Display.Get_Joystick(j);
 
-         Display_Message("Atenccione pickpocket");
+         Display_Message("Atenccionne pickpocket");
          Display_Altitude(altitud);
          Display_Pilot_Power(power);
          Display_Speed(velocidad);
