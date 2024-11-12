@@ -3,7 +3,7 @@ A -g
 P LC TF
 R nnvnrnnvnnnnvvvvnvvvnnnnvnnnnnvnnnnnnnnnnnn
 
-U devicesfss_v1%b	devicesfss_v1.adb	3A0C2269 PK
+U devicesfss_v1%b	devicesfss_v1.adb	70E266CC PK
 W ada.exceptions%s	a-except.adb		a-except.ali
 W kernel%s		kernel.ads		kernel.ali
 W kernel.serial_output%s  kernel-serial_output.adb  kernel-serial_output.ali
@@ -28,8 +28,8 @@ D a-filico.ads		20000718095948 1DECB9AC
 D a-reatim.ads		20000718095948 5DBAB303
 D a-stream.ads		20000718095948 5F7C277B
 D a-tags.ads		20000718095948 45EF7E4E
-D devicesfss_v1.ads	20241111185451 65131FAE
-D devicesfss_v1.adb	20241111185451 49BEBC03
+D devicesfss_v1.ads	20241112142608 65131FAE
+D devicesfss_v1.adb	20241112142608 49BEBC03
 D kernel.ads		20010312182047 56BBE4F1
 D kernel-cpu_primitives.ads  20010312182047 5746D7AD
 D kernel-interrupts.ads	20010312182047 72CD7AA3
@@ -38,7 +38,7 @@ D kernel-peripherals.ads  20010312182047 089544EF
 D kernel-serial_output.ads  20010312182047 16AD38F4
 D kernel-threads.ads	20010312182047 234DAE87
 D kernel-time.ads	20010312182047 7A57ECF4
-D scenario_v1.ads	20241111185451 6A432529
+D scenario_v1.ads	20241112155006 20AD618C
 D system.ads		20010312182047 2AE5BAFE
 D s-exctab.ads		20000718095948 7A25F5F9
 D s-finimp.ads		20000718095949 1C201C0F
@@ -59,7 +59,7 @@ D s-taprop.ads		20010312182047 36F12025
 D s-taskin.ads		20000718095949 09146F23
 D s-taprob.ads		20000718095949 1D5668B3
 D s-unstyp.ads		20000718095949 78AFB91D
-D tools.ads		20241111185451 40AA26E7
+D tools.ads		20241112142608 40AA26E7
 D unchconv.ads		20000718095949 72DC4539
 X 1 ada.ads
 18U9*Ada 8|2r6 2r25 102r43 102r69 9|535r40 535r66
@@ -254,15 +254,15 @@ X 18 scenario_v1.ads
 93M10*Indice_Secuencia_Joystick 9|78r10 93r15
 94A10*tipo_Secuencia_Joystick 9|79r18
 97a5*Joystick_Simulation 9|79r45
-161M10*Indice_Secuencia_Power 9|107r10 124r15
-162A10*tipo_Secuencia_Power 9|108r18
-164a5*Power_Simulation 9|108r42
-191M10*Indice_Secuencia_PilotPresence 9|152r13 155r15
-192A10*tipo_Secuencia_PilotPresence 9|140r18
-194a5*PilotPresence_Simulation 9|140r50
-219M10*Indice_Secuencia_PilotButton 9|181r13 184r15
-220A10*tipo_Secuencia_PilotButton 9|169r18
-222a5*PilotButton_Simulation 9|169r48
+164M10*Indice_Secuencia_Power 9|107r10 124r15
+165A10*tipo_Secuencia_Power 9|108r18
+167a5*Power_Simulation 9|108r42
+194M10*Indice_Secuencia_PilotPresence 9|152r13 155r15
+195A10*tipo_Secuencia_PilotPresence 9|140r18
+197a5*PilotPresence_Simulation 9|140r50
+222M10*Indice_Secuencia_PilotButton 9|181r13 184r15
+223A10*tipo_Secuencia_PilotButton 9|169r18
+225a5*PilotButton_Simulation 9|169r48
 X 19 system.ads
 46U9*System 9|3r6 3r18
 X 39 tools.ads
