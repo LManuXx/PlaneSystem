@@ -73,10 +73,12 @@ package body fss is
       end Get_Plane_Position;
    end Status_Record;
 
+   -- Variables Globales
    Altitude : Altitude_Data;
    Display : Status_Record;
    Shared_Velocidad : Float := 0.0;
    contador_colisiones : Integer := 0;
+   -- Final de Variables Globales
 
    procedure desvio_automatico is
       altitud : Altitude_Samples_Type := Read_Altitude;
@@ -85,14 +87,16 @@ package body fss is
    begin
       Altitude.Get_Altitude(alabeo,cabeceo);
       if (contador_colisiones < 12) then
+         contador_colisiones  := contador_colisiones + 1;
          if (Integer(altitud) <= 8500) then
             Altitude.Set_Altitude(alabeo, 20);
          else
             Altitude.Set_Altitude(45, cabeceo);
          end if;
       else
-         Altitude.Set_Altitude(0, 0);
          contador_colisiones := 0;
+         Altitude.Set_Altitude(0, 0);
+         
       end if;
    end desvio_automatico;
 
@@ -157,10 +161,10 @@ package body fss is
            velocidad := Shared_Velocidad;
            Read_Power(potencia);
 
-         if (velocidad = 1000.0 or velocidad <= 300.0) then
+         if (velocidad >= 1000.0 or velocidad <= 300.0) then
             Light_2(On);
          end if;
-         if (cabeceo > 0 and velocidad < 1000.0) then
+         if (cabeceo /= 0 and velocidad < 1000.0) then
             if (velocidad + 150.0 <= 1000.0) then
                Set_Speed(Speed_Samples_Type(velocidad + 150.0));
                velocidad := velocidad + 150.0;
@@ -170,7 +174,7 @@ package body fss is
             end if;
          end if;
 
-         if (alabeo > 0 and potencia < 1000) then
+         if (alabeo /= 0 and potencia < 1000) then
             if (potencia + 100 <= 1000) then
                if ((Float(potencia) * 1.2) <= 1000.0) then
                   Read_Power(potencia);
@@ -253,23 +257,26 @@ package body fss is
    begin
       loop
          Read_Distance(distancia);
-         if Shared_Velocidad > 0.0 then
-            tiempo_colision := Float(distancia) / Shared_Velocidad;
-         end if;
-         Read_Light_Intensity(visual_piloto);
-         if (tiempo_colision <= 10.0) then
-            Alarm(4);
-            if (tiempo_colision <= 5.0) then
-               desvio_automatico;
+         if distancia < 5000 then
+            if Shared_Velocidad > 0.0 then
+               tiempo_colision := Float(distancia) / Shared_Velocidad;
             end if;
-         end if;
-         if ((Read_PilotPresence = 1) or (Integer(visual_piloto) < 500)) then
-            if (tiempo_colision <= 15.0) then
+            Read_Light_Intensity(visual_piloto);
+            if ((Read_PilotPresence = 0) or (Integer(visual_piloto) < 500)) then
+               if (tiempo_colision <= 15.0) then
+                  Alarm(4);
+                  if (tiempo_colision <= 10.0) then
+                     desvio_automatico;
+                  end if;
+               end if;
+            end if;
+            if (tiempo_colision <= 10.0) then
                Alarm(4);
-               if (tiempo_colision <= 10.0) then
+               if (tiempo_colision <= 5.0) then
                   desvio_automatico;
                end if;
             end if;
+            
          end if;
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(250);
@@ -292,7 +299,7 @@ package body fss is
          Display.Get_Plane_Position(pitch, roll);
          Display.Get_Joystick(j);
 
-         Display_Message("Atenccionnnnne pickpocket");
+         Display_Message("Mostrar Datos: ");
          Display_Altitude(altitud);
          Display_Pilot_Power(power);
          Display_Speed(velocidad);
