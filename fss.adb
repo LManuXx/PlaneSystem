@@ -132,15 +132,16 @@ package body fss is
         loop
            Read_Power(potencia_actual);
            velocidad_actual := Float(potencia_actual) * 1.2;
-
+           if velocidad_actual  >= 1000.0 then
+               Set_Speed(1000);
+           else
+               Set_Speed(Speed_Samples_Type(velocidad_actual));
+           end if;
            if (velocidad_actual <= 1000.0 and velocidad_actual >= 300.0) then
               Set_Speed(Speed_Samples_Type(velocidad_actual));
            elsif (velocidad_actual < 300.0) then 
               Set_Speed(300);
               velocidad_actual := 300.0;
-           else
-              Set_Speed(1000);
-              velocidad_actual := 1000.0;
            end if;
 
            Shared_Velocidad := velocidad_actual;
