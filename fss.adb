@@ -78,6 +78,27 @@ package body fss is
    Display : Status_Record;
    Shared_Velocidad : Float := 0.0;
    contador_colisiones : Integer := 0;
+
+   -- Modo del Sistema: Automático (True) o Manual (False)
+   protected System_Mode is
+      procedure Toggle_Mode;
+      function Is_Automatic return Boolean;
+   private
+      Automatic_Mode : Boolean := True;  -- El sistema arranca en modo automático
+   end System_Mode;
+
+   protected body System_Mode is
+      procedure Toggle_Mode is
+      begin
+         Automatic_Mode := not Automatic_Mode;
+      end Toggle_Mode;
+
+      function Is_Automatic return Boolean is
+      begin
+         return Automatic_Mode;
+      end Is_Automatic;
+   end System_Mode;
+
    -- Final de Variables Globales
 
    procedure desvio_automatico is
@@ -85,110 +106,136 @@ package body fss is
       cabeceo : Pitch_Samples_Type;
       alabeo : Roll_Samples_Type;
    begin
-      Altitude.Get_Altitude(alabeo,cabeceo);
-      if (contador_colisiones < 12) then
-         contador_colisiones  := contador_colisiones + 1;
-         if (Integer(altitud) <= 8500) then
-            Altitude.Set_Altitude(alabeo, 20);
+      if System_Mode.Is_Automatic then
+         Altitude.Get_Altitude(alabeo, cabeceo);
+         if (contador_colisiones < 12) then
+            contador_colisiones  := contador_colisiones + 1;
+            if (Integer(altitud) <= 8500) then
+               Altitude.Set_Altitude(alabeo, 20);
+            else
+               Altitude.Set_Altitude(45, cabeceo);
+            end if;
          else
-            Altitude.Set_Altitude(45, cabeceo);
+            contador_colisiones := 0;
+            Altitude.Set_Altitude(0, 0);
          end if;
-      else
-         contador_colisiones := 0;
-         Altitude.Set_Altitude(0, 0);
-         
       end if;
    end desvio_automatico;
 
-      task control_velocidad is 
-        pragma Priority(5);
-      end control_velocidad;
+   task control_velocidad is 
+      pragma Priority(5);
+   end control_velocidad;
 
-     task riesgos is
-        pragma Priority(2);
-     end riesgos;
+   task riesgos is
+      pragma Priority(2);
+   end riesgos;
 
    task altitud_cabeceo is
       pragma Priority(8);
    end altitud_cabeceo;
 
-     task alabeo is
-        pragma Priority(7);
-     end alabeo;
+   task alabeo is
+      pragma Priority(7);
+   end alabeo;
 
-     task colision is
-        pragma Priority(10);
-     end colision;
+   task colision is
+      pragma Priority(10);
+   end colision;
 
    task visualizacion is
       pragma Priority(1);
    end visualizacion;
 
-     task body control_velocidad is
-        potencia_actual : Power_Samples_Type;
-        velocidad_actual : Float;
-        siguiente_instante : Time := Big_Bang + Milliseconds(300);
-     begin
-        loop
-           Read_Power(potencia_actual);
-           velocidad_actual := Float(potencia_actual) * 1.2;
-           if velocidad_actual  >= 1000.0 then
+   task modo_sistema is
+      pragma Priority(1);
+   end modo_sistema;
+
+   -- Implementación de las tareas
+
+   task body control_velocidad is
+      potencia_actual : Power_Samples_Type;
+      velocidad_actual : Float;
+      siguiente_instante : Time := Big_Bang + Milliseconds(300);
+   begin
+      loop
+         Read_Power(potencia_actual);
+         velocidad_actual := Float(potencia_actual) * 1.2;
+
+         if System_Mode.Is_Automatic then
+            if velocidad_actual >= 1000.0 then
                Set_Speed(1000);
-           else
-               Set_Speed(Speed_Samples_Type(velocidad_actual));
-           end if;
-           if (velocidad_actual <= 1000.0 and velocidad_actual >= 300.0) then
-              Set_Speed(Speed_Samples_Type(velocidad_actual));
-           elsif (velocidad_actual < 300.0) then 
-              Set_Speed(300);
-              velocidad_actual := 300.0;
-           end if;
-
-           Shared_Velocidad := velocidad_actual;
-           delay until siguiente_instante;
-           siguiente_instante := siguiente_instante + Milliseconds(300);
-        end loop;
-     end control_velocidad;
-
-     task body riesgos is
-        velocidad : Float;
-        cabeceo : Pitch_Samples_Type;
-        alabeo : Roll_Samples_Type;
-        potencia : Power_Samples_Type;
-        siguiente_instante : Time := Big_Bang + Milliseconds(300);
-     begin
-        loop
-           Altitude.Get_Altitude(alabeo, cabeceo);
-           velocidad := Shared_Velocidad;
-           Read_Power(potencia);
-
-         if (velocidad >= 1000.0 or velocidad <= 300.0) then
-            Light_2(On);
-         end if;
-         if (cabeceo /= 0 and velocidad < 1000.0) then
-            if (velocidad + 150.0 <= 1000.0) then
-               Set_Speed(Speed_Samples_Type(velocidad + 150.0));
-               velocidad := velocidad + 150.0;
+               velocidad_actual := 1000.0;
+            elsif velocidad_actual < 300.0 then
+               Set_Speed(300);
+               velocidad_actual := 300.0;
             else
-               Set_Speed(1000);
-               velocidad := 1000.0;
+               Set_Speed(Speed_Samples_Type(velocidad_actual));
+            end if;
+         else
+            Set_Speed(Speed_Samples_Type(velocidad_actual));
+            if velocidad_actual >= 1000.0 then
+               Display_Message("ALERTA: Velocidad máxima superada");
+            elsif velocidad_actual < 300.0 then
+               Display_Message("ALERTA: Velocidad mínima no alcanzada");
             end if;
          end if;
 
-         if (alabeo /= 0 and potencia < 1000) then
-            if (potencia + 100 <= 1000) then
-               if ((Float(potencia) * 1.2) <= 1000.0) then
-                  Read_Power(potencia);
-                  Set_Speed(Speed_Samples_Type((Float(potencia + 100)) * 1.2));
+         Shared_Velocidad := velocidad_actual;
+         delay until siguiente_instante;
+         siguiente_instante := siguiente_instante + Milliseconds(300);
+      end loop;
+   end control_velocidad;
+
+   task body riesgos is
+      velocidad : Float;
+      cabeceo : Pitch_Samples_Type;
+      alabeo : Roll_Samples_Type;
+      potencia : Power_Samples_Type;
+      siguiente_instante : Time := Big_Bang + Milliseconds(300);
+   begin
+      loop
+         Altitude.Get_Altitude(alabeo, cabeceo);
+         velocidad := Shared_Velocidad;
+         Read_Power(potencia);
+
+         if (velocidad >= 1000.0 or velocidad <= 300.0) then
+            Light_2(On);
+         else
+            Light_2(Off);
+         end if;
+
+         if System_Mode.Is_Automatic then
+            if (cabeceo /= 0 and velocidad < 1000.0) then
+               if (velocidad + 150.0 <= 1000.0) then
+                  Set_Speed(Speed_Samples_Type(velocidad + 150.0));
+                  velocidad := velocidad + 150.0;
                else
                   Set_Speed(1000);
                   velocidad := 1000.0;
                end if;
-            else
-               Set_Speed(1000);
-               velocidad := 1000.0;
+            end if;
+
+            if (alabeo /= 0 and potencia < 1000) then
+               if (potencia + 100 <= 1000) then
+                  if ((Float(potencia) * 1.2) <= 1000.0) then
+                     Read_Power(potencia);
+                     Set_Speed(Speed_Samples_Type((Float(potencia + 100)) * 1.2));
+                  else
+                     Set_Speed(1000);
+                     velocidad := 1000.0;
+                  end if;
+               else
+                  Set_Speed(1000);
+                  velocidad := 1000.0;
+               end if;
+            end if;
+         else
+            -- En modo manual, emitimos avisos si es necesario
+            if (cabeceo /= 0 and velocidad < 1000.0) then
+               Display_Message("Velocidad insuficiente para maniobra de cabeceo");
             end if;
          end if;
+
          Shared_Velocidad := velocidad;
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
@@ -204,15 +251,19 @@ package body fss is
    begin
       loop
          Read_Joystick(jx);
-         Altitude.Set_Altitude(Roll_Samples_Type(jx(x)),Pitch_Samples_Type(jx(y)));
+         Altitude.Set_Altitude(Roll_Samples_Type(jx(x)), Pitch_Samples_Type(jx(y)));
          Altitude.Get_Altitude(alabeo, cabeceo);
-      
+
          if (cabeceo < -30) then
             Display_Message("ALERTA, CABECEO PELIGROSO -");
-            Altitude.Set_Altitude(alabeo, -30);
+            if System_Mode.Is_Automatic then
+               Altitude.Set_Altitude(alabeo, -30);
+            end if;
          elsif (cabeceo > 30) then
             Display_Message("ALERTA, CABECEO PELIGROSO +");
-            Altitude.Set_Altitude(alabeo, 30);
+            if System_Mode.Is_Automatic then
+               Altitude.Set_Altitude(alabeo, 30);
+            end if;
          end if;
 
          altitud := Read_Altitude;
@@ -221,10 +272,13 @@ package body fss is
          else
             Light_1(Off);
          end if;
-         
+
          if (Float(altitud) <= 2000.0 or Float(altitud) >= 10000.0) then
-            Altitude.Set_Altitude(0, 0);
+            if System_Mode.Is_Automatic then
+               Altitude.Set_Altitude(0, 0);
+            end if;
          end if;
+
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(200);
       end loop;
@@ -237,14 +291,19 @@ package body fss is
    begin
       loop
          Altitude.Get_Altitude(alabeo, cabeceo);
+
          if (alabeo < -35 or alabeo > 35) then
             Display_Message("ALERTA, ALABEO PELIGROSO");
          end if;
-         if (alabeo < -45) then
-            Altitude.Set_Altitude(-45, cabeceo);
-         elsif (alabeo > 45) then
-            Altitude.Set_Altitude(45, cabeceo);
+
+         if System_Mode.Is_Automatic then
+            if (alabeo < -45) then
+               Altitude.Set_Altitude(-45, cabeceo);
+            elsif (alabeo > 45) then
+               Altitude.Set_Altitude(45, cabeceo);
+            end if;
          end if;
+
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(200);
       end loop;
@@ -266,18 +325,17 @@ package body fss is
             if ((Read_PilotPresence = 0) or (Integer(visual_piloto) < 500)) then
                if (tiempo_colision <= 15.0) then
                   Alarm(4);
-                  if (tiempo_colision <= 10.0) then
+                  if (tiempo_colision <= 10.0) and System_Mode.Is_Automatic then
                      desvio_automatico;
                   end if;
                end if;
             end if;
             if (tiempo_colision <= 10.0) then
                Alarm(4);
-               if (tiempo_colision <= 5.0) then
+               if (tiempo_colision <= 5.0) and System_Mode.Is_Automatic then
                   desvio_automatico;
                end if;
             end if;
-            
          end if;
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(250);
@@ -300,6 +358,12 @@ package body fss is
          Display.Get_Plane_Position(pitch, roll);
          Display.Get_Joystick(j);
 
+         if System_Mode.Is_Automatic then
+            Display_Message("Modo: Automático");
+         else
+            Display_Message("Modo: Manual");
+         end if;
+
          Display_Message("Mostrar Datos: ");
          Display_Altitude(altitud);
          Display_Pilot_Power(power);
@@ -312,6 +376,26 @@ package body fss is
          siguiente_instante := siguiente_instante + Milliseconds(1000);
       end loop;
    end visualizacion;
+
+   task body modo_sistema is
+      Previous_State, Current_State: PilotButton_Samples_Type := 0;
+      siguiente_instante : Time := Clock;
+   begin
+      loop
+         Current_State := Read_PilotButton;
+         if (Current_State = 1) and then (Previous_State = 0) then
+            System_Mode.Toggle_Mode;
+            if System_Mode.Is_Automatic then
+               Display_Message("Modo cambiado a Automático");
+            else
+               Display_Message("Modo cambiado a Manual");
+            end if;
+         end if;
+         Previous_State := Current_State;
+         delay until siguiente_instante;
+         siguiente_instante := siguiente_instante + Milliseconds(100);
+      end loop;
+   end modo_sistema;
 
 begin
   null;
