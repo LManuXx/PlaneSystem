@@ -152,6 +152,7 @@ package body fss is
 
    -- Implementación de las tareas
 
+   -- Tarea de Velocidad
    task body control_velocidad is
       potencia_actual : Power_Samples_Type;
       velocidad_actual : Float;
@@ -185,7 +186,9 @@ package body fss is
          siguiente_instante := siguiente_instante + Milliseconds(300);
       end loop;
    end control_velocidad;
+   -- Final de la tarea de velocidad
 
+   -- Tarea de Riesgos
    task body riesgos is
       velocidad : Float;
       cabeceo : Pitch_Samples_Type;
@@ -242,6 +245,9 @@ package body fss is
       end loop;
    end riesgos;
 
+   -- Fin de la tarea de Riesgos
+
+   -- Tarea de Altitud y Cabeceo
    task body altitud_cabeceo is
       altitud : Altitude_Samples_Type;
       cabeceo : Pitch_Samples_Type;
@@ -255,12 +261,10 @@ package body fss is
          Altitude.Get_Altitude(alabeo, cabeceo);
 
          if (cabeceo < -30) then
-            Display_Message("ALERTA, CABECEO PELIGROSO -");
             if System_Mode.Is_Automatic then
                Altitude.Set_Altitude(alabeo, -30);
             end if;
          elsif (cabeceo > 30) then
-            Display_Message("ALERTA, CABECEO PELIGROSO +");
             if System_Mode.Is_Automatic then
                Altitude.Set_Altitude(alabeo, 30);
             end if;
@@ -283,7 +287,9 @@ package body fss is
          siguiente_instante := siguiente_instante + Milliseconds(200);
       end loop;
    end altitud_cabeceo;
+   -- Fin de la Tarea de Altitud y Cabeceo
 
+   -- Tarea de Alabeo
    task body alabeo is
       cabeceo : Pitch_Samples_Type;
       alabeo : Roll_Samples_Type;
@@ -308,7 +314,9 @@ package body fss is
          siguiente_instante := siguiente_instante + Milliseconds(200);
       end loop;
    end alabeo;
+   -- Final de la tarea de Alabeo
 
+   -- Tarea de Colision
    task body colision is
       distancia : Distance_Samples_Type;
       tiempo_colision : Float;
@@ -341,7 +349,9 @@ package body fss is
          siguiente_instante := siguiente_instante + Milliseconds(250);
       end loop;
    end colision;
+   -- Final de la tarea de Colision
 
+   -- Tarea de Visualizacion
    task body visualizacion is
       siguiente_instante : Time := Big_Bang + Milliseconds(1000);
       altitud : Altitude_Samples_Type;
@@ -376,7 +386,9 @@ package body fss is
          siguiente_instante := siguiente_instante + Milliseconds(1000);
       end loop;
    end visualizacion;
+   -- Final de la tarea de Visualizacion
 
+   -- Tarea de Modo Sistema
    task body modo_sistema is
       Previous_State, Current_State: PilotButton_Samples_Type := 0;
       siguiente_instante : Time := Clock;
@@ -396,7 +408,7 @@ package body fss is
          siguiente_instante := siguiente_instante + Milliseconds(100);
       end loop;
    end modo_sistema;
-
+   -- Final de la tarea de Modo Sistema
 begin
   null;
 end fss;

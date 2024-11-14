@@ -3,11 +3,11 @@ A -g
 P LC TF
 R nnvnrnnvnnnnvvvvnvvvnnnnvnnnnnvnnnnnnnnnnnn
 
-U devicesfss_v1%b	devicesfss_v1.adb	77814CDF PK
+U devicesfss_v1%b	devicesfss_v1.adb	15E898D3 PK
 W ada.exceptions%s	a-except.adb		a-except.ali
 W kernel%s		kernel.ads		kernel.ali
 W kernel.serial_output%s  kernel-serial_output.adb  kernel-serial_output.ali
-W scenario_v3%s		scenario_v3.ads		scenario_v3.ali
+W scenario_v4%s		scenario_v4.ads		scenario_v4.ali
 W system%s		system.ads		system.ali
 W system.img_int%s	s-imgint.adb		s-imgint.ali
 W system.img_real%s	s-imgrea.adb		s-imgrea.ali
@@ -29,7 +29,7 @@ D a-reatim.ads		20000718095948 5DBAB303
 D a-stream.ads		20000718095948 5F7C277B
 D a-tags.ads		20000718095948 45EF7E4E
 D devicesfss_v1.ads	20241112110205 65131FAE
-D devicesfss_v1.adb	20241113211516 51BEC403
+D devicesfss_v1.adb	20241114172855 55BEC803
 D kernel.ads		20010312182047 56BBE4F1
 D kernel-cpu_primitives.ads  20010312182047 5746D7AD
 D kernel-interrupts.ads	20010312182047 72CD7AA3
@@ -38,7 +38,7 @@ D kernel-peripherals.ads  20010312182047 089544EF
 D kernel-serial_output.ads  20010312182047 16AD38F4
 D kernel-threads.ads	20010312182047 234DAE87
 D kernel-time.ads	20010312182047 7A57ECF4
-D scenario_v3.ads	20241113213530 3FCE339F
+D scenario_v4.ads	20241114172824 59A7EB93
 D system.ads		20010312182047 2AE5BAFE
 D s-exctab.ads		20000718095948 7A25F5F9
 D s-finimp.ads		20000718095949 1C201C0F
@@ -230,39 +230,39 @@ X 15 kernel-serial_output.ads
 . 440r4 441r4 449r4 450r4 458r4 459r4 467r4 468r4 476r4 477r4 485r4 486r4
 . 494r5 495r5 505r5 506r5 507r22 508r16 516r5 517r5 518r22 519r16 527r5 528r5
 . 529r5 539r3 541r3
-X 18 scenario_v3.ads
-5U9*Scenario_V3 9|5r6 5r23
-10O5*WCET_Distance 9|36r26
-11O5*WCET_Light 9|66r26 394r20 404r20
-13O5*WCET_Joystick 9|95r26
-14O5*WCET_PilotPresence 9|156r26
-15O5*WCET_PilotButton 9|185r26
-17O5*WCET_Power 9|127r26
-19O5*WCET_Speed 9|224r26 228r27 233r25
-20O5*WCET_Altitude 9|275r26 279r27 284r25
-22O5*WCET_Pitch 9|334r26 339r27
-23O5*WCET_Roll 9|369r26 374r27
-25O5*WCET_Display 9|434r20 443r20 452r20 461r20 470r20 479r20 488r20 499r21
+X 18 scenario_v4.ads
+4U9*Scenario_V4 9|5r6 5r23
+9O5*WCET_Distance 9|36r26
+10O5*WCET_Light 9|66r26 394r20 404r20
+12O5*WCET_Joystick 9|95r26
+13O5*WCET_PilotPresence 9|156r26
+14O5*WCET_PilotButton 9|185r26
+16O5*WCET_Power 9|127r26
+18O5*WCET_Speed 9|224r26 228r27 233r25
+19O5*WCET_Altitude 9|275r26 279r27 284r25
+21O5*WCET_Pitch 9|334r26 339r27
+22O5*WCET_Roll 9|369r26 374r27
+24O5*WCET_Display 9|434r20 443r20 452r20 461r20 470r20 479r20 488r20 499r21
 . 510r21 521r21 530r21
-26O5*WCET_Alarm 9|421r19
-36M10*Indice_Secuencia_Distancia 9|16r10 33r15
-37A10*tipo_Secuencia_Distancia 9|17r18
-39a5*Distance_Simulation 9|17r46
-66M10*Indice_Secuencia_Light 9|47r10 64r15
-67A10*tipo_Secuencia_Light 9|48r18
-69a5*Light_Intensity_Simulation 9|48r42
-94M10*Indice_Secuencia_Joystick 9|78r10 93r15
-95A10*tipo_Secuencia_Joystick 9|79r18
-98a5*Joystick_Simulation 9|79r45
-166M10*Indice_Secuencia_Power 9|107r10 124r15
-167A10*tipo_Secuencia_Power 9|108r18
-169a5*Power_Simulation 9|108r42
-197M10*Indice_Secuencia_PilotPresence 9|152r13 155r15
-198A10*tipo_Secuencia_PilotPresence 9|140r18
-200a5*PilotPresence_Simulation 9|140r50
-225M10*Indice_Secuencia_PilotButton 9|181r13 184r15
-226A10*tipo_Secuencia_PilotButton 9|169r18
-228a5*PilotButton_Simulation 9|169r48
+25O5*WCET_Alarm 9|421r19
+35M10*Indice_Secuencia_Distancia 9|16r10 33r15
+36A10*tipo_Secuencia_Distancia 9|17r18
+38a5*Distance_Simulation 9|17r46
+64M10*Indice_Secuencia_Light 9|47r10 64r15
+65A10*tipo_Secuencia_Light 9|48r18
+67a5*Light_Intensity_Simulation 9|48r42
+92M10*Indice_Secuencia_Joystick 9|78r10 93r15
+93A10*tipo_Secuencia_Joystick 9|79r18
+96a5*Joystick_Simulation 9|79r45
+160M10*Indice_Secuencia_Power 9|107r10 124r15
+161A10*tipo_Secuencia_Power 9|108r18
+163a5*Power_Simulation 9|108r42
+189M10*Indice_Secuencia_PilotPresence 9|152r13 155r15
+190A10*tipo_Secuencia_PilotPresence 9|140r18
+192a5*PilotPresence_Simulation 9|140r50
+217M10*Indice_Secuencia_PilotButton 9|181r13 184r15
+218A10*tipo_Secuencia_PilotButton 9|169r18
+220a5*PilotButton_Simulation 9|169r48
 X 19 system.ads
 46U9*System 9|3r6 3r18
 X 39 tools.ads
