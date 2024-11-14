@@ -147,7 +147,7 @@ package body fss is
    end visualizacion;
 
    task modo_sistema is
-      pragma Priority(1);
+      pragma Priority(3);
    end modo_sistema;
 
    -- Implementación de las tareas
