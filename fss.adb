@@ -123,11 +123,11 @@ package body fss is
    end desvio_automatico;
 
    task control_velocidad is 
-      pragma Priority(5);
+      pragma Priority(6);
    end control_velocidad;
 
    task riesgos is
-      pragma Priority(2);
+      pragma Priority(4);
    end riesgos;
 
    task altitud_cabeceo is
@@ -139,11 +139,11 @@ package body fss is
    end alabeo;
 
    task colision is
-      pragma Priority(10);
+      pragma Priority(9);
    end colision;
 
    task visualizacion is
-      pragma Priority(1);
+      pragma Priority(4);
    end visualizacion;
 
    task modo_sistema is
@@ -161,7 +161,6 @@ package body fss is
       loop
          Read_Power(potencia_actual);
          velocidad_actual := Float(potencia_actual) * 1.2;
-
          if System_Mode.Is_Automatic then
             if velocidad_actual >= 1000.0 then
                Set_Speed(1000);
@@ -201,15 +200,15 @@ package body fss is
          velocidad := Shared_Velocidad;
          Read_Power(potencia);
 
-         if (velocidad >= 1000.0 or velocidad <= 300.0) then
+         if ((velocidad >= 1000.0) or (velocidad <= 300.0)) then
             Light_2(On);
          else
             Light_2(Off);
          end if;
 
          if System_Mode.Is_Automatic then
-            if (cabeceo /= 0 and velocidad < 1000.0) then
-               if (velocidad + 150.0 <= 1000.0) then
+            if ((cabeceo /= 0) and (velocidad < 1000.0)) then
+               if ((velocidad + 150.0) < 1000.0) then
                   Set_Speed(Speed_Samples_Type(velocidad + 150.0));
                   velocidad := velocidad + 150.0;
                else
@@ -218,9 +217,9 @@ package body fss is
                end if;
             end if;
 
-            if (alabeo /= 0 and potencia < 1000) then
-               if (potencia + 100 <= 1000) then
-                  if ((Float(potencia) * 1.2) <= 1000.0) then
+            if ((alabeo /= 0) and (potencia < 1000)) then
+               if ((potencia + 100) < 1000) then
+                  if (((Float(potencia +100) * 1.2)) < 1000.0) then
                      Read_Power(potencia);
                      Set_Speed(Speed_Samples_Type((Float(potencia + 100)) * 1.2));
                   else
@@ -368,12 +367,6 @@ package body fss is
          Display.Get_Plane_Position(pitch, roll);
          Display.Get_Joystick(j);
 
-         if System_Mode.Is_Automatic then
-            Display_Message("Modo: Automático");
-         else
-            Display_Message("Modo: Manual");
-         end if;
-
          Display_Message("Mostrar Datos: ");
          Display_Altitude(altitud);
          Display_Pilot_Power(power);
@@ -381,6 +374,14 @@ package body fss is
          Display_Joystick(j);
          Display_Pitch(pitch);
          Display_Roll(roll);
+
+         if System_Mode.Is_Automatic then
+            Display_Message("Modo: Automático");
+         else
+            Display_Message("Modo: Manual");
+         end if;
+
+         
 
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(1000);
@@ -391,7 +392,7 @@ package body fss is
    -- Tarea de Modo Sistema
    task body modo_sistema is
       Previous_State, Current_State: PilotButton_Samples_Type := 0;
-      siguiente_instante : Time := Clock;
+      --siguiente_instante : Time := Clock;
    begin
       loop
          Current_State := Read_PilotButton;
@@ -404,8 +405,8 @@ package body fss is
             end if;
          end if;
          Previous_State := Current_State;
-         delay until siguiente_instante;
-         siguiente_instante := siguiente_instante + Milliseconds(100);
+         --delay until siguiente_instante;
+         --siguiente_instante := siguiente_instante + Milliseconds(100);
       end loop;
    end modo_sistema;
    -- Final de la tarea de Modo Sistema

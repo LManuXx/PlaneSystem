@@ -29,8 +29,8 @@ package body button_interrupt is
          Force_External_Interrupt_2;
          j := j + 1;
 
-         --Hora_Actual (Big_Bang);
-         --Put ("=====> Interrupción Externa 2 ");
+         Hora_Actual (Big_Bang);
+         Put ("=====> Interrupciï¿½n Externa 2 ");
       end loop;
    end Interrupt;
 
