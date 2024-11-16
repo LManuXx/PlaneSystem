@@ -13,6 +13,14 @@ package body fss is
       end loop;
    end Background;
 
+   -- Modo del Sistema: Automático (True) o Manual (False)
+   protected System_Mode is
+      procedure Toggle_Mode;
+      function Is_Automatic return Boolean;
+   private
+      Automatic_Mode : Boolean := True;  -- El sistema arranca en modo automático
+   end System_Mode;
+
    protected type Altitude_Data is
       procedure Get_Altitude (Roll : out Roll_Samples_Type; Pitch : out Pitch_Samples_Type);
       procedure Set_Altitude (Roll : in Roll_Samples_Type; Pitch : in Pitch_Samples_Type);
@@ -30,10 +38,25 @@ package body fss is
 
       procedure Set_Altitude (Roll : in Roll_Samples_Type; Pitch : in Pitch_Samples_Type) is
       begin
-         Set_Aircraft_Pitch(Pitch);
-         Set_Aircraft_Roll(Roll);
-         Pitch_Value := Pitch;
-         Roll_Value := Roll;
+         if System_Mode.Is_Automatic then
+            if(Roll > 45) then
+               Set_Aircraft_Roll(45);
+            elsif(Roll < -45) then
+               Set_Aircraft_Roll(-45);
+            else
+               Set_Aircraft_Roll(Roll);
+            end if;
+
+            if(Pitch > 30) then
+               Set_Aircraft_Pitch(30);
+            elsif(Pitch < -30) then
+               Set_Aircraft_Pitch(-30);
+            else
+               Set_Aircraft_Pitch(Pitch);
+            end if;
+         end if;
+         Pitch_Value := Read_Pitch;
+         Roll_Value := Read_Roll;
       end Set_Altitude;
    end Altitude_Data;
 
@@ -44,6 +67,8 @@ package body fss is
       procedure Get_Speed(Speed : out Speed_Samples_Type);
       procedure Get_Plane_Position(Nx : out Pitch_Samples_Type; Ny : out Roll_Samples_Type);
    end Status_Record;
+
+   Altitude : Altitude_Data;
 
    protected body Status_Record is
       procedure Get_Altitude(Altitude : out Altitude_Samples_Type) is
@@ -68,24 +93,14 @@ package body fss is
 
       procedure Get_Plane_Position(Nx : out Pitch_Samples_Type; Ny : out Roll_Samples_Type) is
       begin
-         Nx := Read_Pitch;
-         Ny := Read_Roll;
+         Altitude.Get_Altitude(Ny, Nx);
       end Get_Plane_Position;
    end Status_Record;
 
    -- Variables Globales
-   Altitude : Altitude_Data;
    Display : Status_Record;
    Shared_Velocidad : Float := 0.0;
    contador_colisiones : Integer := 0;
-
-   -- Modo del Sistema: Automático (True) o Manual (False)
-   protected System_Mode is
-      procedure Toggle_Mode;
-      function Is_Automatic return Boolean;
-   private
-      Automatic_Mode : Boolean := True;  -- El sistema arranca en modo automático
-   end System_Mode;
 
    protected body System_Mode is
       procedure Toggle_Mode is
@@ -114,13 +129,10 @@ package body fss is
                Altitude.Set_Altitude(alabeo, 20);
                Display_Pitch(cabeceo);
             else
-            Display_Message("AAAAAAAAAAAAAAAAAAAAAAAAAAA");
                Altitude.Set_Altitude(45, cabeceo);
-               Display_Roll(alabeo);
             end if;
          else
             contador_colisiones := 0;
-            Altitude.Set_Altitude(0, 0);
          end if;
       end if;
    end desvio_automatico;
@@ -133,9 +145,9 @@ package body fss is
       pragma Priority(4);
    end riesgos;
 
-   task altitud_cabeceo is
+   task altitud_cabeceo_alabeo is
       pragma Priority(8);
-   end altitud_cabeceo;
+   end altitud_cabeceo_alabeo;
 
    task colision is
       pragma Priority(9);
@@ -164,7 +176,7 @@ package body fss is
             if velocidad_actual >= 1000.0 then
                Set_Speed(1000);
                velocidad_actual := 1000.0;
-            elsif velocidad_actual < 300.0 then
+            elsif velocidad_actual < 250.0 then
                Set_Speed(300);
                velocidad_actual := 300.0;
             else
@@ -230,11 +242,6 @@ package body fss is
                   velocidad := 1000.0;
                end if;
             end if;
-         else
-            -- En modo manual, emitimos avisos si es necesario
-            if (cabeceo /= 0 and velocidad < 1000.0) then
-               Display_Message("Velocidad insuficiente para maniobra de cabeceo");
-            end if;
          end if;
 
          Shared_Velocidad := velocidad;
@@ -245,8 +252,8 @@ package body fss is
 
    -- Fin de la tarea de Riesgos
 
-   -- Tarea de Altitud y Cabeceo
-   task body altitud_cabeceo is
+   -- Tarea de Altitud, Cabeceo y Alabeo
+   task body altitud_cabeceo_alabeo is
       altitud : Altitude_Samples_Type;
       cabeceo : Pitch_Samples_Type;
       alabeo : Roll_Samples_Type;
@@ -258,26 +265,8 @@ package body fss is
          Altitude.Set_Altitude(Roll_Samples_Type(jx(x)), Pitch_Samples_Type(jx(y)));
          Altitude.Get_Altitude(alabeo, cabeceo);
 
-         if (cabeceo < -30) then
-            if System_Mode.Is_Automatic then
-               Altitude.Set_Altitude(alabeo, -30);
-            end if;
-         elsif (cabeceo > 30) then
-            if System_Mode.Is_Automatic then
-               Altitude.Set_Altitude(alabeo, 30);
-            end if;
-         end if;
-
          if ((alabeo < -35) or (alabeo > 35)) then
             Display_Message("ALERTA, ALABEO PELIGROSO");
-         end if;
-
-         if System_Mode.Is_Automatic then
-            if (alabeo < -45) then
-               Altitude.Set_Altitude(-45, Pitch_Samples_Type(alabeo));
-            elsif (alabeo >= 45) then
-               Altitude.Set_Altitude(45, Pitch_Samples_Type(alabeo));
-            end if;
          end if;
 
          altitud := Read_Altitude;
@@ -296,8 +285,8 @@ package body fss is
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(200);
       end loop;
-   end altitud_cabeceo;
-   -- Fin de la Tarea de Altitud y Cabeceo
+   end altitud_cabeceo_alabeo;
+   -- Fin de la Tarea de Altitud, Cabeceo y Alabeo
 
 
    -- Tarea de Colision
