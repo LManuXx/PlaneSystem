@@ -112,8 +112,11 @@ package body fss is
             contador_colisiones  := contador_colisiones + 1;
             if (Integer(altitud) <= 8500) then
                Altitude.Set_Altitude(alabeo, 20);
+               Display_Pitch(cabeceo);
             else
+            Display_Message("AAAAAAAAAAAAAAAAAAAAAAAAAAA");
                Altitude.Set_Altitude(45, cabeceo);
+               Display_Roll(alabeo);
             end if;
          else
             contador_colisiones := 0;
@@ -143,11 +146,11 @@ package body fss is
    end colision;
 
    task visualizacion is
-      pragma Priority(4);
+      pragma Priority(3);
    end visualizacion;
 
    task modo_sistema is
-      pragma Priority(3);
+      pragma Priority(2);
    end modo_sistema;
 
    -- Implementación de las tareas
@@ -292,20 +295,21 @@ package body fss is
    task body alabeo is
       cabeceo : Pitch_Samples_Type;
       alabeo : Roll_Samples_Type;
+      jx : Joystick_Samples_Type;
       siguiente_instante : Time := Big_Bang + Milliseconds(200);
    begin
       loop
-         Altitude.Get_Altitude(alabeo, cabeceo);
+         Read_Joystick(jx);
 
-         if (alabeo < -35 or alabeo > 35) then
+         if (Integer(jx(x)) < -35 or Integer(jx(x)) > 35) then
             Display_Message("ALERTA, ALABEO PELIGROSO");
          end if;
 
          if System_Mode.Is_Automatic then
-            if (alabeo < -45) then
-               Altitude.Set_Altitude(-45, cabeceo);
-            elsif (alabeo > 45) then
-               Altitude.Set_Altitude(45, cabeceo);
+            if (Integer(jx(x)) < -45) then
+               Altitude.Set_Altitude(-45, Pitch_Samples_Type(jx(y)));
+            elsif (Integer(jx(x)) >= 45) then
+               Altitude.Set_Altitude(45, Pitch_Samples_Type(jx(y)));
             end if;
          end if;
 
