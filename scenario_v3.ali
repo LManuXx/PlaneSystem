@@ -3,7 +3,7 @@ A -g
 P
 R nnvnrnnvnnnnvvvvnvvvnnnnnnnnnnvnnnnnnnnnnnn
 
-U scenario_v3%s		scenario_v3.ads		07679F32 PK
+U scenario_v3%s		scenario_v3.ads		76C7265F PK
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W devicesfss_v1%s	devicesfss_v1.adb	devicesfss_v1.ali
@@ -23,7 +23,7 @@ D kernel-parameters.ads	20010312182047 0D1B8F78
 D kernel-peripherals.ads  20010312182047 089544EF
 D kernel-threads.ads	20010312182047 234DAE87
 D kernel-time.ads	20010312182047 7A57ECF4
-D scenario_v3.ads	20241113213530 3FCE339F
+D scenario_v3.ads	20241116135436 4E6E8AF2
 D system.ads		20010312182047 2AE5BAFE
 D s-exctab.ads		20000718095948 7A25F5F9
 D s-finimp.ads		20000718095949 1C201C0F
@@ -58,10 +58,10 @@ X 8 devicesfss_v1.ads
 4U9*devicesFSS_V1 16|3r6 3r25
 11I10*Distance_Samples_Type 16|37r76
 15I10*Light_Samples_Type 16|67r68
-54I10*Power_Samples_Type 16|167r68
+54I10*Power_Samples_Type 16|168r68
 60A10*Joystick_Samples_Type 16|96r49
-68I10*PilotPresence_Samples_Type 16|198r84
-72I10*PilotButton_Samples_Type 16|226r80
+68I10*PilotPresence_Samples_Type 16|199r84
+72I10*PilotButton_Samples_Type 16|227r80
 X 16 scenario_v3.ads
 5U9*Scenario_V3
 10O5*WCET_Distance
@@ -88,16 +88,16 @@ X 16 scenario_v3.ads
 94M10*Indice_Secuencia_Joystick 95r44
 95A10*tipo_Secuencia_Joystick 98r26
 98a5*Joystick_Simulation
-165N5*cantidad_datos_Power 166r40
-166M10*Indice_Secuencia_Power 167r41
-167A10*tipo_Secuencia_Power 169r23
-169a5*Power_Simulation
-196N5*cantidad_datos_PilotPresence 197r48
-197M10*Indice_Secuencia_PilotPresence 198r49
-198A10*tipo_Secuencia_PilotPresence 200r31
-200a5*PilotPresence_Simulation
-224N5*cantidad_datos_PilotButton 225r46
-225M10*Indice_Secuencia_PilotButton 226r47
-226A10*tipo_Secuencia_PilotButton 228r29
-228a5*PilotButton_Simulation
+166N5*cantidad_datos_Power 167r40
+167M10*Indice_Secuencia_Power 168r41
+168A10*tipo_Secuencia_Power 170r23
+170a5*Power_Simulation
+197N5*cantidad_datos_PilotPresence 198r48
+198M10*Indice_Secuencia_PilotPresence 199r49
+199A10*tipo_Secuencia_PilotPresence 201r31
+201a5*PilotPresence_Simulation
+225N5*cantidad_datos_PilotButton 226r46
+226M10*Indice_Secuencia_PilotButton 227r47
+227A10*tipo_Secuencia_PilotButton 229r29
+229a5*PilotButton_Simulation
 

@@ -3,7 +3,7 @@ A -g
 P
 R nnvnrnnvnnnnvvvvnvvvnnnnnnnnnnvnnnnnnnnnnnn
 
-U scenario_v2%s		scenario_v2.ads		7D220731 PK
+U scenario_v2%s		scenario_v2.ads		50812644 PK
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W devicesfss_v1%s	devicesfss_v1.adb	devicesfss_v1.ali
@@ -23,7 +23,7 @@ D kernel-parameters.ads	20010312182047 0D1B8F78
 D kernel-peripherals.ads  20010312182047 089544EF
 D kernel-threads.ads	20010312182047 234DAE87
 D kernel-time.ads	20010312182047 7A57ECF4
-D scenario_v2.ads	20241113205004 458BAB9C
+D scenario_v2.ads	20241116135436 68288AE9
 D system.ads		20010312182047 2AE5BAFE
 D s-exctab.ads		20000718095948 7A25F5F9
 D s-finimp.ads		20000718095949 1C201C0F
@@ -57,11 +57,11 @@ X 5 a-reatim.ads
 X 8 devicesfss_v1.ads
 4U9*devicesFSS_V1 16|3r6 3r25
 11I10*Distance_Samples_Type 16|37r76
-15I10*Light_Samples_Type 16|67r68
-54I10*Power_Samples_Type 16|167r68
-60A10*Joystick_Samples_Type 16|96r49
-68I10*PilotPresence_Samples_Type 16|197r84
-72I10*PilotButton_Samples_Type 16|225r80
+15I10*Light_Samples_Type 16|68r68
+54I10*Power_Samples_Type 16|169r68
+60A10*Joystick_Samples_Type 16|97r49
+68I10*PilotPresence_Samples_Type 16|199r84
+72I10*PilotButton_Samples_Type 16|227r80
 X 16 scenario_v2.ads
 5U9*Scenario_V2
 10O5*WCET_Distance
@@ -80,24 +80,24 @@ X 16 scenario_v2.ads
 36M10*Indice_Secuencia_Distancia 37r45
 37A10*tipo_Secuencia_Distancia 39r26
 39a5*Distance_Simulation
-65N5*cantidad_datos_Light 66r40
-66M10*Indice_Secuencia_Light 67r41
-67A10*tipo_Secuencia_Light 69r33
-69a5*Light_Intensity_Simulation
-93N5*cantidad_datos_Joystick 94r43
-94M10*Indice_Secuencia_Joystick 95r44
-95A10*tipo_Secuencia_Joystick 98r26
-98a5*Joystick_Simulation
-165N5*cantidad_datos_Power 166r40
-166M10*Indice_Secuencia_Power 167r41
-167A10*tipo_Secuencia_Power 169r23
-169a5*Power_Simulation
-195N5*cantidad_datos_PilotPresence 196r48
-196M10*Indice_Secuencia_PilotPresence 197r49
-197A10*tipo_Secuencia_PilotPresence 199r31
-199a5*PilotPresence_Simulation
-223N5*cantidad_datos_PilotButton 224r46
-224M10*Indice_Secuencia_PilotButton 225r47
-225A10*tipo_Secuencia_PilotButton 227r29
-227a5*PilotButton_Simulation
+66N5*cantidad_datos_Light 67r40
+67M10*Indice_Secuencia_Light 68r41
+68A10*tipo_Secuencia_Light 70r33
+70a5*Light_Intensity_Simulation
+94N5*cantidad_datos_Joystick 95r43
+95M10*Indice_Secuencia_Joystick 96r44
+96A10*tipo_Secuencia_Joystick 99r26
+99a5*Joystick_Simulation
+167N5*cantidad_datos_Power 168r40
+168M10*Indice_Secuencia_Power 169r41
+169A10*tipo_Secuencia_Power 171r23
+171a5*Power_Simulation
+197N5*cantidad_datos_PilotPresence 198r48
+198M10*Indice_Secuencia_PilotPresence 199r49
+199A10*tipo_Secuencia_PilotPresence 201r31
+201a5*PilotPresence_Simulation
+225N5*cantidad_datos_PilotButton 226r46
+226M10*Indice_Secuencia_PilotButton 227r47
+227A10*tipo_Secuencia_PilotButton 229r29
+229a5*PilotButton_Simulation
 

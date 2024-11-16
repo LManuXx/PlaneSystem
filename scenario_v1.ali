@@ -3,7 +3,7 @@ A -g
 P
 R nnvnrnnvnnnnvvvvnvvvnnnnnnnnnnvnnnnnnnnnnnn
 
-U scenario_v1%s		scenario_v1.ads		1804CD21 PK
+U scenario_v1%s		scenario_v1.ads		78957F3C PK
 W ada%s			ada.ads			ada.ali
 W ada.real_time%s	a-reatim.adb		a-reatim.ali
 W devicesfss_v1%s	devicesfss_v1.adb	devicesfss_v1.ali
@@ -23,7 +23,7 @@ D kernel-parameters.ads	20010312182047 0D1B8F78
 D kernel-peripherals.ads  20010312182047 089544EF
 D kernel-threads.ads	20010312182047 234DAE87
 D kernel-time.ads	20010312182047 7A57ECF4
-D scenario_v1.ads	20241113203135 20AD618C
+D scenario_v1.ads	20241116135609 403CD391
 D system.ads		20010312182047 2AE5BAFE
 D s-exctab.ads		20000718095948 7A25F5F9
 D s-finimp.ads		20000718095949 1C201C0F
@@ -43,43 +43,43 @@ D s-taskin.ads		20000718095949 09146F23
 D s-unstyp.ads		20000718095949 78AFB91D
 D unchconv.ads		20000718095949 72DC4539
 X 1 ada.ads
-18U9*Ada 16|2r6 2r25 10r29 10r56 11r26 11r53 13r29 13r56 14r34 14r61 15r32
-. 15r59 17r26 17r53 19r26 19r53 20r29 20r56 22r26 22r53 23r25 23r52 25r28
-. 25r55 26r26 26r53
+18U9*Ada 16|1r6 1r25 9r29 9r56 10r26 10r53 12r29 12r56 13r34 13r61 14r32
+. 14r59 16r26 16r53 18r26 18r53 19r29 19r56 21r26 21r53 22r25 22r52 24r28
+. 24r55 25r26 25r53
 X 5 a-reatim.ads
-43U13*Real_Time 16|2r10 2r29 10r33 10r60 11r30 11r57 13r33 13r60 14r38 14r65
-. 15r36 15r63 17r30 17r57 19r30 19r57 20r33 20r60 22r30 22r57 23r29 23r56
-. 25r32 25r59 26r30 26r57
-50O9*Time_Span 16|10r43 11r40 13r43 14r48 15r46 17r40 19r40 20r43 22r40 23r39
-. 25r42 26r40
-89U13*Milliseconds 16|10r70 11r67 13r70 14r75 15r73 17r67 19r67 20r70 22r67
-. 23r66 25r69 26r67
+43U13*Real_Time 16|1r10 1r29 9r33 9r60 10r30 10r57 12r33 12r60 13r38 13r65
+. 14r36 14r63 16r30 16r57 18r30 18r57 19r33 19r60 21r30 21r57 22r29 22r56
+. 24r32 24r59 25r30 25r57
+50O9*Time_Span 16|9r43 10r40 12r43 13r48 14r46 16r40 18r40 19r43 21r40 22r39
+. 24r42 25r40
+89U13*Milliseconds 16|9r70 10r67 12r70 13r75 14r73 16r67 18r67 19r70 21r67
+. 22r66 24r69 25r67
 X 8 devicesfss_v1.ads
-4U9*devicesFSS_V1 16|3r6 3r25
-11I10*Distance_Samples_Type 16|37r76
+4U9*devicesFSS_V1 16|2r6 2r25
+11I10*Distance_Samples_Type 16|36r76
 15I10*Light_Samples_Type 16|66r68
-54I10*Power_Samples_Type 16|165r68
+54I10*Power_Samples_Type 16|162r68
 60A10*Joystick_Samples_Type 16|95r49
-68I10*PilotPresence_Samples_Type 16|195r84
-72I10*PilotButton_Samples_Type 16|223r80
+68I10*PilotPresence_Samples_Type 16|193r84
+72I10*PilotButton_Samples_Type 16|221r80
 X 16 scenario_v1.ads
-5U9*Scenario_V1
-10O5*WCET_Distance
-11O5*WCET_Light
-13O5*WCET_Joystick
-14O5*WCET_PilotPresence
-15O5*WCET_PilotButton
-17O5*WCET_Power
-19O5*WCET_Speed
-20O5*WCET_Altitude
-22O5*WCET_Pitch
-23O5*WCET_Roll
-25O5*WCET_Display
-26O5*WCET_Alarm
-35N5*cantidad_datos_Distancia 36r44
-36M10*Indice_Secuencia_Distancia 37r45
-37A10*tipo_Secuencia_Distancia 39r26
-39a5*Distance_Simulation
+4U9*Scenario_V1
+9O5*WCET_Distance
+10O5*WCET_Light
+12O5*WCET_Joystick
+13O5*WCET_PilotPresence
+14O5*WCET_PilotButton
+16O5*WCET_Power
+18O5*WCET_Speed
+19O5*WCET_Altitude
+21O5*WCET_Pitch
+22O5*WCET_Roll
+24O5*WCET_Display
+25O5*WCET_Alarm
+34N5*cantidad_datos_Distancia 35r44
+35M10*Indice_Secuencia_Distancia 36r45
+36A10*tipo_Secuencia_Distancia 38r26
+38a5*Distance_Simulation
 64N5*cantidad_datos_Light 65r40
 65M10*Indice_Secuencia_Light 66r41
 66A10*tipo_Secuencia_Light 68r33
@@ -88,16 +88,16 @@ X 16 scenario_v1.ads
 93M10*Indice_Secuencia_Joystick 94r44
 94A10*tipo_Secuencia_Joystick 97r26
 97a5*Joystick_Simulation
-163N5*cantidad_datos_Power 164r40
-164M10*Indice_Secuencia_Power 165r41
-165A10*tipo_Secuencia_Power 167r23
-167a5*Power_Simulation
-193N5*cantidad_datos_PilotPresence 194r48
-194M10*Indice_Secuencia_PilotPresence 195r49
-195A10*tipo_Secuencia_PilotPresence 197r31
-197a5*PilotPresence_Simulation
-221N5*cantidad_datos_PilotButton 222r46
-222M10*Indice_Secuencia_PilotButton 223r47
-223A10*tipo_Secuencia_PilotButton 225r29
-225a5*PilotButton_Simulation
+160N5*cantidad_datos_Power 161r40
+161M10*Indice_Secuencia_Power 162r41
+162A10*tipo_Secuencia_Power 164r23
+164a5*Power_Simulation
+191N5*cantidad_datos_PilotPresence 192r48
+192M10*Indice_Secuencia_PilotPresence 193r49
+193A10*tipo_Secuencia_PilotPresence 195r31
+195a5*PilotPresence_Simulation
+219N5*cantidad_datos_PilotButton 220r46
+220M10*Indice_Secuencia_PilotButton 221r47
+221A10*tipo_Secuencia_PilotButton 223r29
+223a5*PilotButton_Simulation
 

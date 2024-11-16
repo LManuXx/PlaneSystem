@@ -161,7 +161,7 @@ package Scenario_V1 is
     type Indice_Secuencia_Power is mod cantidad_datos_Power;
     type tipo_Secuencia_Power is array (Indice_Secuencia_Power) of Power_Samples_Type;
 
-    Power_Simulation: tipo_Secuencia_Potencia :=  -- next sample every 100ms.
+    Power_Simulation: tipo_Secuencia_Power :=  -- next sample every 100ms.
             (  900, 910, 920, 930, 940, 950, 960, 970, 980, 990,    -- 1s.
               1000,1010,1020,1020,1020,1020,1020,1020,1020,1020,    -- 2s.
               1020,1020,1020,1020,1020,1020,1020,1020,1020,1020,    -- 3s.
