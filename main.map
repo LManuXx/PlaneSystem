@@ -410,23 +410,21 @@ Common symbol       size              file
 
 ada__finalization__controlledB
                     0x24              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-finali.o)
-scenario_v4__wcet_roll
-                    0x8               ./scenario_v4.o
-scenario_v4__wcet_joystick
-                    0x8               ./scenario_v4.o
+scenario_v2__wcet_joystick
+                    0x8               ./scenario_v2.o
 ada__finalization__limited_controlledT
                     0x30              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-finali.o)
+scenario_v2__wcet_pitch
+                    0x8               ./scenario_v2.o
 errno               0x4               /usr/local/openravenscar/sparc-ork-elf/lib/libc.a(sbrkr.o)
+scenario_v2__wcet_distance
+                    0x8               ./scenario_v2.o
 system__finalization_implementation__record_controllerT
                     0x2c              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-finimp.o)
 ada__finalization__controlledT
                     0x34              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-finali.o)
-scenario_v4__wcet_power
-                    0x8               ./scenario_v4.o
 ada__finalization__limited_controlledB
                     0x24              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-finali.o)
-scenario_v4__wcet_pitch
-                    0x8               ./scenario_v4.o
 kernel__peripherals__registers__protected_segment_2_base_register
                     0x4               /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-peripherals-registers.o)
 ada__finalization__list_controller__list_controllerT
@@ -457,34 +455,38 @@ ada__streams__root_stream_typeT
                     0x14              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-stream.o)
 kernel__peripherals__timer_control_mirror
                     0x4               /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-peripherals.o)
-scenario_v4__wcet_pilotbutton
-                    0x8               ./scenario_v4.o
+scenario_v2__wcet_display
+                    0x8               ./scenario_v2.o
 system__finalization_root__empty_root_controlledB
                     0x1c              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-finroo.o)
 kernel__threads__queues__thread_list
                     0x10a10           /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-threads-queues.o)
 kernel__peripherals__registers__protected_segment_2_end_register
                     0x4               /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-peripherals-registers.o)
+scenario_v2__wcet_pilotbutton
+                    0x8               ./scenario_v2.o
 kernel__peripherals__registers__protected_segment_1_base_register
                     0x4               /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-peripherals-registers.o)
+scenario_v2__wcet_light
+                    0x8               ./scenario_v2.o
 kernel__peripherals__registers__protected_segment_1_end_register
                     0x4               /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-peripherals-registers.o)
 system__stack_checking__null_stack_info
                     0xc               /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-stache.o)
-scenario_v4__wcet_display
-                    0x8               ./scenario_v4.o
+scenario_v2__wcet_roll
+                    0x8               ./scenario_v2.o
+scenario_v2__wcet_power
+                    0x8               ./scenario_v2.o
 system__finalization_root__empty_root_controlledT
                     0x20              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-finroo.o)
-scenario_v4__wcet_light
-                    0x8               ./scenario_v4.o
 kernel__interrupts__handlers_table
                     0xb4              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-interrupts.o)
 system__task_primitives__operations__all_tasks_l
                     0x8               /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(s-taprop.o)
 system__soft_links__nt_exc_stack
                     0x2008            /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-soflin.o)
-scenario_v4__wcet_alarm
-                    0x8               ./scenario_v4.o
+scenario_v2__wcet_pilotpresence
+                    0x8               ./scenario_v2.o
 system__finalization_implementation__limited_record_controllerT
                     0x2c              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-finimp.o)
 system__soft_links__nt_tsd
@@ -499,16 +501,12 @@ system__exceptions__others_dummy_exception
                     0x14              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-except.o)
 system__finalization_implementation__limited_record_controllerB
                     0x24              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-finimp.o)
+scenario_v2__wcet_alarm
+                    0x8               ./scenario_v2.o
 kernel__threads__thread_idL
                     0x28              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(kernel-threads.o)
-scenario_v4__wcet_pilotpresence
-                    0x8               ./scenario_v4.o
-scenario_v4__wcet_speed
-                    0x8               ./scenario_v4.o
-scenario_v4__wcet_distance
-                    0x8               ./scenario_v4.o
-scenario_v4__wcet_altitude
-                    0x8               ./scenario_v4.o
+scenario_v2__wcet_altitude
+                    0x8               ./scenario_v2.o
 tools__big_bang     0x8               ./tools.o
 system__secondary_stack__ss_pool
                     0x4               /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(s-secsta.o)
@@ -516,6 +514,8 @@ ada__finalization__list_controller__list_controllerB
                     0x28              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-filico.o)
 gnat__exceptions__exception_typeT
                     0x2c              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(g-except.o)
+scenario_v2__wcet_speed
+                    0x8               ./scenario_v2.o
 ada__finalization__list_controller__simple_list_controllerB
                     0x28              /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnat.a(a-filico.o)
 system__task_primitives__operations__atcb_array
@@ -553,8 +553,8 @@ Linker script and memory map
                 0x0200151c                adafinal
  .text          0x020015d0       0x1c ./main.o
                 0x020015d0                _ada_main
- .text          0x020015ec      0x118 ./scenario_v4.o
-                0x020015ec                scenario_v4___elabs
+ .text          0x020015ec      0x118 ./scenario_v2.o
+                0x020015ec                scenario_v2___elabs
  .text          0x02001704     0x4aa8 ./devicesfss_v1.o
                 0x020033c8                devicesfss_v1___init_proc__6
                 0x020047ac                devicesfss_v1___init_proc__9
@@ -1732,7 +1732,7 @@ Linker script and memory map
  *fill*         0x0202fb3c        0x4
                 0x0202fb40                .=ALIGN(0x10)
  *(.rodata)
- .rodata        0x0202fb40       0x10 ./scenario_v4.o
+ .rodata        0x0202fb40       0x10 ./scenario_v2.o
  .rodata        0x0202fb50      0x1b8 ./devicesfss_v1.o
  .rodata        0x0202fd08       0x4c ./workload.o
  *fill*         0x0202fd54        0x4
@@ -1929,6 +1929,7 @@ Linker script and memory map
                 0x02032f6c                kernel__threads__queuesS
                 0x02033030                system__tasking__protected_objectsS
                 0x02032e98                systemS
+                0x02033000                scenario_v2S
                 0x02032f28                system__stream_attributesS
                 0x02032f74                kernel__timeS
                 0x02032f98                system__string_ops_concat_3B
@@ -1961,7 +1962,6 @@ Linker script and memory map
                 0x02032f24                system__stream_attributesB
                 0x02032f08                ada__streamsS
                 0x02032f0c                ada__tagsB
-                0x02033000                scenario_v4S
                 0x02032f14                system__string_opsB
                 0x0203301c                system__img_lluS
                 0x02033024                system__img_unsS
@@ -1995,13 +1995,13 @@ Linker script and memory map
                 0x02033034                toolsB
                 0x02033058                system__exn_genB
                 0x0203305c                system__exn_genS
- .data          0x02033070     0x15e0 ./scenario_v4.o
-                0x02033070                scenario_v4__distance_simulation
-                0x02034010                scenario_v4__pilotpresence_simulation
-                0x02034330                scenario_v4__pilotbutton_simulation
-                0x020336b0                scenario_v4__joystick_simulation
-                0x02033cf0                scenario_v4__power_simulation
-                0x02033390                scenario_v4__light_intensity_simulation
+ .data          0x02033070     0x15e0 ./scenario_v2.o
+                0x020336b0                scenario_v2__joystick_simulation
+                0x02034330                scenario_v2__pilotbutton_simulation
+                0x02033070                scenario_v2__distance_simulation
+                0x02033390                scenario_v2__light_intensity_simulation
+                0x02033cf0                scenario_v2__power_simulation
+                0x02034010                scenario_v2__pilotpresence_simulation
  .data          0x02034650       0x18 ./devicesfss_v1.o
                 0x02034660                devicesfss_v1__light_statesT
                 0x02034650                devicesfss_v1_E
@@ -2373,19 +2373,19 @@ Linker script and memory map
  .bss           0x0218e820        0x4 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/libgcc.a(frame.o)
  *(COMMON)
  *fill*         0x0218e824        0x4
- COMMON         0x0218e828       0x60 ./scenario_v4.o
-                0x0218e828                scenario_v4__wcet_roll
-                0x0218e830                scenario_v4__wcet_joystick
-                0x0218e838                scenario_v4__wcet_power
-                0x0218e840                scenario_v4__wcet_pitch
-                0x0218e848                scenario_v4__wcet_pilotbutton
-                0x0218e850                scenario_v4__wcet_display
-                0x0218e858                scenario_v4__wcet_light
-                0x0218e860                scenario_v4__wcet_alarm
-                0x0218e868                scenario_v4__wcet_pilotpresence
-                0x0218e870                scenario_v4__wcet_speed
-                0x0218e878                scenario_v4__wcet_distance
-                0x0218e880                scenario_v4__wcet_altitude
+ COMMON         0x0218e828       0x60 ./scenario_v2.o
+                0x0218e828                scenario_v2__wcet_joystick
+                0x0218e830                scenario_v2__wcet_pitch
+                0x0218e838                scenario_v2__wcet_distance
+                0x0218e840                scenario_v2__wcet_display
+                0x0218e848                scenario_v2__wcet_pilotbutton
+                0x0218e850                scenario_v2__wcet_light
+                0x0218e858                scenario_v2__wcet_roll
+                0x0218e860                scenario_v2__wcet_power
+                0x0218e868                scenario_v2__wcet_pilotpresence
+                0x0218e870                scenario_v2__wcet_alarm
+                0x0218e878                scenario_v2__wcet_altitude
+                0x0218e880                scenario_v2__wcet_speed
  COMMON         0x0218e888        0x8 ./tools.o
                 0x0218e888                tools__big_bang
  COMMON         0x0218e890    0x6a6a8 /usr/local/openravenscar/lib/gcc-lib/sparc-ork-elf/2.8.1/adalib/libgnarl.a(s-taprop.o)
@@ -2460,7 +2460,7 @@ Linker script and memory map
 .stab           0x0220d224    0x3f6a8
  [.stab](*)
  .stab          0x0220d224       0xf0 ./main.o
- .stab          0x0220d314      0x798 ./scenario_v4.o
+ .stab          0x0220d314      0x798 ./scenario_v2.o
                                 0x7a4 (size before relaxing)
  .stab          0x0220daac     0x4494 ./devicesfss_v1.o
                                0x44a0 (size before relaxing)
@@ -2630,7 +2630,7 @@ Linker script and memory map
 LOAD /usr/local/openravenscar/sparc-ork-elf/lib/ada_crt0.o
 LOAD b~main.o
 LOAD ./main.o
-LOAD ./scenario_v4.o
+LOAD ./scenario_v2.o
 LOAD ./devicesfss_v1.o
 LOAD ./workload.o
 LOAD ./tools.o
@@ -2651,7 +2651,7 @@ OUTPUT(main elf32-sparc)
 .comment        0x00000000      0xe46
  .comment       0x00000000       0x12 b~main.o
  .comment       0x00000012       0x12 ./main.o
- .comment       0x00000024       0x12 ./scenario_v4.o
+ .comment       0x00000024       0x12 ./scenario_v2.o
  .comment       0x00000036       0x12 ./devicesfss_v1.o
  .comment       0x00000048       0x12 ./workload.o
  .comment       0x0000005a       0x12 ./tools.o
