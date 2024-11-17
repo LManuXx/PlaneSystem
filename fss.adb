@@ -101,6 +101,7 @@ package body fss is
    Display : Status_Record;
    Shared_Velocidad : Float := 0.0;
    contador_colisiones : Integer := 0;
+   variable_desvio     : Integer := 0;
 
    protected body System_Mode is
       procedure Toggle_Mode is
@@ -119,19 +120,23 @@ package body fss is
       altitud : Altitude_Samples_Type := Read_Altitude;
       cabeceo : Pitch_Samples_Type;
       alabeo : Roll_Samples_Type;
+      jx     : Joystick_Samples_Type;
    begin
       if System_Mode.Is_Automatic then
-         Altitude.Get_Altitude(alabeo, cabeceo);
+         Read_Joystick(jx);
+         cabeceo := Pitch_Samples_Type(jx(y));
+         alabeo  := Roll_Samples_Type(jx(x));
          if (contador_colisiones < 12) then
             contador_colisiones  := contador_colisiones + 1;
+            variable_desvio     := 1;
             if (Integer(altitud) <= 8500) then
                Altitude.Set_Altitude(alabeo, 20);
-               Display_Pitch(cabeceo);
             else
                Altitude.Set_Altitude(45, cabeceo);
             end if;
          else
             contador_colisiones := 0;
+            variable_desvio     := 0;
          end if;
       end if;
    end desvio_automatico;
@@ -169,7 +174,7 @@ package body fss is
       siguiente_instante : Time := Big_Bang + Milliseconds(300);
    begin
       loop
-         Display_Message("---VELOCIDAD---");
+         
          Read_Power(potencia_actual);
          velocidad_actual := Float(potencia_actual) * 1.2;
          if System_Mode.Is_Automatic then
@@ -192,7 +197,6 @@ package body fss is
          end if;
 
          Shared_Velocidad := velocidad_actual;
-         Display_Message("---FIN DE TAREA VELOCIDAD---");
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
 
@@ -209,7 +213,7 @@ package body fss is
       siguiente_instante : Time := Big_Bang + Milliseconds(300);
    begin
       loop
-         Display_Message("---RIESGOS---");
+         
          Altitude.Get_Altitude(alabeo, cabeceo);
          velocidad := Shared_Velocidad;
          Read_Power(potencia);
@@ -248,7 +252,6 @@ package body fss is
          end if;
 
          Shared_Velocidad := velocidad;
-         Display_Message("---FIN DE TAREA RIESGOS---");
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
 
@@ -266,9 +269,10 @@ package body fss is
       siguiente_instante : Time := Big_Bang + Milliseconds(200);
    begin
       loop
-         Display_Message("---ALTITUD,CABECEO,ALABEO---");
-         Read_Joystick(jx);
-         Altitude.Set_Altitude(Roll_Samples_Type(jx(x)), Pitch_Samples_Type(jx(y)));
+         if (variable_desvio = 0) then 
+            Read_Joystick(jx);
+            Altitude.Set_Altitude(Roll_Samples_Type(jx(x)), Pitch_Samples_Type(jx(y)));
+         end if;
          Altitude.Get_Altitude(alabeo, cabeceo);
 
          if ((alabeo < -35) or (alabeo > 35)) then
@@ -287,8 +291,7 @@ package body fss is
                Altitude.Set_Altitude(0, 0);
             end if;
          end if;
-
-         Display_Message("---FIN DE TAREA ALTITUD,CABECEO,ALABEO---");
+         
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(200);
       end loop;
@@ -305,7 +308,6 @@ package body fss is
 
    begin
       loop
-         Display_Message("---COLISION---");
          Read_Distance(distancia);
          if distancia < 5000 then
             if Shared_Velocidad > 0.0 then
@@ -328,7 +330,6 @@ package body fss is
             end if;
          end if;
 
-         Display_Message("---FIN DE TAREA COLISION---");
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(250);
       end loop;
@@ -346,7 +347,7 @@ package body fss is
       j: Joystick_Samples_Type;
    begin
       loop
-         Display_Message("---VISUALIZACION---");
+         
          Display.Get_Altitude(altitud);
          Display.Get_Speed(velocidad);
          Display.Get_Power(power);
@@ -368,7 +369,7 @@ package body fss is
          end if;
 
          
-         Display_Message("---FIN DE TAREA VISUALIZACION---");
+         
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(1000);
       end loop;
