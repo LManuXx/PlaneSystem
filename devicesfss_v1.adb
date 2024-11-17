@@ -533,7 +533,7 @@ end Alarm;
 
 -----------------------------------------------------------------------------
 procedure Display_Cronometro (Origen : Ada.Real_Time.Time; Hora: Ada.Real_Time.Time ) is
-  type Crono is delta 0.1 range 0.0..100.0;
+  type Crono is delta 0.1 range 0.0000..100.0000;
 begin
   Print_Chrono;
   Put ("%Crono:");

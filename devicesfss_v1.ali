@@ -3,7 +3,7 @@ A -g
 P LC TF
 R nnvnrnnvnnnnvvvvnvvvnnnnvnnnnnvnnnnnnnnnnnn
 
-U devicesfss_v1%b	devicesfss_v1.adb	76540066 PK
+U devicesfss_v1%b	devicesfss_v1.adb	6454B51A PK
 W ada.exceptions%s	a-except.adb		a-except.ali
 W kernel%s		kernel.ads		kernel.ali
 W kernel.serial_output%s  kernel-serial_output.adb  kernel-serial_output.ali
@@ -29,7 +29,7 @@ D a-reatim.ads		20000718095948 5DBAB303
 D a-stream.ads		20000718095948 5F7C277B
 D a-tags.ads		20000718095948 45EF7E4E
 D devicesfss_v1.ads	20241111185451 65131FAE
-D devicesfss_v1.adb	20241116183953 45BEB803
+D devicesfss_v1.adb	20241117154951 57BE0D7F
 D kernel.ads		20010312182047 56BBE4F1
 D kernel-cpu_primitives.ads  20010312182047 5746D7AD
 D kernel-interrupts.ads	20010312182047 72CD7AA3

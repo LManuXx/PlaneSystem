@@ -113,7 +113,6 @@ package body fss is
          return Automatic_Mode;
       end Is_Automatic;
    end System_Mode;
-
    -- Final de Variables Globales
 
    procedure desvio_automatico is
@@ -170,6 +169,7 @@ package body fss is
       siguiente_instante : Time := Big_Bang + Milliseconds(300);
    begin
       loop
+         Display_Message("---VELOCIDAD---");
          Read_Power(potencia_actual);
          velocidad_actual := Float(potencia_actual) * 1.2;
          if System_Mode.Is_Automatic then
@@ -194,6 +194,7 @@ package body fss is
          Shared_Velocidad := velocidad_actual;
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
+
       end loop;
    end control_velocidad;
    -- Final de la tarea de velocidad
@@ -207,6 +208,7 @@ package body fss is
       siguiente_instante : Time := Big_Bang + Milliseconds(300);
    begin
       loop
+         Display_Message("---RIESGOS---");
          Altitude.Get_Altitude(alabeo, cabeceo);
          velocidad := Shared_Velocidad;
          Read_Power(potencia);
@@ -247,6 +249,7 @@ package body fss is
          Shared_Velocidad := velocidad;
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
+
       end loop;
    end riesgos;
 
@@ -261,6 +264,7 @@ package body fss is
       siguiente_instante : Time := Big_Bang + Milliseconds(200);
    begin
       loop
+         Display_Message("---ALTITUD,CABECEO,ALABEO---");
          Read_Joystick(jx);
          Altitude.Set_Altitude(Roll_Samples_Type(jx(x)), Pitch_Samples_Type(jx(y)));
          Altitude.Get_Altitude(alabeo, cabeceo);
@@ -295,8 +299,10 @@ package body fss is
       tiempo_colision : Float;
       siguiente_instante : Time := Big_Bang + Milliseconds(250);
       visual_piloto : Light_Samples_Type;
+
    begin
       loop
+         Display_Message("---COLISION---");
          Read_Distance(distancia);
          if distancia < 5000 then
             if Shared_Velocidad > 0.0 then
@@ -335,6 +341,7 @@ package body fss is
       j: Joystick_Samples_Type;
    begin
       loop
+         Display_Message("---VISUALIZACION---");
          Display.Get_Altitude(altitud);
          Display.Get_Speed(velocidad);
          Display.Get_Power(power);
@@ -366,7 +373,6 @@ package body fss is
    -- Tarea de Modo Sistema
    task body modo_sistema is
       Previous_State, Current_State: PilotButton_Samples_Type := 0;
-      --siguiente_instante : Time := Clock;
    begin
       loop
          Current_State := Read_PilotButton;
@@ -379,8 +385,6 @@ package body fss is
             end if;
          end if;
          Previous_State := Current_State;
-         --delay until siguiente_instante;
-         --siguiente_instante := siguiente_instante + Milliseconds(100);
       end loop;
    end modo_sistema;
    -- Final de la tarea de Modo Sistema
