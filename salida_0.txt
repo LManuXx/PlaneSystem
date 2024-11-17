@@ -1,0 +1,640 @@
+
+ TSIM/ERC32 - remote SPARC simulator, version 1.0.10 (evaluation version)
+
+ Copyright (C) 2001, Gaisler Research - all rights reserved.
+ For latest updates, go to http://www.gaisler.com/
+ Comments or bug-reports to tsim@gaisler.com
+
+libreadline.so.3: cannot open shared object file: No such file or directory
+serial port A on stdin/stdout
+allocated 4096 K RAM memory
+allocated 2048 K ROM memory
+section: .text at 0x2000000, size 208480 bytes
+section: .data at 0x2032e60, size 11540 bytes
+tsim> resuming at 0x02000000
+
+[ 0.0375] %L(1): off
+[ 0.0553] %L(2): off
+[ 0.0830] ..# MSSG: Mostrar Datos: 
+[ 0.1053] ..# Altitude:  8000
+[ 0.1245] ..# Pilot_Power:  800
+[ 0.1447] ..# Speed:  1000
+[ 0.1624] ..# Joystick: -1 3
+[ 0.1811] ..# Pitch:  3
+[ 0.19
+[ 0.2313] %L(1): off72] ..# Roll:  1
+[ 0.2568] ..# MSSG: Modo: Automático
+[ 0.3063] %L(2): off
+[ 0.4324] %L(1): off
+[ 0.6317] %L(1): off
+[ 0.6490] %L(2): off
+[ 0.8314] %L(1): off
+[ 0.9065] %L(2): off
+[ 1.0341] %L(1): off
+[ 1.0571] ..# MSSG: Mostrar Datos: 
+[ 1.0794] ..# Altitude:  8000
+[ 1.0986] ..# Pilot_Power:  800
+[ 1.1188] ..# Speed:  1000
+[ 1.1365] ..# Joystick:  1 3
+[ 1.1552] ..# Pitch:  3
+[ 1.1713] ..# Roll:  1
+[ 1.1870] ..# MSSG: Modo: 
+[ 1.2313] %L(1): off
+[ 1.2486] %L(2): offAutomático
+[ 1.4318] %L(1): off
+[ 1.5088] %L(2): off
+[ 1.5266] ..# MSSG: Modo cambiado a Manual
+[ 1.6197] %L(1): off
+[ 1.8205] %L(1): off
+[ 1.8378] %L(2): off
+[ 2.0221] %L(1): off
+[ 2.0450] ..# MSSG: Mostrar Datos: 
+[ 2.0673] ..# Altitude:  8000
+[ 2.0865] ..# Pilot_Power: 
+[ 2.1062] %L(2): off 800
+[ 2.1235] ..# Speed:  960
+[ 2.1449] ..# Joystick:  1 3
+[ 2.1594] ..# Pitch: -3
+[ 2.1755] ..# Roll:  1
+[ 2.1912] ..# MSSG
+[ 2.2196] %L(1): off: Modo: Manual
+[ 2.4200] %L(1): off
+[ 2.4372] %L(2): off
+[ 2.6200] %L(1): off
+[ 2.7067] %L(2): off
+[ 2.8203] %L(1): off
+[ 3.0067] %BEEEEEEEEEEP 4
+[ 3.0400] %L(1): off
+[ 3.0573] %L(2): off
+[ 3.0804] ..# MSSG: Mostrar Datos: 
+[ 3.1026] ..# Altitude:  8000
+[ 3.1219] ..# Pilot_Power:  700
+[ 3.1421] ..# Speed:  840
+[ 3.1592] ..# Joystick:  25 3
+[ 3.1785] ..# Pitch: -3
+[ 3.1946] .
+[ 3.2196] %L(1): off.# Roll:  1
+[ 3.2405] ..# MSSG:
+[ 3.2553] %BEEEEEEEEEEP 4 Modo: Manual
+[ 3.3075] %L(2): off
+[ 3.4207] %L(1): off
+[ 3.5065] %BEEEEEEEEEEP 4
+[ 3.6207] %L(1): off
+[ 3.6380] %L(2): off
+[ 3.7568] %BEEEEEEEEEEP 4
+[ 3.8199] %L(1): off
+[ 3.9066] %L(2): off
+[ 4.0058] %BEEEEEEEEEEP 4
+[ 4.0391] %L(1): off
+[ 4.0620] ..# MSSG: Mostrar Datos: 
+[ 4.0843] ..# Altitude:  8000
+[ 4.1035] ..# Pilot_Power:  600
+[ 4.1237] ..# Speed:  840
+[ 4.1409] ..# Joystick:  47 3
+[ 4.1601] ..# Pitch: -3
+[ 4.1763] ..# Roll:  1
+[ 4.1920] ..# MS
+[ 4.2196] %L(1): off
+[ 4.2368] %L(2): offSG: M
+[ 4.2553] %BEEEEEEEEEEP 4odo: Manual
+[ 4.2807] ..# MSSG: Modo cambiado a Automático
+[ 4.4270] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 4.4594] %L(1): off
+[ 4.5057] %BEEEEEEEEEEP 4
+[ 4.5256] %L(2): off
+[ 4.6266] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 4.6590] %L(1): off
+[ 4.7563] %BEEEEEEEEEEP 4
+[ 4.8273] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 4.8597] %L(1): off
+[ 4.8770] %L(2): off
+[ 5.0065] %BEEEEEEEEEEP 4
+[ 5.0571] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 5.0896] %L(1): off
+[ 5.1071] %Light(2): ON
+[ 5.1339] ..# MSSG: Mostrar Datos: 
+[ 5.1562] ..# Altitude:  8040
+[ 5.1754] ..# Pilot_Power:  900
+[ 5.1957]
+[ 5.2007] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 5.2332] %L(1): off ..# Speed: 
+[ 5.2553] %BEEEEEEEEEEP 4 1000
+[ 5.3122] ..# Joystick:  47 20
+[ 5.3319] ..# Pitch:  20
+[ 5.3486] ..# Roll:  45
+[ 5.3648] ..# MSSG: Modo: Automático
+[ 5.4018] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 5.4342] %L(1): off
+[ 5.4515] %Light(2): ON
+[ 5.5066] %BEEEEEEEEEEP 4
+[ 5.6020] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 5.6344] %L(1): off
+[ 5.7063] %Light(2): ON
+[ 5.7564] %BEEEEEEEEEEP 4
+[ 5.8072] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 5.8396] %L(1): off
+[ 6.0062] %BEEEEEEEEEEP 4
+[ 6.0569] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 6.0894] %L(1): off
+[ 6.1067] %Light(2): ON
+[ 6.1335] ..# MSSG: Mostrar Datos: 
+[ 6.1558] ..# Altitude:  8200
+[ 6.1750] ..# Pilot_Power:  900
+[ 6.1953] 
+[ 6.2009] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 6.2333] %L(1): off..# Speed:  
+[ 6.2553] %BEEEEEEEEEEP 4
+[ 6.3120] %Light(2): ON1000
+[ 6.3330] ..# Joystick:  47 50
+[ 6.3528] ..# Pitch:  20
+[ 6.3694] ..# Roll:  45
+[ 6.3856] ..# MSSG: Modo: Aut
+[ 6.4010] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 6.4334] %L(1): offomático
+[ 6.5059] %BEEEEEEEEEEP 4
+[ 6.6013] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 6.6338] %L(1): off
+[ 6.6510] %Light(2): ON
+[ 6.7556] %BEEEEEEEEEEP 4
+[ 6.8065] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 6.8389] %L(1): off
+[ 6.9075] %Light(2): ON
+[ 7.0056] %BEEEEEEEEEEP 4
+[ 7.0563] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 7.0887] %L(1): off
+[ 7.1117] ..# MSSG: Mostrar Datos: 
+[ 7.1340] ..# Altitude:  8360
+[ 7.1532] ..# Pilot_Power:  1000
+[ 7.1739] ..# Speed:  1000
+[ 7.1916] ..# Joy
+[ 7.2008] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 7.2332] %L(1): off
+[ 7.2558] %BEEEEEEEEEEP 4
+[ 7.3064] %Light(2): ONstick:  47 30
+[ 7.3298] ..# Pitch:  20
+[ 7.3464] ..# Roll:  45
+[ 7.3627] ..# MSSG: Modo: Automático
+[ 7.4013] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 7.4337] %L(1): off
+[ 7.5065] %BEEEEEEEEEEP 4
+[ 7.5629] %Light(2): ON
+[ 7.6010] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 7.6334] %L(1): off
+[ 7.7556] %BEEEEEEEEEEP 4
+[ 7.8064] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 7.8388] %L(1): off
+[ 7.8561] %Light(2): ON
+[ 8.0064] %BEEEEEEEEEEP 4
+[ 8.0586] %L(1): off
+[ 8.0816] ..# MSSG: Mostrar Datos: 
+[ 8.1062] %Light(2): ON
+[ 8.1230] ..# Altitude:  8480
+[ 8.1422] ..# Pilot_Power:  1020
+[ 8.1630] ..# Speed:  1000
+[ 8.1807] ..# Joystick:  25 2
+[
+[ 8.2313] %L(1): off 8.1999] ..# Pi
+[ 8.2553] %BEEEEEEEEEEP 4
+[ 8.3058] %BEEEEEEEEEEP 4tch:  3
+[ 8.3581] ..# Roll:  25
+[ 8.3743] ..# MSSG: Modo: Automático
+[ 8.4015] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 8.4339] %L(1): off
+[ 8.4512] %Light(2): ON
+[ 8.5057] %BEEEEEEEEEEP 4
+[ 8.6005] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 8.6329] %L(1): off
+[ 8.7065] %Light(2): ON
+[ 8.7561] %BEEEEEEEEEEP 4
+[ 8.8014] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 8.8338] %L(1): off
+[ 9.0055] %BEEEEEEEEEEP 4
+[ 9.0506] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 9.0831] %L(1): off
+[ 9.1004] %Light(2): ON
+[ 9.1250] ..# MSSG: Mostrar Datos: 
+[ 9.1473] ..# Altitude:  8520
+[ 9.1665] ..# Pilot_Power:  1020
+[ 9.1872] ..# Speed:  1000
+[ 9.2010] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 9.2335] %L(1): off
+[
+[ 9.2554] %BEEEEEEEEEEP 4
+[ 9.3064] %Light(2): ON 9.2497] ..# Joystick:  1 3
+[ 9.3375] ..# Pitch:  3
+[ 9.3537] ..# Roll:  45
+[ 9.3699] ..# MSSG: Modo: Automático
+[ 9.4020] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 9.4344] %L(1): off
+[ 9.5054] %BEEEEEEEEEEP 4
+[ 9.6019] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 9.6344] %L(1): off
+[ 9.6516] %Light(2): ON
+[ 9.7556] %BEEEEEEEEEEP 4
+[ 9.8009] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 9.8334] %L(1): off
+[ 9.9069] %Light(2): ON
+[ 10.006] %BEEEEEEEEEEP 4
+[ 10.051] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 10.083] %L(1): off
+[ 10.106] ..# MSSG: Mostrar Datos: 
+[ 10.128] ..# Altitude:  8520
+[ 10.148] ..# Pilot_Power:  800
+[ 10.168] ..# Speed:  1000
+[ 10.186] ..# Joystick:  1 3
+[ 10.200] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 10.233] %L(1): off
+[ 10.255] %BEEEEEEEEEEP 4
+[ 10.300] %BEEEEEEEEEEP 4
+[ 10.345] %L(2): off
+[ 10.366] ..# Pitch:  3
+[ 10.382] ..# Roll:  45
+[ 1
+[ 10.400] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 10.433] %L(1): off0.398] ..# MSSG: Modo: Automático
+[ 10.505] %BEEEEEEEEEEP 4
+[ 10.556] %L(2): off
+[ 10.600] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 10.633] %L(1): off
+[ 10.755] %BEEEEEEEEEEP 4
+[ 10.832] %L(1): off
+[ 10.850] %L(2): off
+[ 11.033] %L(1): off
+[ 11.056] ..# MSSG: Mostrar Datos: 
+[ 11.079] ..# Altitude:  8520
+[ 11
+[ 11.106] %L(2): off.098] ..# Pilot_Power:  800
+[ 11.139] ..# Speed:  1000
+[ 11.157] ..# Joystick:  1 3
+[ 11.176] ..# Pitch:  3
+[ 11.192] ..# Ro
+[ 11.231] %L(1): offll:  1
+[ 11.249] ..# MSSG: Modo: Automático
+[ 11.431] %L(1): off
+[ 11.448] %L(2): off
+[ 11.504] ..# MSSG: Modo cambiado a Manual
+[ 11.621] %L(1): off
+[ 11.707] %L(2): off
+[ 11.819] %L(1): off
+[ 12.022] %L(1): off
+[ 12.039] %L(2): off
+[ 12.063] ..# MSSG: Mostrar Datos: 
+[ 12.085] ..# Altitude:  8520
+[ 12.104] ..# Pilot_Power:  800
+[ 12.124] ..# Speed:  960
+[ 12.141] ..# Joystick:  1 3
+[ 12.160] ..# Pitch: -3
+[ 12.176] ..# Roll:  1
+[ 12.192] ..# MS
+[ 12.219] %L(1): offSG: Modo: Manual
+[ 12.307] %L(2): off
+[ 12.420] %L(1): off
+[ 12.620] %L(1): off
+[ 12.637] %L(2): off
+[ 12.820] %L(1): off
+[ 12.907] %L(2): off
+[ 13.022] %L(1): off
+[ 13.045] ..# MSSG: Mostrar Datos: 
+[ 13.067] ..# Altitude:  8520
+[ 13.086] ..# Pilot_Power:  800
+[ 13.107] ..# Speed:  960
+[ 13.124] ..# Joystick: -25 3
+[ 13.143] ..# Pitch: -3
+[ 13.159] ..# Roll:  1
+[ 13.175] ..# MSSG: Modo: Manual
+[ 13.220] %L(1): off
+[ 13.237] %L(2): off
+[ 13.420] %L(1): off
+[ 13.509] %L(2): off
+[ 13.621] %L(1): off
+[ 13.820] %L(1): off
+[ 13.837] %L(2): off
+[ 14.022] %L(1): off
+[ 14.045] ..# MSSG: Mostrar Datos: 
+[ 14.067] ..# Altitude:  8520
+[ 14.086] ..# Pilot_Power: 
+[ 14.106] %L(2): off 800
+[ 14.123] ..# Speed:  960
+[ 14.140] ..# Joystick: -47 3
+[ 14.160] ..# Pitch: -3
+[ 14.176] ..# Roll:  1
+[ 14.191] ..# MSS
+[ 14.219] %L(1): offG: Modo: Manual
+[ 14.420] %L(1): off
+[ 14.437] %L(2): off
+[ 14.620] %L(1): off
+[ 14.707] %L(2): off
+[ 14.819] %L(1): off
+[ 15.022] %L(1): off
+[ 15.037] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 15.071] %Light(2): ON
+[ 15.096] ..# MSSG: Mostrar Datos: 
+[ 15.118] ..# Altitude:  8520
+[ 15.137] ..# Pilot_Power:  900
+[ 15.158] ..# Speed:  1080
+[ 15.175] ..# Joystick: -47 0
+[ 15.194] .
+[ 15.219] %L(1): off.# Pitch: -3
+[ 15.240] ..# Roll:  1
+[ 15.258] ..# MSSG: Modo: Manual
+[ 15.304] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 15.338] %Light(2): ON
+[ 15.420] %L(1): off
+[ 15.619] %L(1): off
+[ 15.635] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 15.669] %Light(2): ON
+[ 15.820] %L(1): off
+[ 15.905] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 15.939] %Light(2): ON
+[ 16.021] %L(1): off
+[ 16.044] ..# MSSG: Mostrar Datos: 
+[ 16.066] ..# Altitude:  8520
+[ 16.086] ..# Pilot_Power:  900
+[ 16.106] ..# Speed:  1080
+[ 16.124] ..# Joystick: -17 0
+[ 16.143] ..# Pitch: -3
+[ 16.159] ..# Roll:  1
+[ 16.175] ..# MSSG: Modo: Manual
+[ 16.220] %L(1): off
+[ 16.235] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 16.271] %Light(2): ON
+[ 16.420] %L(1): off
+[ 16.507] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 16.541] %Light(2): ON
+[ 16.619] %L(1): off
+[ 16.820] %L(1): off
+[ 16.838] %L(2): off
+[ 17.022] %L(1): off
+[ 17.045] ..# MSSG: Mostrar Datos: 
+[ 17.067] ..# Altitude:  8520
+[ 17.087] ..# Pilot_Power:
+[ 17.104] ..# MSSG: ALERTA: Velocidad mínima no alcanzada
+[ 17.140] %Light(2): ON  150
+[ 17.159] ..# Speed:  480
+[ 17.176] ..# Joystick:  1 3
+[ 17.195]
+[ 17.219] %L(1): off ..# Pitch: -3
+[ 17.241] ..# Roll:  1
+[ 17.259] ..# MSSG: Modo: Manual
+[ 17.419] %L(1): off
+[ 17.435] ..# MSSG: ALERTA: Velocidad mínima no alcanzada
+[ 17.471] %Light(2): ON
+[ 17.620] %L(1): off
+[ 17.705] ..# MSSG: ALERTA: Velocidad mínima no alcanzada
+[ 17.741] %Light(2): ON
+[ 17.819] %L(1): off
+[ 18.022] %L(1): off
+[ 18.037] ..# MSSG: ALERTA: Velocidad mínima no alcanzada
+[ 18.073] %Light(2): ON
+[ 18.098] ..# MSSG: Mostrar Datos: 
+[ 18.120] ..# Altitude:  8520
+[ 18.139] ..# Pilot_Power:  110
+[ 18.160] ..# Speed:  132
+[ 18.177] ..# Joystick:  1 3
+[ 18.195]
+[ 18.219] %L(1): off ..# Pitch: -3
+[ 18.241] ..# Roll:  1
+[ 18.259] ..# MSSG: Modo: Manual
+[ 18.305] ..# MSSG: ALERTA: Velocidad mínima no alcanzada
+[ 18.341] %Light(2): ON
+[ 18.420] %L(1): off
+[ 18.621] %L(1): off
+[ 18.636] ..# MSSG: ALERTA: Velocidad mínima no alcanzada
+[ 18.672] %Light(2): ON
+[ 18.820] %L(1): off
+[ 18.905] ..# MSSG: ALERTA: Velocidad mínima no alcanzada
+[ 18.941] %Light(2): ON
+[ 19.022] %L(1): off
+[ 19.045] ..# MSSG: Mostrar Datos: 
+[ 19.067] ..# Altitude:  8520
+[ 19.086] ..# Pilot_Power:  900
+[ 19.106] ..# Speed:  120
+[ 19.124] ..# Joystick:  1 3
+[ 19.142] ..# Pitch: -3
+[ 19.158] ..# Roll:  1
+[ 19.174] ..# MSSG: Modo: Manual
+[ 19.219] %L(1): off
+[ 19.237] %L(2): off
+[ 19.420] %L(1): off
+[ 19.508] %L(2): off
+[ 19.620] %L(1): off
+[ 19.819] %L(1): off
+[ 19.837] %L(2): off
+[ 20.021] %L(1): off
+[ 20.044] ..# MSSG: Mostrar Datos: 
+[ 20.066] ..# Altitude:  8520
+[ 20.086] ..# Pilot_Power:  
+[ 20.106] %L(2): off800
+[ 20.123] ..# Speed:  960
+[ 20.140] ..# Joystick:  1 3
+[ 20.158] ..# Pitch: -3
+[ 20.175] ..# Roll:  1
+[ 20.190] ..# MSSG:
+[ 20.219] %L(1): off Modo: Manual
+[ 20.419] %L(1): off
+[ 20.436] %L(2): off
+[ 20.619] %L(1): off
+[ 20.706] %L(2): off
+[ 20.820] %L(1): off
+[ 21.022] %L(1): off
+[ 21.040] %L(2): off
+[ 21.063] ..# MSSG: Mostrar Datos: 
+[ 21.085] ..# Altitude:  8520
+[ 21.104] ..# Pilot_Power:  800
+[ 21.125] ..# Speed:  960
+[ 21.142] ..# Joystick:  1 3
+[ 21.160] ..# Pitch: -3
+[ 21.177] ..# Roll:  1
+[ 21.192] ..# M
+[ 21.219] %L(1): offSSG: Modo: Manual
+[ 21.307] %L(2): off
+[ 21.421] %L(1): off
+[ 21.503] ..# MSSG: Modo cambiado a Automático
+[ 21.632] %L(1): off
+[ 21.650] %L(2): off
+[ 21.832] %L(1): off
+[ 21.906] %L(2): off
+[ 22.034] %L(1): off
+[ 22.057] ..# MSSG: Mostrar Datos: 
+[ 22.079] ..# Altitude:  8520
+[ 22.098] ..# Pilot_Power:  800
+[ 22.118] ..# Speed:  1000
+[ 22.136] ..# Joystick:  1 3
+[ 22.155] ..# Pitch:  3
+[ 22.171] ..# Roll:  1
+[ 22.187] ..# MSSG: Modo: 
+[ 22.231] %L(1): off
+[ 22.248] %L(2): offAutomático
+[ 22.432] %L(1): off
+[ 22.509] %L(2): off
+[ 22.632] %L(1): off
+[ 22.831] %L(1): off
+[ 22.848] %L(2): off
+[ 23.006] %BEEEEEEEEEEP 4
+[ 23.051] %L(1): off
+[ 23.074] ..# MSSG: Mostrar Datos: 
+[ 23.09
+[ 23.106] %L(2): off6] ..# Altitude:  8520
+[ 23.138] ..# Pilot_Power:  700
+[ 23.159] ..# Speed:  960
+[ 23.176] ..# Joystick:  25 3
+[ 23.195]
+[ 23.231] %L(1): off ..# Pitch:  3
+[ 23.255] %BEEEEEEEEEEP 4
+[ 23.303] ..# Roll:  25
+[ 23.320] ..# MSSG: Modo: Automático
+[ 23.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 23.434] %L(1): off
+[ 23.451] %L(2): off
+[ 23.506] %BEEEEEEEEEEP 4
+[ 23.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 23.634] %L(1): off
+[ 23.707] %L(2): off
+[ 23.756] %BEEEEEEEEEEP 4
+[ 23.800] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 23.832] %L(1): off
+[ 24.006] %BEEEEEEEEEEP 4
+[ 24.020] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 24.052] %L(1): off
+[ 24.070] %L(2): off
+[ 24.097] ..# MSSG: Mostrar Datos: 
+[ 24.119] ..# Altitude:  8520
+[ 24.138] ..# Pilot_Power:  600
+[ 24.158] ..# Speed:  840
+[ 24.176] ..# Joystick:  47 3
+[ 24.195] 
+[ 24.200] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 24.233] %L(1): off..# Pitch:  
+[ 24.255] %BEEEEEEEEEEP 40
+[ 24.274] ..# Roll:  45
+[ 24.290] ..# MSSG:
+[ 24.306] %L(2): off Modo: Automático
+[ 24.336] ..# MSSG: Modo cambiado a Manual
+[ 24.400] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 24.433] %L(1): off
+[ 24.505] %BEEEEEEEEEEP 4
+[ 24.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 24.633] %L(1): off
+[ 24.650] %L(2): off
+[ 24.756] %BEEEEEEEEEEP 4
+[ 24.800] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 24.833] %L(1): off
+[ 24.906] %L(2): off
+[ 25.005] %BEEEEEEEEEEP 4
+[ 25.020] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 25.052] %L(1): off
+[ 25.075] ..# MSSG: Mostrar Datos: 
+[ 25.097] ..# Altitude:  8520
+[ 25.116] ..# Pilot_Power:  900
+[ 25.137] ..# Speed:  720
+[ 25.154] ..# Joystick:  47 20
+[ 25.174] ..# Pitch:  0
+[ 25.190] ..# Roll: 
+[ 25.200] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 25.233] %L(1): off
+[ 2
+[ 25.255] %BEEEEEEEEEEP 45.248] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 25.301] %Light(2): ON 45
+[ 25.319] ..# MSSG: Modo: Manual
+[ 25.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 25.434] %L(1): off
+[ 25.506] %BEEEEEEEEEEP 4
+[ 25.524] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 25.558] %Light(2): ON
+[ 25.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 25.634] %L(1): off
+[ 25.756] %BEEEEEEEEEEP 4
+[ 25.800] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 25.833] %L(1): off
+[ 25.848] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 25.882] %Light(2): ON
+[ 26.006] %BEEEEEEEEEEP 4
+[ 26.020] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 26.052] %L(1): off
+[ 26.075] ..# MSSG: Mostrar Datos: 
+[ 26
+[ 26.104] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 26.138] %Light(2): ON.098] ..# Altitude:  8520
+[ 26.167] ..# Pilot_Power:  900
+[ 26.188] ..# Speed:  10
+[ 26.200] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 26.233] %L(1): off80
+[
+[ 26.255] %BEEEEEEEEEEP 4 26.249] ..# Joystick:  47 50
+[ 26.288] ..# Pitch:  0
+[ 26.304] ..# Roll:  45
+[ 26.320] ..# MSSG: Modo: Manual
+[ 26.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 26.433] %L(1): off
+[ 26.449] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 26.483] %Light(2): ON
+[ 26.506] %BEEEEEEEEEEP 4
+[ 26.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 26.633] %L(1): off
+[ 26.705] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 26.739] %Light(2): 
+[ 26.755] %BEEEEEEEEEEP 4ON
+[ 26.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 26.833] %L(1): off
+[ 27.006] %BEEEEEEEEEEP 4
+[ 27.021] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 27.053] %L(1): off
+[ 27.069] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 27.102] %Light(2): ON
+[ 27.127] ..# MSSG: Mostrar Datos: 
+[ 27.149] ..# Altitude:  8520
+[ 27.168] ..# Pilot_Power:  1000
+[ 27.189] ..# Speed: 
+[ 27.200] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 27.233] %L(1): off 1200
+[ 27.255] %BEEEEEEEEEEP 4
+[ 27.270] ..# Joystick:  47 30
+[ 27.290] ..# Pitch:
+[ 27.304] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 27.338] %Light(2): ON  0
+[ 27.356] ..# Roll:  45
+[ 27.372] ..# MSSG: Modo: Manual
+[ 27.400] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 27.433] %L(1): off
+[ 27.505] %BEEEEEEEEEEP 4
+[ 27.600] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 27.633] %L(1): off
+[ 27.648] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 27.682] %Light(2): ON
+[ 27.756] %BEEEEEEEEEEP 4
+[ 27.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 27.833] %L(1): off
+[ 27.905] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 27.939] %Light(2): ON
+[ 28.006] %BEEEEEEEEEEP 4
+[ 28.021] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 28.053] %L(1): off
+[ 28.076] ..# MSSG: Mostrar Datos: 
+[ 28.098] ..# Altitude:  8520
+[ 28.118] ..# Pilot_Power:  1020
+[ 28.138] ..# Speed:  1200
+[ 28.156] ..# Joystick:  25 2
+[ 28.175] ..# Pitch:  0
+[ 28.191] ..# Rol
+[ 28.200] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 28.233] %L(1): off
+[ 2
+[ 28.255] %BEEEEEEEEEEP 4
+[ 28.269] %BEEEEEEEEEEP 48.248] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 28.315] %Light(2): ONl:  45
+[ 28.335] ..# MSSG: Modo: Manual
+[ 28.400] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 28.433] %L(1): off
+[ 28.505] %BEEEEEEEEEEP 4
+[ 28.523] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 28.557] %Light(2): ON
+[ 28.600] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 28.633] %L(1): off
+[ 28.755] %BEEEEEEEEEEP 4
+[ 28.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 28.833] %L(1): off
+[ 28.849] ..# MSSG: ALERTA: Velocidad máxima superada
+[ 28.882] %Light(2): ON
+Interrupt!
+ Stopped at time 291337199 (2.081e+01 s)
+tsim> 
