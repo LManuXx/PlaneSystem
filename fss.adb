@@ -192,6 +192,7 @@ package body fss is
          end if;
 
          Shared_Velocidad := velocidad_actual;
+         Display_Message("---FIN DE TAREA VELOCIDAD---");
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
 
@@ -247,6 +248,7 @@ package body fss is
          end if;
 
          Shared_Velocidad := velocidad;
+         Display_Message("---FIN DE TAREA RIESGOS---");
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
 
@@ -286,6 +288,7 @@ package body fss is
             end if;
          end if;
 
+         Display_Message("---FIN DE TAREA ALTITUD,CABECEO,ALABEO---");
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(200);
       end loop;
@@ -324,6 +327,8 @@ package body fss is
                end if;
             end if;
          end if;
+
+         Display_Message("---FIN DE TAREA COLISION---");
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(250);
       end loop;
@@ -363,7 +368,7 @@ package body fss is
          end if;
 
          
-
+         Display_Message("---FIN DE TAREA VISUALIZACION---");
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(1000);
       end loop;
