@@ -234,96 +234,97 @@ tsim> resuming at 0x02000000
 [ 11.034] ..# MSSG: ALERTA, ALABEO PELIGROSO
 [ 11.066] %L(1): off
 [ 11.089] ..# MSSG: 
-[ 11.106] %L(2): offMostrar Datos: 
-[ 11.135] ..# Altitude:  7980
-[ 11.154] ..# Pilot_Power:  400
-[ 11.174] ..# Speed:  600
-[ 11.191] ..# Jo
+[ 11.106] %Light(2): ONMostrar Datos: 
+[ 11.136] ..# Altitude:  7980
+[ 11.156] ..# Pilot_Power:  100
+[ 11.176] ..# Speed:  600
+[ 11.193] ..#
 [ 11.231] ..# MSSG: ALERTA, ALABEO PELIGROSO
-[ 11.265] %L(1): offystick:  75 20
-[ 11.287] ..# Pitch: -25
-[ 11.304] ..# Roll:  45
-[ 11.320] ..# MSSG: Modo: Automático
+[ 11.265] %L(1): off Joystick:  75 20
+[ 11.288] ..# Pitch: -25
+[ 11.305] ..# Roll:  45
+[ 11.321] ..# MSSG: Modo: Automático
 [ 11.438] %L(1): off
-[ 11.455] %L(2): off
-[ 11.505] ..# MSSG: Modo cambiado a Manual
+[ 11.455] %Light(2): ON
+[ 11.504] ..# MSSG: Modo cambiado a Manual
 [ 11.621] %L(1): off
-[ 11.706] %L(2): off
-[ 11.820] %L(1): off
+[ 11.705] ..# MSSG: ALERTA: Velocidad mínima no alcanzada
+[ 11.741] %Light(2): ON
+[ 11.819] %L(1): off
 [ 12.022] %L(1): off
-[ 12.040] %L(2): off
-[ 12.063] ..# MSSG: Mostrar Datos: 
+[ 12.039] %L(2): off
+[ 12.062] ..# MSSG: Mostrar Datos: 
 [ 12.085] ..# Altitude:  7880
 [ 12.104] ..# Pilot_Power:  400
 [ 12.124] ..# Speed:  480
 [ 12.141] ..# Joystick:  85-40
 [ 12.161] ..# Pitch: -20
 [ 12.178] ..# Roll:  25
-[ 12.194] .
-[ 12.219] %L(1): off.# MSSG: Modo: Manual
-[ 12.306] %L(2): off
-[ 12.419] %L(1): off
+[ 12.194] ..
+[ 12.219] %L(1): off# MSSG: Modo: Manual
+[ 12.307] %L(2): off
+[ 12.421] %L(1): off
 [ 12.620] %L(1): off
-[ 12.638] %L(2): off
-[ 12.819] %L(1): off
-[ 12.906] %L(2): off
-[ 13.021] %L(1): off
-[ 13.044] ..# MSSG: Mostrar Datos: 
-[ 13.066] ..# Altitude:  7880
-[ 13.086] ..# Pilot_Power:  700
-[ 13.106] ..# Speed:  480
-[ 13.123] ..# Joystick:  60 15
-[ 13.143] ..# Pitch: -20
-[ 13.159] ..# Roll:  25
-[ 13.176] ..# MSSG: Modo: Manual
-[ 13.219] %L(1): off
-[ 13.236] %L(2): off
-[ 13.419] %L(1): off
-[ 13.508] %L(2): off
-[ 13.620] %L(1): off
-[ 13.821] %L(1): off
+[ 12.637] %L(2): off
+[ 12.820] %L(1): off
+[ 12.907] %L(2): off
+[ 13.022] %L(1): off
+[ 13.045] ..# MSSG: Mostrar Datos: 
+[ 13.068] ..# Altitude:  7880
+[ 13.087] ..# Pilot_Power:  700
+[ 13.107] ..# Speed:  480
+[ 13.124] ..# Joystick:  60 15
+[ 13.144] ..# Pitch: -20
+[ 13.161] ..# Roll:  25
+[ 13.177] ..# MSSG: Modo: Manual
+[ 13.220] %L(1): off
+[ 13.238] %L(2): off
+[ 13.421] %L(1): off
+[ 13.509] %L(2): off
+[ 13.619] %L(1): off
+[ 13.820] %L(1): off
 [ 13.838] %L(2): off
 [ 14.022] %L(1): off
 [ 14.045] ..# MSSG: Mostrar Datos: 
-[ 14.068] ..# Altitude:  7880
-[ 14.087] ..# Pilot_Power
-[ 14.106] %L(2): off:  720
+[ 14.067] ..# Altitude:  7880
+[ 14.087] ..# Pilot_Power:
+[ 14.106] %L(2): off  720
 [ 14.124] ..# Speed:  912
 [ 14.141] ..# Joystick:  70-15
-[ 14.161] ..# Pitch: -20
-[ 14.178] ..# Roll:  25
-[ 14.194] ..
-[ 14.219] %L(1): off# MSSG: Modo: Manual
-[ 14.419] %L(1): off
-[ 14.437] %L(2): off
-[ 14.620] %L(1): off
+[ 14.160] ..# Pitch: -20
+[ 14.177] ..# Roll:  25
+[ 14.193] ..#
+[ 14.219] %L(1): off MSSG: Modo: Manual
+[ 14.421] %L(1): off
+[ 14.438] %L(2): off
+[ 14.619] %L(1): off
 [ 14.706] %L(2): off
 [ 14.820] %L(1): off
-[ 15.021] %L(1): off
-[ 15.038] %L(2): off
-[ 15.061] ..# MSSG: Mostrar Datos: 
-[ 15.084] ..# Altitude:  7880
-[ 15.103] ..# Pilot_Power:  700
-[ 15.123] ..# Speed:  840
-[ 15.140] ..# Joystick:  45 20
-[ 15.160] ..# Pitch: -20
-[ 15.177] ..# Roll:  25
-[ 15.193] ..# 
-[ 15.219] %L(1): offMSSG: Modo: Manual
+[ 15.022] %L(1): off
+[ 15.040] %L(2): off
+[ 15.063] ..# MSSG: Mostrar Datos: 
+[ 15.085] ..# Altitude:  7880
+[ 15.104] ..# Pilot_Power:  700
+[ 15.124] ..# Speed:  840
+[ 15.142] ..# Joystick:  45 20
+[ 15.161] ..# Pitch: -20
+[ 15.178] ..# Roll:  25
+[ 15.194] .
+[ 15.219] %L(1): off.# MSSG: Modo: Manual
 [ 15.306] %L(2): off
-[ 15.420] %L(1): off
+[ 15.419] %L(1): off
 [ 15.621] %L(1): off
 [ 15.638] %L(2): off
 [ 15.819] %L(1): off
 [ 15.906] %L(2): off
 [ 16.021] %L(1): off
 [ 16.044] ..# MSSG: Mostrar Datos: 
-[ 16.067] ..# Altitude:  7880
+[ 16.066] ..# Altitude:  7880
 [ 16.086] ..# Pilot_Power:  710
 [ 16.106] ..# Speed:  888
 [ 16.123] ..# Joystick:  40 15
 [ 16.143] ..# Pitch: -20
-[ 16.160] ..# Roll:  25
+[ 16.159] ..# Roll:  25
 [ 16.176] ..# MSSG: Modo: Manual
 [ 16.219] %L(1): off
 [ 16.237] %L(2): off
@@ -331,11 +332,11 @@ tsim> resuming at 0x02000000
 [ 16.508] %L(2): off
 [ 16.620] %L(1): off
 [ 16.819] %L(1): off
-[ 16.837] %L(2): off
+[ 16.836] %L(2): off
 [ 17.021] %L(1): off
 [ 17.044] ..# MSSG: Mostrar Datos: 
 [ 17.066] ..# Altitude:  7880
-[ 17.086] ..# Pilot_Power:  
+[ 17.085] ..# Pilot_Power:  
 [ 17.106] %L(2): off730
 [ 17.123] ..# Speed:  852
 [ 17.140] ..# Joystick:  60 15
@@ -459,78 +460,6 @@ tsim> resuming at 0x02000000
 [ 23.632] ..# MSSG: ALERTA, ALABEO PELIGROSO
 [ 23.664] %L(1): off
 [ 23.706] %Light(2): ON
-[ 23.836] %L(1): off
-[ 24.034] ..# MSSG: ALERTA, ALABEO PELIGROSO
-[ 24.067] %L(1): off
-[ 24.084] %Light(2): ON
-[ 24.111] ..# MSSG: Mostrar Datos: 
-[ 24.133] ..# Altitude:  7820
-[ 24.152] ..# Pilot_Power:  900
-[ 24.173] ..# Speed:  1000
-[ 24.190] ..# Joyst
-[ 24.236] %L(1): offick:  35-25
-[ 24.259] ..# Pitch:  20
-[ 24.275] ..# Roll:  45
-[ 24.291] ..# MSS
-[ 24.306] %Light(2): ONG: Modo: Automático
-[ 24.337] ..# MSSG: Modo cambiado a Manual
-[ 24.420] %L(1): off
-[ 24.620] %L(1): off
-[ 24.635] ..# MSSG: ALERTA: Velocidad máxima superada
-[ 24.669] %Light(2): ON
-[ 24.820] %L(1): off
-[ 24.905] ..# MSSG: ALERTA: Velocidad máxima superada
-[ 24.939] %Light(2): ON
-[ 25.021] %L(1): off
-[ 25.044] ..# MSSG: Mostrar Datos: 
-[ 25.067] ..# Altitude:  7880
-[ 25.086] ..# Pilot_Power:  850
-[ 25.106] ..# Speed:  1080
-[ 25.124] ..# Joystick:  60-30
-[ 25.144] ..# Pitch:  30
-[ 25.160] ..# Roll: -25
-[ 25.176] ..# MSSG: Modo: Manual
-[ 25.220] %L(1): off
-[ 25.235] ..# MSSG: ALERTA: Velocidad máxima superada
-[ 25.271] %Light(2): ON
-[ 25.420] %L(1): off
-[ 25.507] ..# MSSG: ALERTA: Velocidad máxima superada
-[ 25.541] %Light(2): ON
-[ 25.619] %L(1): off
-[ 25.820] %L(1): off
-[ 25.836] ..# MSSG: ALERTA: Velocidad máxima superada
-[ 25.870] %Light(2): ON
-[ 26.021] %L(1): off
-[ 26.044] ..# MSSG: Mostrar Datos: 
-[ 26.066] ..# Altitude:  7880
-[ 26.086] ..# Pilot_Power:  
-[ 26.106] %L(2): off400
-[ 26.123] ..# Speed:  1020
-[ 26.140] ..# Joystick:  80-40
-[ 26.160] ..# Pitch:  30
-[ 26.177] ..# Roll: -25
-[ 26.193] ..# 
-[ 26.219] %L(1): offMSSG: Modo: Manual
-[ 26.420] %L(1): off
-[ 26.437] %L(2): off
-[ 26.620] %L(1): off
-[ 26.707] %L(2): off
-[ 26.819] %L(1): off
-[ 27.022] %L(1): off
-[ 27.039] %L(2): off
-[ 27.062] ..# MSSG: Mostrar Datos: 
-[ 27.084] ..# Altitude:  7880
-[ 27.104] ..# Pilot_Power:  400
-[ 27.124] ..# Speed:  480
-[ 27.141] ..# Joystick:  45 20
-[ 27.161] ..# Pitch:  30
-[ 27.177] ..# Roll: -25
-[ 27.194] ..
-[ 27.219] %L(1): off# MSSG: Modo: Manual
-[ 27.307] %L(2): off
-[ 27.421] %L(1): off
-[ 27.620] %L(1): off
-[ 27.637] %L(2): off
 Interrupt!
- Stopped at time 279312689 (1.995e+01 s)
+ Stopped at time 240119072 (1.715e+01 s)
 tsim> 
