@@ -1,7 +1,7 @@
 with Ada.Real_Time; use Ada.Real_Time;
 with devicesfss_v1; use devicesfss_v1;
 
-package Scenario_V4 is
+package Scenario_V3 is
 
     ---------------------------------------------------------------------
     ------ Access time for devices
@@ -230,7 +230,7 @@ package Scenario_V4 is
                    0,0,0,0,0, 0,0,0,0,0,   -- 9s.
                    0,0,0,0,0, 0,0,0,0,0,  -- 10s.                   
                    0,0,0,0,0, 0,0,0,0,0,   -- 11s. 
-                   0,0,0,0,0, 1,1,1,1,1,   -- 12s.
+                   0,0,0,0,0, 0,0,0,0,0,   -- 12s.
                    0,0,0,0,0, 0,0,0,0,0,   -- 13s.
                    0,0,0,0,0, 0,0,0,0,0,   -- 14s. 
                    0,0,0,0,0, 0,0,0,0,0,   -- 15s.
@@ -239,4 +239,4 @@ package Scenario_V4 is
                    0,0,0,0,0, 0,0,0,0,0,   -- 18s. 
                    0,0,0,0,0, 0,0,0,0,0,   -- 19s.
                    0,0,0,0,0, 0,0,0,0,0);  -- 20s.
-end Scenario_V4;
+end Scenario_V3;
