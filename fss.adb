@@ -34,6 +34,7 @@ package body fss is
       begin
          Pitch := Pitch_Value;
          Roll := Roll_Value;
+         Execution_Time (Milliseconds (3));
       end Get_Altitude;
 
       procedure Set_Altitude (Roll : in Roll_Samples_Type; Pitch : in Pitch_Samples_Type) is
@@ -57,6 +58,7 @@ package body fss is
          end if;
          Pitch_Value := Read_Pitch;
          Roll_Value := Read_Roll;
+         Execution_Time (Milliseconds (5));
       end Set_Altitude;
    end Altitude_Data;
 
@@ -74,26 +76,31 @@ package body fss is
       procedure Get_Altitude(Altitude : out Altitude_Samples_Type) is
       begin
          Altitude := Read_Altitude;
+         Execution_Time (Milliseconds (2));
       end Get_Altitude;
 
       procedure Get_Joystick(J : out Joystick_Samples_Type) is
       begin
          Read_Joystick(J);
+         Execution_Time (Milliseconds (3));
       end Get_Joystick;
 
       procedure Get_Power(Power : out Power_Samples_Type) is
       begin
          Read_Power(Power);
+         Execution_Time (Milliseconds (4));
       end Get_Power;
 
       procedure Get_Speed(Speed : out Speed_Samples_Type) is
       begin
          Speed := Read_Speed;
+         Execution_Time (Milliseconds (5));
       end Get_Speed;
 
       procedure Get_Plane_Position(Nx : out Pitch_Samples_Type; Ny : out Roll_Samples_Type) is
       begin
          Altitude.Get_Altitude(Ny, Nx);
+         Execution_Time (Milliseconds (8));
       end Get_Plane_Position;
    end Status_Record;
 
@@ -107,11 +114,13 @@ package body fss is
       procedure Toggle_Mode is
       begin
          Automatic_Mode := not Automatic_Mode;
+         Execution_Time (Milliseconds (3));
       end Toggle_Mode;
 
       function Is_Automatic return Boolean is
       begin
          return Automatic_Mode;
+         Execution_Time (Milliseconds (2));
       end Is_Automatic;
    end System_Mode;
    -- Final de Variables Globales
@@ -172,9 +181,12 @@ package body fss is
       potencia_actual : Power_Samples_Type;
       velocidad_actual : Float;
       siguiente_instante : Time := Big_Bang + Milliseconds(300);
+      Comienzo: Time;
+      Periodo : Duration;
+      Tiempo : float;
    begin
       loop
-         
+         Comienzo := Clock;
          Read_Power(potencia_actual);
          velocidad_actual := Float(potencia_actual) * 1.2;
          if System_Mode.Is_Automatic then
@@ -197,6 +209,11 @@ package body fss is
          end if;
 
          Shared_Velocidad := velocidad_actual;
+         Periodo := Clock - Comienzo;
+         -- escribimos el calculo
+         Tiempo := float (Periodo);
+         Print_a_String("La tarea ha tardado ");
+         Print_a_Float(Tiempo)
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
 
@@ -211,9 +228,12 @@ package body fss is
       alabeo : Roll_Samples_Type;
       potencia : Power_Samples_Type;
       siguiente_instante : Time := Big_Bang + Milliseconds(300);
+      Comienzo: Time;
+      Periodo : Duration;
+      Tiempo : float;
    begin
       loop
-         
+         Comienzo := Clock;
          Altitude.Get_Altitude(alabeo, cabeceo);
          velocidad := Shared_Velocidad;
          Read_Power(potencia);
@@ -252,6 +272,11 @@ package body fss is
          end if;
 
          Shared_Velocidad := velocidad;
+         Periodo := Clock - Comienzo;
+         -- escribimos el calculo
+         Tiempo := float (Periodo);
+         Print_a_String("La tarea ha tardado ");
+         Print_a_Float(Tiempo)
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
 
@@ -267,8 +292,12 @@ package body fss is
       alabeo : Roll_Samples_Type;
       jx : Joystick_Samples_Type;
       siguiente_instante : Time := Big_Bang + Milliseconds(200);
+      Comienzo: Time;
+      Periodo : Duration;
+      Tiempo : float;
    begin
       loop
+         Comienzo := Clock;
          if (variable_desvio = 0) then 
             Read_Joystick(jx);
             Altitude.Set_Altitude(Roll_Samples_Type(jx(x)), Pitch_Samples_Type(jx(y)));
@@ -291,7 +320,11 @@ package body fss is
                Altitude.Set_Altitude(0, 0);
             end if;
          end if;
-         
+         Periodo := Clock - Comienzo;
+         -- escribimos el calculo
+         Tiempo := float (Periodo);
+         Print_a_String("La tarea ha tardado ");
+         Print_a_Float(Tiempo)
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(200);
       end loop;
@@ -305,9 +338,12 @@ package body fss is
       tiempo_colision : Float;
       siguiente_instante : Time := Big_Bang + Milliseconds(250);
       visual_piloto : Light_Samples_Type;
-
+      Comienzo: Time;
+      Periodo : Duration;
+      Tiempo : float;
    begin
       loop
+         Comienzo := Clock;
          Read_Distance(distancia);
          if distancia < 5000 then
             if Shared_Velocidad > 0.0 then
@@ -329,7 +365,11 @@ package body fss is
                end if;
             end if;
          end if;
-
+         Periodo := Clock - Comienzo;
+         -- escribimos el calculo
+         Tiempo := float (Periodo);
+         Print_a_String("La tarea ha tardado ");
+         Print_a_Float(Tiempo)
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(250);
       end loop;
@@ -345,9 +385,12 @@ package body fss is
       pitch : Pitch_Samples_Type;
       roll : Roll_Samples_Type;
       j: Joystick_Samples_Type;
+      Comienzo: Time;
+      Periodo : Duration;
+      Tiempo : float;
    begin
       loop
-         
+         Comienzo := Clock;
          Display.Get_Altitude(altitud);
          Display.Get_Speed(velocidad);
          Display.Get_Power(power);
@@ -367,9 +410,11 @@ package body fss is
          else
             Display_Message("Modo: Manual");
          end if;
-
-         
-         
+         Periodo := Clock - Comienzo;
+         -- escribimos el calculo
+         Tiempo := float (Periodo);
+         Print_a_String("La tarea ha tardado ");
+         Print_a_Float(Tiempo)
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(1000);
       end loop;
@@ -379,8 +424,12 @@ package body fss is
    -- Tarea de Modo Sistema
    task body modo_sistema is
       Previous_State, Current_State: PilotButton_Samples_Type := 0;
+      Comienzo: Time;
+      Periodo : Duration;
+      Tiempo : float;
    begin
       loop
+         Comienzo := Clock;
          Current_State := Read_PilotButton;
          if (Current_State = 1) and then (Previous_State = 0) then
             System_Mode.Toggle_Mode;
@@ -391,6 +440,11 @@ package body fss is
             end if;
          end if;
          Previous_State := Current_State;
+         Periodo := Clock - Comienzo;
+         -- escribimos el calculo
+         Tiempo := float (Periodo);
+         Print_a_String("La tarea ha tardado ");
+         Print_a_Float(Tiempo)
       end loop;
    end modo_sistema;
    -- Final de la tarea de Modo Sistema
