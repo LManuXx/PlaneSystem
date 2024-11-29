@@ -1,4 +1,6 @@
-
+--Paul Brayan Rodriguez Isler 
+--Manuel Neto Romero
+--Alvaro Del Cerro Del Alamo
 with Ada.Real_Time; use Ada.Real_Time;
 
 package devicesFSS_V1 is

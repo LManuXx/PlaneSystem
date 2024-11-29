@@ -1,3 +1,6 @@
+--Paul Brayan Rodriguez Isler 
+--Manuel Neto Romero
+--Alvaro Del Cerro Del Alamo
 with Kernel.Serial_Output; use Kernel.Serial_Output;
 with Ada.Real_Time;        use Ada.Real_Time;
 with System;               use System;
