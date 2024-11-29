@@ -1,0 +1,1825 @@
+
+ TSIM/ERC32 - remote SPARC simulator, version 1.0.10 (evaluation version)
+
+ Copyright (C) 2001, Gaisler Research - all rights reserved.
+ For latest updates, go to http://www.gaisler.com/
+ Comments or bug-reports to tsim@gaisler.com
+
+libreadline.so.3: cannot open shared object file: No such file or directory
+serial port A on stdin/stdout
+allocated 4096 K RAM memory
+allocated 2048 K ROM memory
+section: .text at 0x2000000, size 234192 bytes
+section: .data at 0x20392d0, size 11932 bytes
+tsim> resuming at 0x02000000
+
+[ 0.0062]  La tarea colision ha tardado  1.7E-03
+[ 0.0641] %L(1): off
+[ 0.0754]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 0.1111]  La tarea velocidad ha tardado  4.0E-03
+[ 0.1387] %L(2): off
+[ 0.1546]  La tarea riesgos ha tardado  1.8E-02
+[ 0
+[ 0.2337] %L(1): off
+[ 0.2450] 
+[ 0.2521]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 0.3070]  La tarea velocidad ha tardado  4.0E-03
+[ 0.3344] %L(2): off
+[ 0.3503]  La tarea riesgos ha tardado  1.8E-02.1986] ..# MSSG: Mostrar Datos: 
+[ 0.3951] 
+[ 0.4337] %L(1): off
+[ 0.4450]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02..# Altitude:  8000
+[ 0.4909] ..# Pilo
+[ 0.5021]  La tarea colision ha tardado  1.7E-03t_Power:  800
+[ 0.5376] ..# Speed:  1000
+[ 0.5553] ..# Joystick:  1-2
+[ 0.5740] ..# Pitch:  1
+[ 0.5902] ..# Roll: 
+[ 0.6337] %L(1): off
+[ 0.6451]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 0.6805]  La tarea velocidad ha tardado  4.0E-03
+[ 0.7079] %L(2): off
+[ 0.7238]  La tarea riesgos ha tardado  1.8E-02 3
+[ 0.7521]  La tarea colision ha tardado  1.7E-03
+[ 0.7795] ..# MSSG: Modo: Automático
+[ 0.8337] %L(1): off
+[ 0.8450]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 0.8792]  La tarea visualizacion ha tard
+[ 0.9043]  La tarea velocidad ha tardado  4.0E-03
+[ 0.9317] %L(2): off
+[ 0.9453]  La tarea riesgos ha tardado  1.6E-02ado  7.0E-01
+[ 0.9771]  La tarea modo_sistema ha tardado  
+[ 1.0021]  La tarea colision ha tardado  1.7E-03
+[ 1.0597] %L(1): off
+[ 1.0710]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 1.1225] ..# MSSG: Mostrar Datos: 
+[ 1.1448] ..# Altitude:  8000
+[ 1.1640] ..# Pilot_Power:  800
+[ 1.1842] ..# Speed:  1000
+[ 1.2337] %L(1): off
+[ 1.2451] 
+[ 1.2520]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 1.3070]  La tarea velocidad ha tardado  4.0E-03
+[ 1.3344] %L(2): off
+[ 1.3502]  La tarea riesgos ha tardado  1.8E-02
+[ 1.3757] ..# Joystick:  3 1
+[ 1.3944] ..
+[ 1.4337] %L(1): off
+[ 1.4450]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02# Pitch:  1
+[ 1.4868] ..# Roll:  3
+[ 1.5021]  La tarea colision ha tardado  1.7E-03
+[ 1.5304]  La tarea velocidad ha tardado  4.0E-03
+[ 1.5578] %L(2): off
+[ 1.5736]  La tarea riesgos ha tardado  1.8E-02
+[
+[ 1.6337] %L(1): off
+[ 1.6450]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 1.5997] ..# MSSG: Modo: Automático
+[ 1.6996]  La tarea visualizacion ha tardado  6.0E-011.7E-03
+[ 1.7316]  La tarea modo_sistema ha t
+[ 1.7521]  La tarea colision ha tardado  1.7E-03ardado  1.7E-03
+[ 1.7856]  La tarea modo_sist
+[ 1.8337] %L(1): off
+[ 1.8450]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 1.8804]  La tarea velocidad ha tardado  4.0E-03
+[ 1.9078] %L(2): off
+[ 1.9215]  La tarea riesgos ha tardado  1.6E-02ema ha tardado  1.7E-03
+[ 1.9585]  La tarea modo_sistema ha tardado  1.7E-03
+[ 1.9864]  La tarea modo_si
+[ 2.0021]  La tarea colision ha tardado  1.7E-03
+[ 2.0597] %L(1): off
+[ 2.0710]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 2.1065]  La tarea velocidad ha tardado  4.0E-03
+[ 2.1339] %L(2): off
+[ 2.1498]  La tarea riesgos ha tardado  1.8E-02
+[ 2.1936] ..#
+[ 2.2337] %L(1): off
+[ 2.2450] 
+[ 2.2521]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 MSSG: Mostrar Datos: 
+[ 2.3189] ..# Altitude:  8000
+[ 2.3381] ..# Pilot_Power:  800
+[ 2.3583] ..# Speed:  1000
+[ 2.3760] ..# Joystick:  1 2
+[ 2.3947] .
+[ 2.4337] %L(1): off
+[ 2.4450]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 2.4805]  La tarea velocidad ha tardad
+[ 2.5021]  La tarea colision ha tardado  1.7E-03o  4.0E-03
+[ 2.5341] %L(2): off
+[ 2.5516]  La tarea riesgos ha tardado  2.0E-02.# Pitch:  1
+[ 2.5862] ..# Roll:  3
+[ 2.6393] %L(1): off
+[ 2.6506]  La tarea altitud_cabeceo_alabeo ha tardado  5.0E-02
+[ 2.6838] ..# MSSG: Modo: Autom�
+[ 2.7044]  La tarea velocidad ha tardado  4.0E-03
+[ 2.7318] %L(2): off
+[
+[ 2.7520]  La tarea colision ha tardado  1.7E-03 2.7493]  La tarea riesgos ha tardado  2.0E-02
+[ 2.8392] %L(1): off
+[ 2.8505]  La tarea altitud_cabeceo_alabeo ha tardado  5.0E-02�tico
+[ 2.8892]  La tarea visualizacion ha tardado  7.2E-01stema ha tardado  1.7E-03
+[ 2.9304]  La tarea modo_sistema ha tardado  1.7E-03
+[ 2.9582]  La tarea modo_sistema ha tardado  1.7E-03
+[ 2.9861]  La tarea modo_sis
+[ 3.0053] %BEEEEEEEEEEP 4
+[ 3.0573]  La tarea colision ha tardado  5.7E-02
+[ 3.0881] %L(1): off
+[ 3.0995]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-02
+[ 3.1350]  La tarea velocidad ha tardado  4.0E-03
+[ 3.1624] %L(2): off
+[ 3.1799]  La tarea riesgos ha tardado  
+[ 3.2069] %L(1): off
+[ 3.2182]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-022
+[ 3.2553] %BEEEEEEEEEEP 4
+[ 3.3075]  La tarea colision ha tardado  5.7E-02
+[ 3.3358]  La tarea velocidad ha tardado  4.0E-03.0E-02
+[ 3.3662] %L(2): off
+[ 3.3798]  La tarea riesgos ha tardado  
+[ 3.4069] %L(1): off
+[ 3.4182]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-021.6E-02
+[ 3.4733] ..# MSSG: Mostrar Datos: 
+[ 3.4955]
+[ 3.5053] %BEEEEEEEEEEP 4
+[ 3.5573]  La tarea colision ha tardado  5.7E-02 ..# Altitude:  8160
+[ 3.596
+[ 3.6069] %L(1): off
+[ 3.6182]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-02
+[ 3.6537]  La tarea velocidad ha tardado  4.0E-03
+[ 3.6811] %L(2): off
+[ 3.6986]  La tarea riesgos ha tardado  2.0E-025] ..# Pilot_Power:  700
+[ 3.7393] ..# Speed: 
+[ 3.7553] %BEEEEEEEEEEP 4
+[ 3.8075]  La tarea colision ha tardado  5.7E-02
+[ 3.8383] %L(1): off
+[ 3.8496]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-02 990
+[ 3.8878] ..# Joystick: 
+[ 3.9043]  La tarea velocidad ha tardado  4.0E-03
+[ 3.9317] %L(2): off
+[ 3.9454]  La tarea riesgos ha tardado  1.6E-02-3 35
+[ 3.9763] ..# Pitch:  20
+[ 3.9930] ..# 
+[ 4.0053] %BEEEEEEEEEEP 4
+[ 4.0573]  La tarea colision ha tardado  5.7E-02
+[ 4.0881] %L(1): off
+[ 4.0994]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-02Roll:  0
+[ 4.1397] ..# MSSG: Modo: Automático
+[ 4.1630]  La tarea visualizacion ha tardado  7.1E-01
+[ 4.2069] %L(1): off
+[ 4.2182]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-02
+[ 4.2566] %BEEEEEEEEEEP 4
+[ 4.3086]  La tarea colision ha tardado  5.7E-02
+[ 4.3352]  La tarea velocidad ha tardado  8.5E-02
+[ 4.3626] %L(2): off
+[ 4.3762]  La tarea riesgos ha tardado  1.6E-02
+[ 4.4100] %L(1): off
+[ 4.4214]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-02
+[ 4.4592] ..# MSSG: Mostrar Datos: 
+[ 4.4815] ..# Altitude:  8280
+[ 4.5054] %BEEEEEEEEEEP 4
+[ 4.5193]  La tarea colision ha tardado  1.9E-02
+[ 4.5476]  La tarea velocidad ha tardado  4.0E-03
+[ 4.5750] %L(2): off
+[ 4.5887]  La tarea rie
+[ 4.6069] %L(1): off
+[ 4.6182]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-02sgos ha tardado  1.6E-02
+[ 4.6627] ..# Pilot_Power:  600
+[ 4.6830] ..# Speed:  990
+[ 4.7001] ..# Joystick: -3 45
+[ 4.7193] ..# Pitch:  20
+[ 4.7360] ..# Roll:  0
+[ 4.7554] %BEEEEEEEEEEP 4
+[ 4.7693]  La tarea colision ha tardado  1.9E-02
+[ 4.7951] 
+[ 4.8068] %L(1): off
+[ 4.8181]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-02
+[ 4.8536]  La tarea velocidad ha tardado  4.0E-03
+[ 4.8810] %L(2): off
+[ 4.8946]  La tarea riesgos ha tardado  1.6E-02..# MSSG: Modo: Automático
+[ 4.9369]  La tarea visualizacion ha tardado  7.5E-01tema ha tardado  1.7E-03
+[ 4.9776]  La tarea modo_sistema ha tardado 
+[ 5.0054] %BEEEEEEEEEEP 4
+[ 5.0573]  La tarea colision ha tardado  5.7E-02
+[ 5.0881] %L(1): off
+[ 5.0994]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-02
+[ 5.1350]  La tarea velocidad ha tardado  4.0E-03
+[ 5.1623] %Light(2): ON
+[ 5.1775]  La tarea riesgos ha tardado  1.8E-
+[ 5.2069] %L(1): off
+[ 5.2182]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-020
+[ 5.2553] %BEEEEEEEEEEP 4
+[ 5.3073]  La tarea colision ha tardado  5.7E-022
+[ 5.3521] ..# MSSG: Mostrar Datos: 
+[ 5.3744] ..# Altitude:  8400
+[ 5.3936] ..#
+[ 5.4069] %L(1): off
+[ 5.4182]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-02
+[ 5.4537]  La tarea velocidad ha tardado  4.0E-03
+[ 5.4811] %Light(2): ON
+[ 5.4962
+[ 5.5053] %BEEEEEEEEEEP 4
+[ 5.5573]  La tarea colision ha tardado  5.7E-02]  La tarea riesgos ha tardado  1.8E
+[ 5.6069] %L(1): off
+[ 5.6182]  La tarea altitud_cabeceo_alabeo ha tardado  1.8E-02-02 Pilot_Power:  900
+[ 5.6651] ..# Speed:  1000
+[ 5.6827] ..# Joystick:  30 45
+[ 5.7044]  La tarea velocidad ha tardado  4.0E-03
+[ 5.7318] %Light(2): ON
+[ 5.747
+[ 5.7553] %BEEEEEEEEEEP 4
+[ 5.8075]  La tarea colision ha tardado  5.7E-02
+[ 5.8327] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 5.8651] %L(1): off
+[ 5.8764]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-020]  La tarea riesgos ha tardado  1.8E-02
+[ 5.9307] ..# Pitch:  20
+[ 5.9473] ..# Roll:  30
+[ 5.9635] ..# MSSG: Modo: Automático
+[ 5.9869]  La tarea visual
+[ 6.0053] %BEEEEEEEEEEP 4
+[ 6.0573]  La tarea colision ha tardado  5.7E-02
+[ 6.0826] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 6.1150] %L(1): off
+[ 6.1263]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 6.1618]  La tarea velocidad ha tardado  4.0E-03
+[ 6.1892] %Light(2): O
+[ 6.2013] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 6.2338] %L(1): off
+[ 6.2451] 
+[ 6.2553] %BEEEEEEEEEEP 4
+[ 6.3075]  La tarea colision ha tardado  5.7E-02 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 6.3624]  La tarea velocidad ha tardado  4.0E-03N
+[ 6.3914]  La tar
+[ 6.4013] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 6.4338] %L(1): off
+[ 6.4451]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02ea riesgos ha tardado  2.0E-01
+[ 6.4944] %
+[ 6.5053] %BEEEEEEEEEEP 4
+[ 6.5266]  La tarea colision ha tardado  2.6E-0Light(2): ON
+[ 6.5602]  La tarea riesgos ha tardado  6.8E-02izacion ha tardado  6.5E-01
+[ 6.6379] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 6.6703] %L(1): off
+[ 6.6816]  La tarea altitud_cabeceo_alabeo ha tardado  7.7E-02
+[ 6.7171]  La tarea velocidad ha tardado  4.0E-03
+[ 6.7445] %
+[ 6.7553] %BEEEEEEEEEEP 4
+[ 6.8075]  La tarea colision ha tardado  5.7E-02
+[ 6.8328] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 6.8652] %L(1): off
+[ 6.8765]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 6.9120]  La tarea velocidad ha tardado  4.0E-03Light(2): ON
+[ 6.9466]  La tarea riesgos ha tardado  2.0E-01
+[ 6.9729] %Light(2): ON
+[ 6.9881]  La tarea ries
+[ 7.0054] %BEEEEEEEEEEP 4
+[ 7.0573]  La tarea colision ha tardado  5.7E-02
+[ 7.0826] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 7.1150] %L(1): off
+[ 7.1263]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02gos ha tardado  1.8E-02
+[ 7.1831] ..# MSSG: Mostrar Datos:
+[ 7.2014] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 7.2338] %L(1): off
+[ 7.2451] 
+[ 7.2553] %BEEEEEEEEEEP 4
+[ 7.3072]  La tarea colision ha tardado  5.7E-02 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 7.3622]  La tarea velocidad ha tardado  4.0E-03
+[ 7.3896] %Light(2): 
+[ 7.4013] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 7.4338] %L(1): off
+[ 7.4451]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02ON
+[ 7.4790]  La tarea riesgos ha tardado  9.
+[ 7.5054] %BEEEEEEEEEEP 4
+[ 7.5573]  La tarea colision ha tardado  5.7E-02
+[ 7.5856]  La tarea velocidad
+[ 7.6013] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 7.6338] %L(1): off
+[ 7.6451]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 ha tardado  4.0E-032E-02
+[ 7.6919] %Light(2): ON
+[ 7.7048]  La tarea riesgos ha tardado  1.6E-02 
+[ 7.7337] ..# Altitude:  8580
+[ 7.7554] %BEEEEEEEEEEP 4
+[ 7.8075]  La tarea colision ha tardado  5.7E-02
+[ 7.8327] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 7.8652] %L(1): off
+[ 7.8765]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 7.9119]  La tarea velocidad ha tardado  4.0E-03
+[ 7.9393] %Light(2): ON
+[ 7.9522]  La tarea riesgos ha tardado  1.6E-02
+[ 7.9788] ..# Pilot_Power:  1000
+[
+[ 8.0054] %BEEEEEEEEEEP 4
+[ 8.0573]  La tarea colision ha tardado  5.7E-02
+[ 8.0826] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 8.1150] %L(1): off
+[ 8.1263]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 8.1619]  La tarea velocidad ha tardado  4.0E-03
+[ 8.1892] %Light(2): O
+[ 8.2013] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 8.2338] %L(1): off
+[ 8.2451] 
+[ 8.2553] %BEEEEEEEEEEP 4
+[ 8.3073] %BEEEEEEEEEEP 4
+[ 8.3593]  La tarea colision ha tardado  1.1E-01 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 8.4111] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 8.4435] %L(1): off
+[ 8.4548]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 8.4903]  La tarea 
+[ 8.5053] %BEEEEEEEEEEP 4
+[ 8.5573]  La tarea colision ha tardado  5.7E-02velocidad ha tardado  4.0E-03N
+[ 8.
+[ 8.6013] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 8.6338] %L(1): off
+[ 8.6451]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-025984]  La tarea riesgos ha tardado  4.1E-01
+[ 8.7054]  La tarea velocidad ha tardado  4.0E-03
+[ 8.7309] %Light(2): ON
+[ 8.7439]  La
+[ 8.7553] %BEEEEEEEEEEP 4
+[ 8.8019]  La tarea colision ha tardado  5.2E-02
+[ 8.8271] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 8.8596] %L(1): off
+[ 8.8709]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 tarea riesgos ha tardado  4.5E-02
+[ 8.9223] %Light(2): ON
+[ 8.9352]  La tarea riesgos ha tardado  1.6E-02 7.9996] ..# Speed:  1000
+[ 8.9764] ..# Joystick:  30 47
+[ 8.9961
+[ 9.0053] %BEEEEEEEEEEP 4
+[ 9.0517]  La tarea colision ha tardado  5.1E-02
+[ 9.0770] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 9.1095] %L(1): off
+[ 9.1208]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 9.1563]  La tarea velocidad ha tardado  4.0E-03
+[ 9.1837] %Light(2): ON
+[ 9.196
+[ 9.2013] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 9.2338] %L(1): off
+[ 9.2451] 
+[ 9.2553] %BEEEEEEEEEEP 4
+[ 9.3019]  La tarea colision ha tardado  5.2E-02 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 9.3569]  La tarea velocidad ha tardado  4.0E-036]  La tarea riesgos ha tardado  1.6
+[ 9.4013] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 9.4338] %L(1): off
+[ 9.4451]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02E-02
+[ 9.4811] %Light(2): ON
+[ 9.4940]  L
+[ 9.5053] %BEEEEEEEEEEP 4
+[ 9.5266]  La tarea colision ha tardado  2.6E-02a tarea riesgos ha tardado  1.6E-02] ..# Pitch:  30
+[ 9.5816] ..# Roll:  45
+[ 9.5
+[ 9.6337] %L(1): off
+[ 9.6451]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 9.6805]  La tarea velocidad ha tardado  4.0E-03
+[ 9.7079] %Light(2): ON
+[ 9.7208]  La tarea riesgos ha tardado  1.6E-02978] ..# MS
+[ 9.7553] %BEEEEEEEEEEP 4
+[ 9.8020]  La tarea colision ha tardado  5.2E-02
+[ 9.8272] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 9.8597] %L(1): off
+[ 9.8710]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 9.9064]  La tarea velocidad ha tardado  4.0E-03
+[ 9.9338] %Light(2): ON
+[ 9.9467]  La tarea riesgos ha tardado  1.6E-02SG: Modo: Automático
+[ 9.9859]  La tarea visualiz
+[ 10.005] %BEEEEEEEEEEP 4
+[ 10.051]  La tarea colision ha tardado  5.1E-02
+[ 10.077] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 10.109] %L(1): off
+[ 10.120]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02acion ha tardado  3.4E+00
+[ 10.185] ..# MSSG: Mostrar Da
+[ 10.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 10.233] %L(1): off
+[ 10.245] 
+[ 10.255] %BEEEEEEEEEEP 4
+[ 10.301] %BEEEEEEEEEEP 4
+[ 10.348]  La tarea colision ha tardado  9.8E-02 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 10.402] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 10.434] %L(1): off
+[ 10.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 10.479]  La tarea velocidad ha tardado 
+[ 10.505] %BEEEEEEEEEEP 4
+[ 10.551]  La tarea colision ha tardado  5.1E-02 8.0E-02
+[ 10.584]  La tarea velocidad ha
+[ 10.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 10.633] %L(1): off
+[ 10.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 tardado  4.0E-03
+[ 10.687] %L(2): off
+[ 10.703]  La tarea riesgos ha tardado  1.8E-02
+[ 10.734] %Light(2): ON
+[ 10.745] 
+[ 10.755] %BEEEEEEEEEEP 4
+[ 10.801]  La tarea colision ha tardado  5.2E-02
+[ 10.827] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 10.859] %L(1): off
+[ 10.870]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 10.906]  La tarea velocidad ha tardado  4.0E-03 La tarea riesgos ha tardado  1.8E-02
+[ 10.952] %L(2): off
+[ 10.968]  La tarea riesgos ha tardado  1.9E-02tos: 
+[
+[ 11.002]  La tarea colision ha tardado  1.7E-03
+[ 11.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 11.059] %L(1): off
+[ 11.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 11.106]  La tarea velocidad ha tardado  4.0E-03
+[ 11.134] %L(2): off
+[ 11.149]  La tarea riesgos ha tardado  1.8E-02 10.999] ..# Altitude:  9100
+[ 11.192] ..# P
+[ 11.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 11.233] %L(1): off
+[ 11.245] 
+[ 11.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02ilot_Power:  800
+[ 11.315] ..# Speed:  1000
+[ 11.333] ..# Joystick:  3 1
+[ 11.352] ..# Pitch:  1
+[ 11.368] ..# Roll:  45
+[ 11.384] ..# MSSG: Modo: Autom
+[ 11.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 11.433] %L(1): off
+[ 11.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 11.480]  La tarea velocidad ha tardad
+[ 11.502]  La tarea colision ha tardado  1.7E-03o  4.0E-03
+[ 11.534] %L(2): off
+[ 11.549]  La tarea riesgos ha tardado  1.8E-02ático
+[ 11.581]  La tarea visualizacion ha 
+[ 11.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 11.633] %L(1): off
+[ 11.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02tardado  1.4E+00
+[ 11.706]  La tarea velocidad ha tardado  4.0E-03
+[ 11.733] %L(2): off
+[
+[ 11.752]  La tarea colision ha tardado  1.7E-03 11.749]  La tarea riesgos ha tardado  1.8E-02
+[ 11.803] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 11.836] %L(1): off
+[ 11.847]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 11.879] ..# MSSG: Mostrar Datos: 
+[ 11.902] ..# Altitude:  9100
+[ 11.921] ..# Pilot_Power:  800
+[ 11.941] ..# Speed:  1000
+[ 11.959] ..# Joystick:  0 3
+[ 11.977] ..# Pitch:  3
+[ 11.993] ..
+[ 12.002]  La tarea colision ha tardado  1.7E-03
+[ 12.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 12.059] %L(1): off
+[ 12.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 12.106]  La tarea velocidad ha tardado  4.0E-03
+[ 12.134] %L(2): off
+[ 12.149]  La tarea riesgos ha tardado  1.8E-02# Roll:  45
+[ 12.184] ..# MSSG: Modo: Autom�
+[ 12.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 12.233] %L(1): off
+[ 12.245] 
+[ 12.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 12.307]  La tarea velocidad ha tardado  4.0E-03
+[ 12.334] %L(2): off
+[ 12.350]  La tarea riesgos ha tardado  1.8E-02�tico
+[ 12.381]  La tarea visualizacion ha 
+[ 12.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 12.433] %L(1): off
+[ 12.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02tardado  7.0E-01
+[ 12.504]  La tarea colision ha tardado  1.7E-03
+[ 12.530] ..# MSSG: Mostrar Datos: 
+[ 12.553] ..# Altitude:  9100
+[ 12.572] ..# Pilot_Power:  800
+[ 12.592] ..# S
+[ 12.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 12.633] %L(1): off
+[ 12.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 12.680]  La tarea velocidad ha tardado  4.0E-03
+[ 12.708] %L(2): off
+[ 12.723]  La tarea riesgos ha tardado  1.8E-02peed:
+[ 12.752]  La tarea colision ha tardado  1.7E-03  1000
+[ 12.784] ..# Joystick:  3-15
+[ 12.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 12.833] %L(1): off
+[ 12.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 12.883] ..# Pitch:  3
+[ 12.895]
+[ 12.904]  La tarea velocidad ha tardado  4.0E-03
+[ 12.931] %L(2): off
+[ 12.947]  La tarea riesgos ha tardado  1.8E-02 ..# Roll:  45
+[ 12.983] ..# MSSG: Modo: Automá
+[ 13.002]  La tarea colision ha tardado  1.7E-03
+[ 13.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 13.059] %L(1): off
+[ 13.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02tico
+[ 13.109]  La tarea visualizacion ha tardado  6.2E-01
+[ 13.156] ..# MSSG: Mostrar Datos: 
+[ 13.178] ..# Altitude:  9100
+[ 13.
+[ 13.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 13.233] %L(1): off
+[ 13.245] 
+[ 13.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 13.307]  La tarea velocidad ha tardado  4.0E-03
+[ 13.334] %L(2): off
+[ 13.350]  La tarea riesgos ha tardado  1.8E-02197] ..# Pilot_Power:  800
+[ 13.392] ..# Sp
+[ 13.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 13.433] %L(1): off
+[ 13.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02eed:  1000
+[ 13.486] ..# Joystick:  3-
+[ 13.502]  La tarea colision ha tardado  1.7E-03
+[ 13.530]  La tarea velocidad ha tardado  4.0E-03
+[ 13.557] %L(2): off
+[ 13.573]  La tarea riesgos ha tardado  1.8E-0225
+[ 13.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 13.633] %L(1): off
+[ 13.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 13.679] ..# Pitch:  3
+[ 13.695] ..# Roll:  45
+[ 13.711] ..# MSSG: Modo: Automático
+[ 13.735]  La tarea visualizac
+[ 13.752]  La tarea colision ha tardado  1.7E-03ion ha tardado  6.0E-01
+[ 13.802] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 13.835] %L(1): off
+[ 13.846]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 13.882]  La tarea velocidad ha tardado  4.0E-03
+[ 13.909] %L(2): off
+[ 13.925]  La tarea riesgos ha tardado  1.8E-02
+[ 13.955] ..# MSSG: Mostrar Datos: 
+[ 13.977] ..# Altitude:  9100
+[ 13.9
+[ 14.002]  La tarea colision ha tardado  1.7E-03
+[ 14.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 14.059] %L(1): off
+[ 14.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 14.106]  La tarea velocidad ha tardado  4.0E-03
+[ 14.134] %L(2): off
+[ 14.149]  La tarea riesgos ha tardado  1.8E-0297] ..# Pilot_Power:  800
+[ 14.191] ..# Spee
+[ 14.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 14.233] %L(1): off
+[ 14.245] 
+[ 14.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02d:  1000
+[ 14.311] ..# Joystick: -3-45
+[ 14.330] ..# Pitch:  3
+[ 14.347] ..# Roll:  45
+[ 14.363] ..# MSSG: Modo: Automático
+[ 14.386]  La tarea visuali
+[ 14.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 14.433] %L(1): off
+[ 14.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 14.480]  La tarea velocidad ha tardad
+[ 14.502]  La tarea colision ha tardado  1.7E-03o  4.0E-03
+[ 14.534] %L(2): off
+[ 14.549]  La tarea riesgos ha tardado  1.8E-02zacion ha tardado  6.0E-01
+[ 14.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 14.634] %L(1): off
+[ 14.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 14.683] ..# MSSG: Mostrar Datos
+[ 14.704]  La tarea velocidad ha tardado  4.0E-03
+[ 14.731] %L(2): off
+[ 14.
+[ 14.752]  La tarea colision ha tardado  1.7E-03747]  La tarea riesgos ha tardado  1.8E-02: 
+[ 14.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 14.833] %L(1): off
+[ 14.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 14.879] ..# Altitude:  9100
+[ 14.899] ..# Pilot_Power:  800
+[ 14.919] ..# Speed:  1000
+[ 14.937] ..# Joystick:  3-47
+[ 14.937] ..# Joystick:  3-47
+[ 14.956] ..# Pitch:  3
+[ 14.972] ..# Roll:  45
+[ 14.988] ..# MSSG: Mod
+[ 15.002]  La tarea colision ha tardado  1.7E-03
+[ 15.031] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 15.059] %L(1): off
+[ 15.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 15.106]  La tarea velocidad ha tardado  4.0E-03
+[ 15.134] %Light(2): ON
+[ 15.149]  La tarea riesgos ha tardado  1.8E-02o: Automático
+[ 15.184]  La tarea visualizac
+[ 15.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 15.233] %L(1): off
+[ 15.245] 
+[ 15.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 15.307]  La tarea velocidad ha tardado  4.0E-03
+[ 15.334] %Light(2): ON
+[ 15.349]  La tarea riesgos ha tardado  1.8E-02ion ha tardado  6.0E-01
+[ 15.403] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 15.436] %L(1): off
+[ 15.447]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 15.481] ..# MSSG: Mostrar Datos: 
+[ 15.502]  La tarea colision ha tardado  1.7E-03
+[ 15.530] ..# Altitude:  9100
+[ 15.549] ..# Pilot_Power:  900
+[ 15.569] ..# Speed:  1000
+[ 15.587] ..# Joystick: -3
+[ 15.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 15.633] %L(1): off
+[ 15.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 15.680]  La tarea velocidad ha tardado  4.0E-03
+[ 15.708] %Light(2): ON
+[ 15.723]  La tarea riesgos ha tardado  1.8E-02-45
+[ 15.752]  La tarea colision ha tardado  1.7E-03
+[ 15.779] ..# Pitch:  3
+[ 15.795] 
+[ 15.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 15.833] %L(1): off
+[ 15.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02..# Roll:  45
+[ 15.887] ..# MSSG: Modo
+[ 15.904]  La tarea velocidad ha tardado  4.0E-03
+[ 15.931] %Light(2): ON
+[ 15.946]  La tarea riesgos ha tardado  1.8E-02: Automático
+[ 15.982]  La tarea visualizacion ha
+[ 16.002]  La tarea colision ha tardado  1.7E-03
+[ 16.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 16.059] %L(1): off
+[ 16.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 tardado  6.0E-01
+[ 16.131] ..# MSSG: Mostrar Datos: 
+[ 16.153] ..# Altitude:  9100
+[ 16.172] ..# Pilot_Power:  900
+[ 16.192] ..# S
+[ 16.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 16.233] %L(1): off
+[ 16.245] 
+[ 16.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 16.307]  La tarea velocidad ha tardado  4.0E-03
+[ 16.334] %Light(2): ON
+[ 16.349]  La tarea riesgos ha tardado  1.8E-02peed:  1000
+[ 16.383] ..# Joystick:  0-17
+[ 16.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 16.433] %L(1): off
+[ 16.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 16.479] ..# Pitch:  3
+[ 16.495] 
+[ 16.502]  La tarea colision ha tardado  1.7E-03
+[ 16.530]  La tarea velocidad ha tardado  4.0E-03
+[ 16.557] %Light(2): ON
+[ 16.572]  La tarea riesgos ha tardado  1.8E-02..# Ro
+[ 16.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 16.633] %L(1): off
+[ 16.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02ll:  45
+[ 16.684] ..# MSSG: Modo: Automático
+[ 16.708]  La tarea visualizacion ha tardado  6.0E-01
+[ 16.754]  La tarea colision ha tardado  1.7E-03
+[ 16.781] ..# MSSG: Mostrar Datos: 
+[ 16.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 16.833] %L(1): off
+[ 16.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 16.880]  La tarea velocidad ha tardado  4.0E-03
+[ 16.907] %L(2): off
+[ 16.925]  La tarea riesgos ha tardado  2.0E-02
+[ 16.952] ..# Altitude:  9100
+[ 16.971] ..# Pilot_Power:  500
+[ 16.992] ..# Sp
+[ 17.002]  La tarea colision ha tardado  1.7E-03
+[ 17.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 17.059] %L(1): off
+[ 17.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 17.106]  La tarea velocidad ha tardado  4.0E-03
+[ 17.134] %Light(2): ON
+[ 17.153]  La tarea riesgos ha tardado  2.2E-02eed:  1000
+[ 17.186] ..# Joystick:  0 
+[ 17.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 17.233] %L(1): off
+[ 17.245] 
+[ 17.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-023
+[ 17.308] ..# Pitch:  3
+[ 17.324] ..# Roll:  45
+[ 17.340] ..# MSSG: Modo: Automático
+[ 17.363]  La tarea visualizacion ha tardado  6.3E-01
+[ 17.402] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 17.434] %L(1): off
+[ 17.446]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 17.481]  La tarea velocidad ha tard
+[ 17.502]  La tarea colision ha tardado  1.7E-03ado  4.0E-03
+[ 17.535] %Light(2): ON
+[ 17.554]  La tarea riesgos ha tardado  2.2E-02
+[ 17.587] ..# MSSG: Mostr
+[ 17.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 17.633] %L(1): off
+[ 17.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02ar Datos: 
+[ 17.686] ..# Altitude:  91
+[ 17.704]  La tarea velocidad ha tardado  4.0E-03
+[ 17.731] %Light(2): ON
+[ 17.752]  La tarea colision ha tardado  1.7E-03
+[ 17.777]  La tarea riesgos ha tardado  4.8E
+[ 17.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 17.833] %L(1): off
+[ 17.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02-0200
+[ 17.883] ..# Pilot_Power:  100
+[ 17.903] ..# Speed:  240
+[ 17.921] ..# Joystick:  3 1
+[ 17.939] ..# Pitch:  3
+[ 17.955] ..# Roll:  45
+[ 17.972] ..# MSSG: Modo: Automático
+[ 17.995] 
+[ 18.002]  La tarea colision ha tardado  1.7E-03
+[ 18.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 18.059] %L(1): off
+[ 18.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 18.106]  La tarea velocidad ha tardado  4.0E-03
+[ 18.134] %Light(2): ON
+[ 18.153]  La tarea riesgos ha tardado  2.2E-02 La tarea visualizacion ha tardado  6.0E-01
+[ 18.206] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 18.239] %L(1): off
+[ 18.252]  La tarea colision ha tardado  1.7E-03
+[ 18.277]  La tarea altitud_cabeceo_alabeo ha tardado  7.1E-02
+[ 18.312]  La tarea velocidad ha tardado  4.0E-03
+[ 18.340] %Light(2): ON
+[ 18.359]  La tarea riesgos ha tardado  2.2E-02
+[ 18.396
+[ 18.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 18.433] %L(1): off
+[ 18.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02] ..# MSSG: Mostrar Datos: 
+[ 18.495] 
+[ 18.502]  La tarea colision ha tardado  1.7E-03..# Altitude:  9100
+[ 18.540] ..# Pilot_Power:  103
+[ 18.561] ..# Speed:  252
+[ 18.578] ..# Joystick: -3 1
+[ 18.59
+[ 18.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 18.633] %L(1): off
+[ 18.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 18.680]  La tarea velocidad ha tardado  4.0E-03
+[ 18.708] %Light(2): ON
+[ 18.727]  La tarea riesgos ha tardado  2.2E-
+[ 18.752]  La tarea colision ha tardado  1.7E-03026] ..# Pitch:  3
+[ 18.790] ..# Roll: 
+[ 18.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 18.833] %L(1): off
+[ 18.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 45
+[ 18.882] ..# MSSG: Modo: Automát
+[ 18.904]  La tarea velocidad ha tardado  4.0E-03
+[ 18.931] %Light(2): ON
+[ 18.950]  La tarea riesgos ha tardado  2.2E-02ico
+[ 18.980]  La tarea visualizacion ha t
+[ 19.002]  La tarea colision ha tardado  1.7E-03
+[ 19.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 19.059] %L(1): off
+[ 19.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02ardado  7.8E-01
+[ 19.130] ..# MSSG: Mostrar Datos: 
+[ 19.152] ..# Altitude:  9100
+[ 19.171] ..# Pilot_Power:  900
+[ 19.191] ..# Spe
+[ 19.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 19.233] %L(1): off
+[ 19.245] 
+[ 19.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 19.307]  La tarea velocidad ha tardado  4.0E-03
+[ 19.334] %L(2): off
+[ 19.350]  La tarea riesgos ha tardado  1.8E-02ed:  240
+[ 19.382] ..# Joystick:  3 1
+[ 19.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 19.433] %L(1): off
+[ 19.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 19.477] ..# Pitch:  3
+[ 19.494] ..
+[ 19.502]  La tarea colision ha tardado  1.7E-03
+[ 19.530]  La tarea velocidad ha tardado  4.0E-03
+[ 19.557] %L(2): off
+[ 19.573]  La tarea riesgos ha tardado  1.8E-02# Rol
+[ 19.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 19.633] %L(1): off
+[ 19.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02l:  45
+[ 19.684] ..# MSSG: Modo: Automático
+[ 19.707]  La tarea visualizacion ha tardado  6.0E-01
+[ 19.753]  La tarea colision ha tardado  1.7E-03
+[ 19.780] ..# MSSG: Mostrar Datos: 
+[ 19.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 19.833] %L(1): off
+[ 19.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 19.880]  La tarea velocidad ha tardado  4.0E-03
+[ 19.907] %L(2): off
+[ 19.923]  La tarea riesgos ha tardado  1.8E-02
+[ 19.950] ..# Altitude:  9100
+[ 19.969] ..# Pilot_Power:  800
+[ 19.990] ..# Speed:
+[ 20.002]  La tarea colision ha tardado  1.7E-03
+[ 20.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 20.059] %L(1): off
+[ 20.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 20.106]  La tarea velocidad ha tardado  4.0E-03
+[ 20.134] %L(2): off
+[ 20.149]  La tarea riesgos ha tardado  1.8E-02  1000
+[ 20.181] ..# Joystick:  0 3
+
+[ 20.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 20.233] %L(1): off
+[ 20.245] 
+[ 20.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02[ 20.303] ..# Pitch:  3
+[ 20.319] ..# Roll:  45
+[ 20.335] ..# MSSG: Modo: Automático
+[ 20.358]  La tarea visualizacion ha tardado  6.2E-01
+[ 20.404] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 20.436] %L(1): off
+[ 20.448]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 20.483]  La tarea velocidad ha 
+[ 20.502]  La tarea colision ha tardado  1.7E-03tardado  4.0E-03
+[ 20.537] %L(2): off
+[ 20.553]  La tarea riesgos ha tardado  1.8E-02
+[ 20.579] ..# MSSG: Mostrar Datos: 
+[ 20.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 20.633] %L(1): off
+[ 20.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 20.678] ..# Altitude:  9100
+[ 20.6
+[ 20.704]  La tarea velocidad ha tardado  4.0E-03
+[ 20.731] %L(2): off
+[ 20.
+[ 20.752]  La tarea colision ha tardado  1.7E-03747]  La tarea riesgos ha tardado  1.8E-0297] 
+[ 20.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 20.833] %L(1): off
+[ 20.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02..# Pilot_Power:  800
+[ 20.891] ..# Speed:  1000
+[ 20.909] ..# Joystick:  3-1
+[ 20.928] ..# Pitch:  3
+[ 20.944] ..# Roll:  45
+[ 20.960] ..# MSSG: Modo: Automático
+[ 20.983]  La tarea visualizacio
+[ 21.002]  La tarea colision ha tardado  1.7E-03
+[ 21.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 21.059] %L(1): off
+[ 21.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 21.106]  La tarea velocidad ha tardado  4.0E-03
+[ 21.134] %L(2): off
+[ 21.149]  La tarea riesgos ha tardado  1.8E-02n ha tardado  6.0E-01
+[ 21.203] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 21.235] %L(1): off
+[ 21.24
+[ 21.252]  La tarea colision ha tardado  1.7E-036]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 21.308]  La tarea velocidad ha tardado  4.0E-03
+[ 21.336] %L(2): off
+[ 21.351]  La tarea riesgos ha tardado  1.8E-02
+[ 21.378] ..# MSSG: Mostrar Datos: 
+[ 21.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 21.433] %L(1): off
+[ 21.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 21.477] ..# Altitude:  9100
+[ 21.49
+[ 21.502]  La tarea colision ha tardado  1.7E-036] ..# Pilot_Power:  800
+[ 21.543] ..# Speed:  1000
+[ 21.561] ..# Joystick: -3 1
+[ 21.579] ..# Pitch:  3
+[ 21.595]
+[ 21.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 21.633] %L(1): off
+[ 21.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 21.680]  La tarea velocidad ha tardado  4.0E-03
+[ 21.708] %L(2): off
+[ 21.723]  La tarea riesgos ha tardado  1.8E-02 ..# 
+[ 21.752]  La tarea colision ha tardado  1.7E-03Roll:  45
+[ 21.785] ..# MSSG: Modo: Aut
+[ 21.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 21.833] %L(1): off
+[ 21.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02omático
+[ 21.885]  La tarea visualiza
+[ 21.904]  La tarea velocidad ha tardado  4.0E-03
+[ 21.931] %L(2): off
+[ 21.947]  La tarea riesgos ha tardado  1.8E-02cion ha tardado  7.0E-01 1.7E-03
+[ 21.989]  La tarea mo
+[ 22.002]  La tarea colision ha tardado  1.7E-03
+[ 22.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 22.059] %L(1): off
+[ 22.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 22.122] ..# MSSG: Mostrar Datos: 
+[ 22.144] ..# Altitude:  9100
+[ 22.164] ..# Pilot_Power:  800
+[ 22.184] ..# Speed:  1000
+[ 22.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 22.233] %L(1): off
+[ 22.245] 
+[ 22.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 22.307]  La tarea velocidad ha tardado  4.0E-03
+[ 22.334] %L(2): off
+[ 22.350]  La tarea riesgos ha tardado  1.8E-02
+[ 22.375] ..# Joystick:  3 1
+[ 22.394] .
+[ 22.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 22.433] %L(1): off
+[ 22.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02.# Pitch:  3
+[ 22.487] ..# Roll:  45
+[ 22.502]  La tarea colision ha tardado  1.7E-03
+[ 22.530]  La tarea velocidad ha tardado  4.0E-03
+[ 22.557] %L(2): off
+[ 22.575]  La tarea riesgos ha tardado  2.0E-02
+[ 22.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 22.633] %L(1): off
+[ 22.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 22.678] ..# MSSG: Modo: Automático
+[ 22.702]  La tarea visualizacion ha tardado  6.0E-01do_sistema ha tardado  1.7E-03
+[ 22.745]
+[ 22.752]  La tarea colision ha tardado  1.7E-03  La tarea modo_sistema ha tardado  1.7E-03
+[
+[ 22.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 22.833] %L(1): off
+[ 22.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 22.880]  La tarea velocidad ha tardado  4.0E-03
+[ 22.907] %L(2): off
+[ 22.925]  La tarea riesgos ha tardado  2.0E-02 22.799]  La tarea modo_sistema ha tardado  1.7E-03
+[ 22.976]  La tarea modo_sistema ha tardado  1
+[ 23.005] %BEEEEEEEEEEP 4
+[ 23.057]  La tarea colision ha tardado  5.7E-02
+[ 23.082] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 23.115] %L(1): off
+[ 23.126]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 23.161]  La tarea velocidad ha tardado  4.0E-03
+[ 23.189] %L(2): off
+[ 23.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 23.233] %L(1): off
+[ 23.245] 
+[ 23.255] %BEEEEEEEEEEP 4
+[ 23.269]  La tarea colision ha tardado  1.9E-02 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 23.326]  La tarea riesgos ha tardado  1.4E-01
+[ 23.370] ..# MSSG: Mostrar Datos: 
+[ 23.392] ..# 
+[ 23.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 23.433] %L(1): off
+[ 23.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 23.480]  La tarea velocidad ha tardad
+[ 23.505] %BEEEEEEEEEEP 4
+[ 23.519]  La tarea colision ha tardado  1.9E-02o  4.0E-03
+[ 23.551] %L(2): off
+[ 23.568]  La tarea riesgos ha tardado  2.0E-02Altitude:  914
+[ 23.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 23.633] %L(1): off
+[ 23.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-020
+[ 23.681] ..# Pilot_Power:  700
+[ 23.704]  La tarea velocidad ha tardado  4.0E-03
+[ 23.731] %L(2): off
+[
+[ 23.755] %BEEEEEEEEEEP 4
+[ 23.807]  La tarea colision ha tardado  5.7E-02
+[ 23.832] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 23.865] %L(1): off
+[ 23.876]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 23.749]  La tarea riesgos ha tardado  2.0E-02
+[ 23.933] ..# Speed:  960
+[ 23.950] ..# Joystick:  0 35
+[ 23.969] ..# Pitch:  25
+[ 23.986] ..# Roll:  45
+[ 24.005] %BEEEEEEEEEEP 4
+[ 24.057]  La tarea colision ha tardado  5.7E-02
+[ 24.082] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 24.115] %L(1): off
+[ 24.126]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 24.161]  La tarea velocidad ha tardado  4.0E-03
+[ 24.189] %L(2): off
+[ 24.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 24.233] %L(1): off
+[ 24.245] 
+[ 24.255] %BEEEEEEEEEEP 4
+[ 24.269]  La tarea colision ha tardado  1.9E-02 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 24.324]  La tarea velocidad ha tardado  4.0E-03
+[ 24.355]  La tarea riesgos ha tardado  1.7E-01
+[ 24.382] %L(2): off
+[
+[ 24.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 24.433] %L(1): off
+[ 24.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 24.399]  La tarea riesgos ha tardado  2.0E-02
+[ 24.505] %BEEEEEEEEEEP 4
+[ 24.557]  La tarea colision ha tardado  5.7E-02
+[ 24.584] ..# MSSG: Modo: Autom�
+[ 24.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 24.633] %L(1): off
+[ 24.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 24.680]  La tarea velocidad ha tardado  4.0E-03
+[ 24.708] %L(2): off
+[ 24.725]  La tarea riesgos ha tardado  2.0E-02�
+[ 24.755] %BEEEEEEEEEEP 4
+[ 24.769]  La tarea colision ha tardado  1.9E-02tico
+[ 24.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 24.833] %L(1): off
+[ 24.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 24.877]  La tarea visualizacion ha tardado 
+[ 24.904]  La tarea velocidad ha tardado  4.0E-03
+[ 24.931] %L(2): off
+[ 24.949]  La tarea riesgos ha tardado  2.0E-02 1.5E+00
+[ 24.9
+[ 25.005] %BEEEEEEEEEEP 4
+[ 25.057]  La tarea colision ha tardado  5.7E-02
+[ 25.082] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 25.115] %L(1): off
+[ 25.126]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-0297] ..# MSSG: Mostrar Datos: 
+[ 25.177] ..# Altitude:  9320
+[ 25.196
+[ 25.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 25.233] %L(1): off
+[ 25.245] 
+[ 25.255] %BEEEEEEEEEEP 4
+[ 25.307]  La tarea colision ha tardado  5.7E-02 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 25.362]  La tarea velocidad ha tardado  4.0E-03
+[ 25.389] %Light(2): 
+[ 25.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 25.433] %L(1): off
+[ 25.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02ON
+[ 25.481]  La tarea riesgos ha tardad
+[ 25.505] %BEEEEEEEEEEP 4
+[ 25.526]  La tarea colision ha tardado  2.6E-02
+[ 25.554]  La tarea velocidad ha tardado  4.0E-03o  9.4E-02
+[ 25.587] %Light(2): ON
+[ 25.633] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 25.666] %L(1): off
+[ 25.677]  La tarea altitud_cabeceo_alabeo ha tardado  7.7E-02
+[ 25.711]  La tarea riesgos ha tardado  1.3E-01] ..# Pilot_Power:  600
+[ 25.755] %BEEEEEEEEEEP 4
+[ 25.807]  La tarea colision ha tardado  5.7E-02
+[ 25.832] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 25.865] %Light(1): ON
+[ 25.878]  La tarea altitud_cabeceo_alabeo ha tardado  4.6E-02
+[ 25.913]  La tarea velocidad ha tardado  4.0E-03
+[ 25.940] %Light(2): ON
+[ 25.956]  La tarea riesgos ha tardado  1.8E-02
+[ 25.981] ..# Speed:  840
+[ 25
+[ 26.005] %BEEEEEEEEEEP 4
+[ 26.057]  La tarea colision ha tardado  5.7E-02
+[ 26.082] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 26.115] %Light(1): ON
+[ 26.127]  La tarea altitud_cabeceo_alabeo ha tardado  4.6E-02
+[ 26.163]  La tarea velocidad ha tardado  4.0E-03
+[ 26.190] %Light(2)
+[ 26.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 26.233] %Light(1): ON
+[ 26.24
+[ 26.255] %BEEEEEEEEEEP 4
+[ 26.307]  La tarea colision ha tardado  5.7E-026]  La tarea altitud_cabeceo_alabeo ha tardado  4.6E-02: ON
+[ 26.365]  La tarea riesgos ha tardado  1.8E-01.998] ..# Joystick: -
+[ 26.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 26.433] %Light(1): ON
+[ 26.446]  La tarea altitud_cabeceo_alabeo ha tardado  4.6E-02
+[ 26.482]  La tarea velocidad ha tar
+[ 26.505] %BEEEEEEEEEEP 4
+[ 26.557]  La tarea colision ha tardado  5.7E-02dado  4.0E-03
+[ 26.590] %Light(2
+[ 26.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 26.633] %Light(1): ON
+[ 26.646]  La tarea altitud_cabeceo_alabeo ha tardado  4.6E-02): ON
+[ 26.684]  La tarea riesgos ha 
+[ 26.704]  La tarea velocidad ha tardado  4.0E-03tardado  9.6E-02
+[ 26.739] %Light(2):
+[ 26.755] %BEEEEEEEEEEP 4
+[ 26.807]  La tarea colision ha tardado  5.7E-02
+[ 26.832] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 26.865] %Light(1): ON
+[ 26.878]  La tarea altitud_cabeceo_alabeo ha tardado  4.6E-02 ON
+[ 26.914]  La tarea riesgos ha tardado  1.8E-013 46
+[ 26.945] ..# Pitch:  30
+[ 26.961] ..# Roll:  45
+[ 26.978] ..# MSSG: Modo: Automático
+[ 27.005] %BEEEEEEEEEEP 4
+[ 27.057]  La tarea colision ha tardado  5.7E-02
+[ 27.082] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 27.115] %Light(1): ON
+[ 27.127]  La tarea altitud_cabeceo_alabeo ha tardado  4.6E-02
+[ 27.163]  La tarea velocidad ha tardado  4.0E-03
+[ 27.190] %Light(2)
+[ 27.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 27.233] %Light(1): ON
+[ 27.24
+[ 27.255] %BEEEEEEEEEEP 4
+[ 27.307]  La tarea colision ha tardado  5.7E-026]  La tarea altitud_cabeceo_alabeo ha tardado  4.6E-02
+[ 27.364]  La tarea velocidad ha tardado  4.0E-03: ON
+[ 27.392]  La ta
+[ 27.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 27.433] %Light(1): ON
+[ 27.446]  La tarea altitud_cabeceo_alabeo ha tardado  4.6E-02rea riesgos ha tardado  2.0E-01
+[ 27.49
+[ 27.505] %BEEEEEEEEEEP 4
+[ 27.557]  La tarea colision ha tardado  5.7E-026] %Light(2): ON
+[ 27.591]  La tare
+[ 27.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 27.633] %Light(1): ON
+[ 27.646]  La tarea altitud_cabeceo_alabeo ha tardado  4.6E-02
+[ 27.682]  La tarea velocidad ha tardado  4.0E-03a riesgos ha tardado  9.7E-02
+[ 27.724] %Light(2): ON
+[ 27.737]  La tarea riesgo
+[ 27.755] %BEEEEEEEEEEP 4
+[ 27.807]  La tarea colision ha tardado  5.7E-02
+[ 27.832] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 27.865] %Light(1): ON
+[ 27.903]  La tarea altitud_cabeceo_alabeo ha tardado  7.2E-02
+[ 27.938]  La tarea velocidad ha tardado  4.0E-03s ha tardado  1.6E-02
+[ 27.977] %Light(2): ON
+[ 27.989]  La tarea 
+[ 28.005] %BEEEEEEEEEEP 4
+[ 28.057]  La tarea colision ha tardado  5.7E-02
+[ 28.082] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 28.115] %Light(1): ON
+[ 28.153]  La tarea altitud_cabeceo_alabeo ha tardado  7.1E-02riesgos ha tardado  1.6E-02
+[
+[ 28.206] %Light(1): ON
+[ 28.245] 
+[ 28.255] %BEEEEEEEEEEP 4
+[ 28.307] %BEEEEEEEEEEP 4
+[ 28.359]  La tarea colision ha tardado  1.1E-01 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 28.411] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 28.443] %Light(1): ON
+[ 28.481]  La tarea altitud_cabeceo_a
+[ 28.505] %BEEEEEEEEEEP 4
+[ 28.526]  La tarea colision ha tardado  2.6E-02labeo ha tardado  7.1E-02
+[ 28.567]  La tarea velocidad ha tardado  4.0E-03
+[ 28.596
+[ 28.633] %Light(1): ON
+[ 28.671]  La tarea altitud_cabeceo_alabeo ha tardado  7.1E-02]  La tarea velocidad ha tardado  4.0E-03
+[ 28.726] %Light(2): ON
+[ 28.739]  La tarea r
+[ 28.755] %BEEEEEEEEEEP 4
+[ 28.801]  La tarea colision ha tardado  5.2E-02
+[ 28.827] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 28.859] %Light(1): ON
+[ 28.897]  La tarea altitud_cabeceo_alabeo ha tardado  7.1E-02
+[ 28.933]  La tarea velocidad ha tardado  4.0E-03iesgos ha tardado  1.6E-02
+[ 28.973] %Light(2): ON
+[ 28.986]  La tarea riesgos
+[ 29.005] %BEEEEEEEEEEP 4
+[ 29.051]  La tarea colision ha tardado  5.1E-02
+[ 29.077] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 29.109] %Light(1): ON
+[ 29.147]  La tarea altitud_cabeceo_alabeo ha tardado  7.2E-02
+[ 29.183]  La tarea velocidad ha 
+[ 29.206] %Light(1): ON
+[ 29.245] 
+[ 29.255] %BEEEEEEEEEEP 4
+[ 29.301]  La tarea colision ha tardado  5.1E-02 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02tardado  4.0E-03 ha tardado  1.6E-02
+[ 29.373] %Light(2): ON
+[ 29.386]  La tarea riesgos
+[ 29.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 29.433] %Light(1): ON
+[ 29.471]  La tarea altitud_cabeceo_alabeo ha tardado  
+[ 29.505] %BEEEEEEEEEEP 4
+[ 29.551]  La tarea colision ha tardado  5.1E-07.1E-02
+[ 29.583]  La tarea velocidad ha t
+[ 29.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 29.633] %Light(1): ON
+[ 29.671]  La tarea altitud_cabeceo_alabeo ha tardado  7.1E-02ardado  4.0E-03
+[ 29.714]  La tarea velocidad ha tardado  4.0E-03 ha tardado  1.6E-02
+[ 29.756] %BEEEEEEEEEEP 4
+[ 29.802]  La tarea colision ha tardado  5.1E-02
+[ 29.827] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 29.860] %Light(1): ON
+[ 29.898]  La tarea altitud_cabeceo_alabeo ha tardado  7.1E-02
+[ 29.931] %Light(2): ON
+[ 29.944]  La tarea riesgos ha tardado  1.9E-01
+[ 29.970] %Light(2): ON
+[ 29.983]  La tarea riesgos ha t
+[ 30.005] %BEEEEEEEEEEP 4
+[ 30.051]  La tarea colision ha tardado  5.1E-02
+[ 30.077] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 30.109] %Light(1): ON
+[ 30.147]  La tarea altitud_cabeceo_alabeo ha tardado  7.1E-02
+[ 30.183]  La tarea velocidad ha t
+[ 30.206] %Light(1): ON
+[ 30.245] 
+[ 30.255] %BEEEEEEEEEEP 4
+[ 30.301] %BEEEEEEEEEEP 4
+[ 30.348]  La tarea colision ha tardado  9.8E-02 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02ar
+[ 30.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 30.433] %Light(1): ON
+[ 30.471]  La tarea altitud_cabeceo_alabeo ha tardado  7
+[ 30.505] %BEEEEEEEEEEP 4
+[ 30.551]  La tarea colision ha tardado  5.1E-02.1E-02dado  4.0E-03
+[ 30.589]  La tarea v
+[ 30.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 30.633] %Light(1): ON
+[ 30.671]  La tarea altitud_cabeceo_alabeo ha tardado  7.1E-02elocidad ha tardado  4.0E-03
+[ 30.721]  La tarea velocidad ha tardado  4.0E-03ardado 
+[ 30.755] %BEEEEEEEEEEP 4
+[ 30.802]  La tarea colision ha tardado  5.2E-02
+[ 30.827] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 30.859] %Light(1): ON
+[ 30.897]  La tarea altitud_cabeceo_alabeo ha tardado  7.1E-02
+[ 30.933]  La tarea velocidad ha tardado  4.0E-03 1.6E-02
+[ 30.964] %L(2): off
+[ 30.976]  La tarea riesgos ha tardado  1.4E-02
+[ 31.002]  La tarea colision ha tardado  1.7E-03
+[ 31.033] %Light(1): ON
+[ 31.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 31.104] %L(2): off
+[ 31.116]  La tarea riesgos ha tardado  1.2E-01
+[ 31.142] %L(2): off
+[ 31.153]  La tarea riesgos ha tardado  1.4E-02
+[ 31.180] %L(2): off
+[ 31.191]  La tar
+[ 31.206] %Light(1): ON
+[ 31.245] 
+[ 31.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 31.307]  La tarea velocidad ha tardado  4.0E-03ea riesgos ha tardado  1.4E-02
+[ 31.349] %L(2): off
+[ 31.361]  La tarea riesgos ha tardado  1.4E-02
+[ 31.387] %L(2): off
+[ 3
+[ 31.406] %Light(1): ON
+[ 31.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-021.398]  La tarea riesgos ha tardado  1.4E-02 2
+[ 31.502]  La tarea colision ha tardado  1.7E-03
+[ 31.530]  La tarea velocidad ha tardado  4.0E-03
+[ 31.557] %L(2): off
+[ 31.569]  La tarea riesgos ha tardado  1.4E-028.199]  La tar
+[ 31.606] %Light(1): ON
+[ 31.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02ea visualizacion ha tardado  3.2E+00
+[ 31.714] ..# MSSG: Mostrar Datos: 
+[ 31.737] ..# Altitude:  1
+[ 31.752]  La tarea colision ha tardado  1.7E-030160
+[ 31.783] ..# Pilot_Power:  800
+[ 31.806] %Light(1): ON
+[ 31.844]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 31.880]  La tarea velocidad ha tardado  4.0E-03
+[ 31.907] %L(2): off
+[ 31.919]  La tarea riesgos ha tardado  1.4E-02
+[ 31.946] ..# Speed:  960
+[ 31.963] ..# Joystick:  1-2
+[ 31.981] ..# Pitch:  0
+[ 31
+[ 32.002]  La tarea colision ha tardado  1.7E-03
+[ 32.032] %Light(1): ON
+[ 32.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 32.106]  La tarea velocidad ha tardado  4.0E-03
+[ 32.133] %L(2): off
+[ 32.145]  La tarea riesgos ha tardado  1.4E-02.998] ..# Roll:  0
+[ 32.183] ..# MSSG: Modo: Automát
+[ 32.211] %Light(1): ON
+[ 32.245] 
+[ 32.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02ico
+[ 32.309]  La tarea visualizacion ha tardado  6.1E-01
+[ 32.356] ..# MSSG: Mostrar Datos: 
+[ 32.378] ..# Altitude:  10160
+[ 32.
+[ 32.406] %Light(1): ON
+[ 32.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 32.480]  La tarea velocidad ha tardad
+[ 32.502]  La tarea colision ha tardado  1.7E-03o  4.0E-03
+[ 32.534] %L(2): off
+[ 32.545]  La tarea riesgos ha tardado  1.4E-02398] ..# Pilot_Power:  800
+[ 32.587] ..# Speed:  960
+[ 32.606] %Light(1): ON
+[ 32.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 32.680] ..# Joystick:  0 3
+[
+[ 32.704]  La tarea velocidad ha tardado  4.0E-03
+[ 32.731] %L(2): off
+[ 32.743]  La 
+[ 32.752]  La tarea colision ha tardado  1.7E-03tarea riesgos ha tardado  1.4E-02 32.699] ..# 
+[ 32.806] %Light(1): ON
+[ 32.844]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02Pitch:  0
+[ 32.885] ..# Roll:  0
+[ 32.901] ..# MSSG: Modo: Automático
+[ 32.924]  La tarea visualizacion ha tardado  5.9E-01
+[ 32.971] ..# MSSG: Mostrar Datos: 
+[ 32.993] ..#
+[ 33.002]  La tarea colision ha tardado  1.7E-03
+[ 33.032] %Light(1): ON
+[ 33.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 33.106]  La tarea velocidad ha tardado  4.0E-03
+[ 33.133] %L(2): off
+[ 33.145]  La tarea riesgos ha tardado  1.4E-02 Altitude:  10160
+[ 33.182] ..# Pilot_Power:  800
+[ 33.206] %Light(1): ON
+[ 33.245] 
+[ 33.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 33.307]  La tarea velocidad ha tardado  4.0E-03
+[ 33.334] %L(2): off
+[ 33.345]  La tarea riesgos ha tardado  1.4E-02
+[ 33.372] ..# Speed:  960
+[ 33.389] ..# Joystick
+[ 33.406] %Light(1): ON
+[ 33.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02: -3-20
+[ 33.484] ..# Pitch:  0
+[ 33.502]  La tarea colision ha tardado  1.7E-03
+[ 33.527] ..# Roll:  0
+[ 33.542] ..# MSSG: Modo: Automático
+[ 33.566]  La tarea visualizacion ha tardado  6.1E-01
+[ 33.610] %Light(1): ON
+[ 33.648]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 33.683]  La tarea velocidad ha tardado  4.0E-03
+[ 33.711] %L(2): off
+[ 33.722]  La tarea riesgos ha tardado  1.4E-02
+[ 33.755]  La tarea colision ha tardado  1.7E-03
+[ 33.782] ..# MSSG: Mostrar Datos: 
+[ 33.806] %Light(1): ON
+[ 33.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 33.880] ..# Altitude:  10160
+[ 33.904]  La tarea velocidad ha tardado  4.0E-03
+[ 33.931] %L(2): off
+[ 33.943]  La tarea riesgos ha tardado  1.4E-02
+[ 33.967] ..# Pilot_Power:  800
+[ 33.987] ..# Speed:  96
+[ 34.002]  La tarea colision ha tardado  1.7E-03
+[ 34.032] %Light(1): ON
+[ 34.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-020
+[ 34.107] ..# Joystick:  0-45
+[ 34.126] ..# Pitch:  0
+[ 34.142] ..# Roll:  0
+[ 34.158] ..# MSSG: Modo: Automático
+[ 34.182]  La tarea visualizacion ha
+[ 34.206] %Light(1): ON
+[ 34.245] 
+[ 34.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 34.307]  La tarea velocidad ha tardado  4.0E-03
+[ 34.334] %L(2): off
+[ 34.345]  La tarea riesgos ha tardado  1.4E-02 tardado  5.9E-01
+[ 34
+[ 34.406] %Light(1): ON
+[ 34.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02.398] ..# MSSG: Mostrar Datos: 
+[ 34.49
+[ 34.502]  La tarea colision ha tardado  1.7E-03
+[ 34.530]  La tarea velocidad ha tardado  4.0E-03
+[ 34.557] %L(2): off
+[ 34.569]  La tarea riesgos ha tardado  1.4E-027] ..# Altitud
+[ 34.606] %Light(1): ON
+[ 34.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02e:  10160
+[ 34.685] ..# Pilot_Power:  800
+[ 34.705] ..# Speed:  960
+[ 34.723] ..# Joystick: -3-45
+[ 34.742] ..# Pi
+[ 34.752]  La tarea colision ha tardado  1.7E-03tch:  0
+[ 34.784] ..# Roll:  0
+[ 34.806] %Light(1): ON
+[ 34.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 34.880]  La tarea velocidad ha tardado  4.0E-03
+[ 34.907] %L(2): off
+[ 34.919]  La tarea riesgos ha tardado  1.4E-02
+[ 34.943] ..# MSSG: Modo: Automático
+[ 34.967]  La tarea visualizacion ha tardado  5.9E-01
+[ 35.002]  La tarea colision ha tardado  1.7E-03
+[ 35.033] %Light(1): ON
+[ 35.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 35.106]  La tarea velocidad ha tardado  4.0E-03
+[ 35.134] %Light(2): ON
+[ 35.147]  La tarea riesgos ha tardado  1.6E-02
+[ 35.184] ..# MSSG: Mostrar Dat
+[ 35.206] %Light(1): ON
+[ 35.245] 
+[ 35.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02os: 
+[ 35.309] ..# Altitude:  10160
+[ 35.329] ..# Pilot_Power:  900
+[ 35.349] ..# Speed:  1000
+[ 35.367] ..# Joystick:  0-47
+[ 35.386] ..# Pitch:  0
+[ 35.406] %Light(1): ON
+[ 35.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 35.480]  La tarea velocidad ha tardad
+[ 35.502]  La tarea colision ha tardado  1.7E-03o  4.0E-03
+[ 35.534] %Light(2): ON
+[ 35.547]  La tarea riesgos ha tardado  1.6E-02
+[ 35.573] ..# Roll:  0
+[ 35.588] ..# MSSG: Mo
+[ 35.606] %Light(1): ON
+[ 35.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02do: Automático
+[ 35.688]  La tarea vi
+[ 35.704]  La tarea velocidad ha tardado  4.0E-03
+[ 35.731] %Light(2): ON
+[ 35.744]  
+[ 35.752]  La tarea colision ha tardado  1.7E-03La tarea riesgos ha tardado  1.6E-02sualizacio
+[ 35.806] %Light(1): ON
+[ 35.844]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02n ha tardado  6.9E-01
+[ 35.907] ..# MSSG: Mostrar Datos: 
+[ 35.929] ..# Altitude:  10160
+[ 35.949] ..# Pilot_Power:  900
+[ 35.969] ..# Speed:  1000
+[ 35.987] ..# Joystick: -3
+[ 36.002]  La tarea colision ha tardado  1.7E-03
+[ 36.032] %Light(1): ON
+[ 36.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 36.106]  La tarea velocidad ha tardado  4.0E-03
+[ 36.133] %Light(2): ON
+[ 36.146]  La tarea riesgos ha tardado  1.6E-02-46
+[ 36.176] ..# Pitch:  0
+[ 36.192] ..# 
+[ 36.206] %Light(1): ON
+[ 36.245] 
+[ 36.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 36.307]  La tarea velocidad ha tardado  4.0E-03
+[ 36.334] %Light(2): ON
+[ 36.347]  La tarea riesgos ha tardado  1.6E-02Roll:  0
+[ 36.380] ..# MSSG: Modo: Automático
+[ 36.406] %Light(1): ON
+[ 36.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 36.479]  La tarea visualizacion ha tard
+[ 36.506]  La tarea colision ha tardado  1.7E-03ado  5.9E-01
+[ 36.552] ..# MSSG: Mostrar Datos: 
+[ 36.574] ..# Altitude:  10160
+[ 36.594] .
+[ 36.606] %Light(1): ON
+[ 36.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 36.680]  La tarea velocidad ha tardado  4.0E-03
+[ 36.707] %L(2): off
+[ 36.719]  La tarea riesgos ha tardado  1.4E-02.# Pilot_Power
+[ 36.752]  La tarea colision ha tardado  1.7E-03:  900
+[ 36.784] ..# Speed:  1000
+[ 36.806] %Light(1): ON
+[ 36.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 36.878] ..# Joystick:  3 1
+[ 36.89
+[ 36.904]  La tarea velocidad ha tardado  4.0E-03
+[ 36.931] %L(2): off
+[ 36.943]  La tarea riesgos ha tardado  1.4E-026] ..# Pitch:  0
+[ 36.979] ..# Roll:  0
+[ 36.995] 
+[ 37.002]  La tarea colision ha tardado  1.7E-03
+[ 37.032] %Light(1): ON
+[ 37.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02..# MSSG: Modo: Automático
+[ 37.120]  La tarea visualizacion ha tardado  5.9E-01
+[ 37.167] ..# MSSG: Mostrar Datos: 
+[ 37.190] ..# Altitu
+[ 37.206] %Light(1): ON
+[ 37.245] 
+[ 37.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 37.307]  La tarea velocidad ha tardado  4.0E-03
+[ 37.334] %Light(2): ON
+[ 37.347]  La tarea riesgos ha tardado  1.6E-02de:  10160
+[ 37.380] ..# Pilot_Power:  100
+[ 37.406] %Light(1): ON
+[ 37.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 37.477] ..# Speed:  360
+[ 37.494] .
+[ 37.502]  La tarea colision ha tardado  1.7E-03
+[ 37.530]  La tarea velocidad ha tardado  4.0E-03
+[ 37.557] %Light(2): ON
+[ 37.570]  La tarea riesgos ha tardado  1.6E-02.# Joystick
+[ 37.606] %Light(1): ON
+[ 37.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02:  3 1
+[ 37.684] ..# Pitch:  0
+[ 37.700] ..# Roll:  0
+[ 37.716] ..# MSSG: Modo: Automático
+[ 37.739]  La tarea v
+[ 37.752]  La tarea colision ha tardado  1.7E-03isualizacion ha tardado  5.9E-01
+[ 37.809] %Light(1): ON
+[ 37.847]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 37.883]  La tarea velocidad ha tardado  4.0E-03
+[ 37.910] %Light(2): ON
+[ 37.923]  La tarea riesgos ha tardado  1.6E-02
+[ 37.957] ..# MSSG: Mostrar Datos: 
+[ 37.979] ..# Altitude:  10160
+[ 
+[ 38.002]  La tarea colision ha tardado  1.7E-03
+[ 38.032] %Light(1): ON
+[ 38.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 38.106]  La tarea velocidad ha tardado  4.0E-03
+[ 38.133] %Light(2): ON
+[ 38.146]  La tarea riesgos ha tardado  1.6E-0237.999] ..# Pilot_Power:  100
+[ 38.190] ..# Speed:
+[ 38.206] %Light(1): ON
+[ 38.245] 
+[ 38.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02  300
+[ 38.310] ..# Joystick: -3 1
+[ 38.328] ..# Pitch:  0
+[ 38.345] ..# Roll:  0
+[ 38.360] ..# MSSG: Modo: Automático
+[ 38.384]  La tarea visualizacio
+[ 38.406] %Light(1): ON
+[ 38.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 38.480]  La tarea velocidad ha tardad
+[ 38.502]  La tarea colision ha tardado  1.7E-03o  4.0E-03
+[ 38.534] %Light(2): ON
+[ 38.547]  La tarea riesgos ha tardado  1.6E-02n ha tardado  5.9E-01
+[ 38.608] %Light(1): ON
+[ 38.650]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 38.678] ..# MSSG: Mostrar Datos: 
+[ 38.704]  La tarea velocidad ha tardado  4.0E-03
+[ 38.731] %Light(2): ON
+[ 38.744]  
+[ 38.752]  La tarea colision ha tardado  1.7E-03La tarea riesgos ha tardado  1.6E-02
+[ 38.795]
+[ 38.806] %Light(1): ON
+[ 38.844]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 ..# Altitude:  10160
+[ 38.891] ..# Pilot_Power:  103
+[ 38.912] ..# Speed:  300
+[ 38.929] ..# Joystick:  3-1
+[ 38.947] ..# Pitch:  0
+[ 38.964] ..# Roll:  0
+[ 38.979] ..# MSSG: Modo: Automático
+[ 39.002]  La tarea colision ha tardado  1.7E-03
+[ 39.032] %Light(1): ON
+[ 39.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 39.106]  La tarea velocidad ha tardado  4.0E-03
+[ 39.133] %Light(2): ON
+[ 39.146]  La tarea riesgos ha tardado  1.6E-02
+[ 39.173]  La tarea visualizacion ha tardado  5.9E-0
+[ 39.206] %Light(1): ON
+[ 39.245] 
+[ 39.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 39.307]  La tarea velocidad ha tardado  4.0E-03
+[ 39.334] %L(2): off
+[ 39.345]  La tarea riesgos ha tardado  1.4E-021
+[ 39.390] ..# MSSG: 
+[ 39.406] %Light(1): ON
+[ 39.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02Mostrar Datos: 
+[ 39.488] ..# Altitude:
+[ 39.502]  La tarea colision ha tardado  1.7E-03  10160
+[ 39.534] ..# Pilot_Power:  800
+[ 39.554] ..# Speed:  960
+[ 39.572] ..# Joystick: -3 1
+[ 39.590] ..# Pitch
+[ 39.606] %Light(1): ON
+[ 39.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 39.680]  La tarea velocidad ha tardado  4.0E-03
+[ 39.707] %L(2): off
+[ 39.719]  La tarea riesgos ha tardado  1.4E-02:  0
+[
+[ 39.752]  La tarea colision ha tardado  1.7E-03 39.749] ..# Roll:  0
+[ 39.791] ..# MSS
+[ 39.806] %Light(1): ON
+[ 39.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02G: Modo: Automático
+[ 39.891]  La tar
+[ 39.904]  La tarea velocidad ha tardado  4.0E-03
+[ 39.931] %L(2): off
+[ 39.943]  La tarea riesgos ha tardado  1.4E-02ea visualizacion ha tardado  5.2E-01
+[ 40.004]  La tarea colision ha tardado  1.7E-03
+[ 40.035] %Light(1): ON
+[ 40.073]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 40.107] ..# MSSG: Mostrar Datos: 
+[ 40.129] ..# Altitude:  10160
+[ 40.149] ..# Pilot_Power:  800
+[ 40.169] ..# Speed:  960
+[ 40.187] ..# Joystick:  3
+[ 40.206] %Light(1): ON
+[ 40.245] 
+[ 40.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 40.307]  La tarea velocidad ha tardado  4.0E-03
+[ 40.334] %L(2): off
+[ 40.345]  La tarea riesgos ha tardado  1.4E-02-1
+[ 40.375] ..# Pitch:  0
+[ 40.391] ..# Roll
+[ 40.406] %Light(1): ON
+[ 40.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02:  0
+[ 40.483] ..# MSSG: Modo: Automá
+[ 40.502]  La tarea colision ha tardado  1.7E-03
+[ 40.530]  La tarea velocidad ha tardado  4.0E-03
+[ 40.557] %L(2): off
+[ 40.569]  La tarea riesgos ha tardado  1.4E-02tico
+[
+[ 40.606] %Light(1): ON
+[ 40.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 40.599]  La tarea visualizacion ha tardado  6.1E-01
+[ 40.723] ..# MSSG: Mostrar Datos: 
+[ 40.745] 
+[ 40.752]  La tarea colision ha tardado  1.7E-03..# Altitude:  10160
+[ 40.791] ..# Pilo
+[ 40.806] %Light(1): ON
+[ 40.844]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 40.880]  La tarea velocidad ha tardado  4.0E-03
+[ 40.907] %L(2): off
+[ 40.919]  La tarea riesgos ha tardado  1.4E-02t_Power:  800
+[ 40.954] ..# Speed:  960
+[ 40.971] ..# Joystick:  1-2
+[ 40.990] ..# Pitch:
+[ 41.002]  La tarea colision ha tardado  1.7E-03
+[ 41.032] %Light(1): ON
+[ 41.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 41.106]  La tarea velocidad ha tardado  4.0E-03
+[ 41.133] %L(2): off
+[ 41.145]  La tarea riesgos ha tardado  1.4E-02  0
+[ 41.175] ..# Roll:  0
+[ 41.190] ..# MSSG
+[ 41.206] %Light(1): ON
+[ 41.245] 
+[ 41.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02: Modo: Automático
+[ 41.317]  La tarea visualizacion ha tardado  6.1E-01
+[ 41.364] ..# MSSG: Mostrar Datos: 
+[ 41.386] ..# Altitude:  10
+[ 41.406] %Light(1): ON
+[ 41.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 41.480]  La tarea velocidad ha tardad
+[ 41.502]  La tarea colision ha tardado  1.7E-03o  4.0E-03
+[ 41.534] %L(2): off
+[ 41.545]  La tarea riesgos ha tardado  1.4E-02160
+[ 41.575] ..# Pilot_Power:  800
+[ 41.595]
+[ 41.606] %Light(1): ON
+[ 41.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 ..# Speed:  960
+[ 41.689] ..# Joystick
+[ 41.704]  La tarea velocidad ha tardado  4.0E-03
+[ 41.731] %L(2): off
+[ 41.743]  La 
+[ 41.752]  La tarea colision ha tardado  1.7E-03tarea riesgos ha tardado  1.4E-02:  0 3
+[ 41.806] %Light(1): ON
+[ 41.844]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 41.877] ..# Pitch:  0
+[ 41.893] ..# Roll:  0
+[ 41.909] ..# MSSG: Modo: Automático
+[ 41.932]  La tarea vis
+[ 14.956] ..# Pitch:  3
+[ 14.972] ..# Roll:  45
+[ 14.988] ..# MSSG: Mod
+[ 15.002]  La tarea colision ha tardado  1.7E-03
+[ 15.031] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 15.059] %L(1): off
+[ 15.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 15.106]  La tarea velocidad ha tardado  4.0E-03
+[ 15.134] %Light(2): ON
+[ 15.149]  La tarea riesgos ha tardado  1.8E-02o: Automático
+[ 15.184]  La tarea visualizac
+[ 15.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 15.233] %L(1): off
+[ 15.245] 
+[ 15.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 15.307]  La tarea velocidad ha tardado  4.0E-03
+[ 15.334] %Light(2): ON
+[ 15.349]  La tarea riesgos ha tardado  1.8E-02ion ha tardado  6.0E-01
+[ 15.403] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 15.436] %L(1): off
+[ 15.447]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 15.481] ..# MSSG: Mostrar Datos: 
+[ 15.502]  La tarea colision ha tardado  1.7E-03
+[ 15.530] ..# Altitude:  9100
+[ 15.549] ..# Pilot_Power:  900
+[ 15.569] ..# Speed:  1000
+[ 15.587] ..# Joystick: -3
+[ 15.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 15.633] %L(1): off
+[ 15.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 15.680]  La tarea velocidad ha tardado  4.0E-03
+[ 15.708] %Light(2): ON
+[ 15.723]  La tarea riesgos ha tardado  1.8E-02-45
+[ 15.752]  La tarea colision ha tardado  1.7E-03
+[ 15.779] ..# Pitch:  3
+[ 15.795] 
+[ 15.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 15.833] %L(1): off
+[ 15.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02..# Roll:  45
+[ 15.887] ..# MSSG: Modo
+[ 15.904]  La tarea velocidad ha tardado  4.0E-03
+[ 15.931] %Light(2): ON
+[ 15.946]  La tarea riesgos ha tardado  1.8E-02: Automático
+[ 15.982]  La tarea visualizacion ha
+[ 16.002]  La tarea colision ha tardado  1.7E-03
+[ 16.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 16.059] %L(1): off
+[ 16.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 tardado  6.0E-01
+[ 16.131] ..# MSSG: Mostrar Datos: 
+[ 16.153] ..# Altitude:  9100
+[ 16.172] ..# Pilot_Power:  900
+[ 16.192] ..# S
+[ 16.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 16.233] %L(1): off
+[ 16.245] 
+[ 16.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 16.307]  La tarea velocidad ha tardado  4.0E-03
+[ 16.334] %Light(2): ON
+[ 16.349]  La tarea riesgos ha tardado  1.8E-02peed:  1000
+[ 16.383] ..# Joystick:  0-17
+[ 16.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 16.433] %L(1): off
+[ 16.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 16.479] ..# Pitch:  3
+[ 16.495] 
+[ 16.502]  La tarea colision ha tardado  1.7E-03
+[ 16.530]  La tarea velocidad ha tardado  4.0E-03
+[ 16.557] %Light(2): ON
+[ 16.572]  La tarea riesgos ha tardado  1.8E-02..# Ro
+[ 16.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 16.633] %L(1): off
+[ 16.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02ll:  45
+[ 16.684] ..# MSSG: Modo: Automático
+[ 16.708]  La tarea visualizacion ha tardado  6.0E-01
+[ 16.754]  La tarea colision ha tardado  1.7E-03
+[ 16.781] ..# MSSG: Mostrar Datos: 
+[ 16.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 16.833] %L(1): off
+[ 16.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 16.880]  La tarea velocidad ha tardado  4.0E-03
+[ 16.907] %L(2): off
+[ 16.925]  La tarea riesgos ha tardado  2.0E-02
+[ 16.952] ..# Altitude:  9100
+[ 16.971] ..# Pilot_Power:  500
+[ 16.992] ..# Sp
+[ 17.002]  La tarea colision ha tardado  1.7E-03
+[ 17.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 17.059] %L(1): off
+[ 17.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 17.106]  La tarea velocidad ha tardado  4.0E-03
+[ 17.134] %Light(2): ON
+[ 17.153]  La tarea riesgos ha tardado  2.2E-02eed:  1000
+[ 17.186] ..# Joystick:  0 
+[ 17.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 17.233] %L(1): off
+[ 17.245] 
+[ 17.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-023
+[ 17.308] ..# Pitch:  3
+[ 17.324] ..# Roll:  45
+[ 17.340] ..# MSSG: Modo: Automático
+[ 17.363]  La tarea visualizacion ha tardado  6.3E-01
+[ 17.402] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 17.434] %L(1): off
+[ 17.446]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 17.481]  La tarea velocidad ha tard
+[ 17.502]  La tarea colision ha tardado  1.7E-03ado  4.0E-03
+[ 17.535] %Light(2): ON
+[ 17.554]  La tarea riesgos ha tardado  2.2E-02
+[ 17.587] ..# MSSG: Mostr
+[ 17.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 17.633] %L(1): off
+[ 17.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02ar Datos: 
+[ 17.686] ..# Altitude:  91
+[ 17.704]  La tarea velocidad ha tardado  4.0E-03
+[ 17.731] %Light(2): ON
+[ 17.752]  La tarea colision ha tardado  1.7E-03
+[ 17.777]  La tarea riesgos ha tardado  4.8E
+[ 17.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 17.833] %L(1): off
+[ 17.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02-0200
+[ 17.883] ..# Pilot_Power:  100
+[ 17.903] ..# Speed:  240
+[ 17.921] ..# Joystick:  3 1
+[ 17.939] ..# Pitch:  3
+[ 17.955] ..# Roll:  45
+[ 17.972] ..# MSSG: Modo: Automático
+[ 17.995] 
+[ 18.002]  La tarea colision ha tardado  1.7E-03
+[ 18.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 18.059] %L(1): off
+[ 18.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 18.106]  La tarea velocidad ha tardado  4.0E-03
+[ 18.134] %Light(2): ON
+[ 18.153]  La tarea riesgos ha tardado  2.2E-02 La tarea visualizacion ha tardado  6.0E-01
+[ 18.206] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 18.239] %L(1): off
+[ 18.252]  La tarea colision ha tardado  1.7E-03
+[ 18.277]  La tarea altitud_cabeceo_alabeo ha tardado  7.1E-02
+[ 18.312]  La tarea velocidad ha tardado  4.0E-03
+[ 18.340] %Light(2): ON
+[ 18.359]  La tarea riesgos ha tardado  2.2E-02
+[ 18.396
+[ 18.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 18.433] %L(1): off
+[ 18.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02] ..# MSSG: Mostrar Datos: 
+[ 18.495] 
+[ 18.502]  La tarea colision ha tardado  1.7E-03..# Altitude:  9100
+[ 18.540] ..# Pilot_Power:  103
+[ 18.561] ..# Speed:  252
+[ 18.578] ..# Joystick: -3 1
+[ 18.59
+[ 18.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 18.633] %L(1): off
+[ 18.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 18.680]  La tarea velocidad ha tardado  4.0E-03
+[ 18.708] %Light(2): ON
+[ 18.727]  La tarea riesgos ha tardado  2.2E-
+[ 18.752]  La tarea colision ha tardado  1.7E-03026] ..# Pitch:  3
+[ 18.790] ..# Roll: 
+[ 18.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 18.833] %L(1): off
+[ 18.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02 45
+[ 18.882] ..# MSSG: Modo: Automát
+[ 18.904]  La tarea velocidad ha tardado  4.0E-03
+[ 18.931] %Light(2): ON
+[ 18.950]  La tarea riesgos ha tardado  2.2E-02ico
+[ 18.980]  La tarea visualizacion ha t
+[ 19.002]  La tarea colision ha tardado  1.7E-03
+[ 19.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 19.059] %L(1): off
+[ 19.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02ardado  7.8E-01
+[ 19.130] ..# MSSG: Mostrar Datos: 
+[ 19.152] ..# Altitude:  9100
+[ 19.171] ..# Pilot_Power:  900
+[ 19.191] ..# Spe
+[ 19.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 19.233] %L(1): off
+[ 19.245] 
+[ 19.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 19.307]  La tarea velocidad ha tardado  4.0E-03
+[ 19.334] %L(2): off
+[ 19.350]  La tarea riesgos ha tardado  1.8E-02ed:  240
+[ 19.382] ..# Joystick:  3 1
+[ 19.401] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 19.433] %L(1): off
+[ 19.445]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 19.477] ..# Pitch:  3
+[ 19.494] ..
+[ 19.502]  La tarea colision ha tardado  1.7E-03
+[ 19.530]  La tarea velocidad ha tardado  4.0E-03
+[ 19.557] %L(2): off
+[ 19.573]  La tarea riesgos ha tardado  1.8E-02# Rol
+[ 19.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 19.633] %L(1): off
+[ 19.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02l:  45
+[ 19.684] ..# MSSG: Modo: Automático
+[ 19.707]  La tarea visualizacion ha tardado  6.0E-01
+[ 19.753]  La tarea colision ha tardado  1.7E-03
+[ 19.780] ..# MSSG: Mostrar Datos: 
+[ 19.801] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 19.833] %L(1): off
+[ 19.845]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 19.880]  La tarea velocidad ha tardado  4.0E-03
+[ 19.907] %L(2): off
+[ 19.923]  La tarea riesgos ha tardado  1.8E-02
+[ 19.950] ..# Altitude:  9100
+[ 19.969] ..# Pilot_Power:  800
+[ 19.990] ..# Speed:
+[ 20.002]  La tarea colision ha tardado  1.7E-03
+[ 20.027] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 20.059] %L(1): off
+[ 20.071]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 20.106]  La tarea velocidad ha tardado  4.0E-03
+[ 20.134] %L(2): off
+[ 20.149]  La tarea riesgos ha tardado  1.8E-02  1000
+[ 20.181] ..# Joystick:  0 3
+
+[ 20.201] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 20.233] %L(1): off
+[ 20.245] 
+[ 20.252]  La tarea colision ha tardado  1.7E-03 La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02[ 20.303] ..# Pitch:  3
+[ 20.319] ..# Roll:  45
+[ 20.335] ..# MSSG: Modo: Automático
+[ 20.358]  La tarea visualizacion ha tardado  6.2E-01
+[ 20.404] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 20.436] %L(1): off
+[ 20.448]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 20.483]  La tarea velocidad ha 
+[ 20.502]  La tarea colision ha tardado  1.7E-03tardado  4.0E-03
+[ 20.537] %L(2): off
+[ 20.553]  La tarea riesgos ha tardado  1.8E-02
+[ 20.579] ..# MSSG: Mostrar Datos: 
+[ 20.601] ..# MSSG: ALERTA, ALABEO PELIGROSO
+[ 20.633] %L(1): off
+[ 20.645]  La tarea altitud_cabeceo_alabeo ha tardado  4.5E-02
+[ 20.678] ..# Altitude:  9100
+Interrupt!
+ Stopped at time 421769091 (3.013e+01 s)
+tsim> 

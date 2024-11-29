@@ -3,6 +3,8 @@ with Ada.Real_Time;        use Ada.Real_Time;
 with System;               use System;
 with tools;         use tools;
 with devicesFSS_V1; use devicesFSS_V1;
+with Text_IO; use Text_IO;
+
 
 package body fss is
 
@@ -13,7 +15,6 @@ package body fss is
       end loop;
    end Background;
 
-   -- Modo del Sistema: Automático (True) o Manual (False)
    protected System_Mode is
       procedure Toggle_Mode;
       function Is_Automatic return Boolean;
@@ -209,11 +210,11 @@ package body fss is
          end if;
 
          Shared_Velocidad := velocidad_actual;
-         Periodo := Clock - Comienzo;
+         Periodo := To_Duration(Clock - Comienzo);
          -- escribimos el calculo
          Tiempo := float (Periodo);
-         Print_a_String("La tarea ha tardado ");
-         Print_a_Float(Tiempo)
+         tools.Print_a_String("La tarea velocidad ha tardado ");
+         tools.Print_a_Float(Tiempo);
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
 
@@ -272,11 +273,11 @@ package body fss is
          end if;
 
          Shared_Velocidad := velocidad;
-         Periodo := Clock - Comienzo;
+         Periodo := To_Duration(Clock - Comienzo);
          -- escribimos el calculo
          Tiempo := float (Periodo);
-         Print_a_String("La tarea ha tardado ");
-         Print_a_Float(Tiempo)
+         Print_a_String("La tarea riesgos ha tardado ");
+         Print_a_Float(Tiempo);
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(300);
 
@@ -320,11 +321,11 @@ package body fss is
                Altitude.Set_Altitude(0, 0);
             end if;
          end if;
-         Periodo := Clock - Comienzo;
+         Periodo := To_Duration(Clock - Comienzo);
          -- escribimos el calculo
          Tiempo := float (Periodo);
-         Print_a_String("La tarea ha tardado ");
-         Print_a_Float(Tiempo)
+         Print_a_String("La tarea altitud_cabeceo_alabeo ha tardado ");
+         Print_a_Float(Tiempo);
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(200);
       end loop;
@@ -365,11 +366,11 @@ package body fss is
                end if;
             end if;
          end if;
-         Periodo := Clock - Comienzo;
+         Periodo := To_Duration(Clock - Comienzo);
          -- escribimos el calculo
          Tiempo := float (Periodo);
-         Print_a_String("La tarea ha tardado ");
-         Print_a_Float(Tiempo)
+         Print_a_String("La tarea colision ha tardado ");
+         Print_a_Float(Tiempo);
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(250);
       end loop;
@@ -410,11 +411,11 @@ package body fss is
          else
             Display_Message("Modo: Manual");
          end if;
-         Periodo := Clock - Comienzo;
+         Periodo := To_Duration(Clock - Comienzo);
          -- escribimos el calculo
          Tiempo := float (Periodo);
-         Print_a_String("La tarea ha tardado ");
-         Print_a_Float(Tiempo)
+         Print_a_String("La tarea visualizacion ha tardado ");
+         Print_a_Float(Tiempo);
          delay until siguiente_instante;
          siguiente_instante := siguiente_instante + Milliseconds(1000);
       end loop;
@@ -440,11 +441,11 @@ package body fss is
             end if;
          end if;
          Previous_State := Current_State;
-         Periodo := Clock - Comienzo;
+         Periodo := To_Duration(Clock - Comienzo);
          -- escribimos el calculo
          Tiempo := float (Periodo);
-         Print_a_String("La tarea ha tardado ");
-         Print_a_Float(Tiempo)
+         Print_a_String("La tarea modo_sistema ha tardado ");
+         Print_a_Float(Tiempo);
       end loop;
    end modo_sistema;
    -- Final de la tarea de Modo Sistema
