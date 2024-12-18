@@ -1,0 +1,301 @@
+V "GNAT Lib v6"
+M P W=b
+P ZX
+
+RN
+RV NO_DELAY
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_FIXED_POINT
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_DYNAMIC_CODE
+RV NO_LOCAL_PROTECTED_OBJECTS
+RV NO_PROTECTED_TYPES
+RV NO_RELATIVE_DELAY
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_TASK_HIERARCHY
+RV NO_TASKING
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV SPARK_05
+RV MAX_TASKS=1+
+RV MAX_ENTRY_QUEUE_LENGTH=1+
+
+U control2%b		control2.adb		b2f765ac NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.calendar.delays%s	a-caldel.adb		a-caldel.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.real_time%s	a-reatim.adb		a-reatim.ali
+W ada.real_time.delays%s  a-retide.adb		a-retide.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W devices_a%s		devices_a.ads		devices_a.ali
+W system%s		system.ads		system.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.concat_3%s	s-conca3.adb		s-conca3.ali
+W system.concat_4%s	s-conca4.adb		s-conca4.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.img_real%s	s-imgrea.adb		s-imgrea.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.task_info%s	s-tasinf.adb		s-tasinf.ali
+W system.tasking%s	s-taskin.adb		s-taskin.ali
+W system.tasking.protected_objects%s  s-taprob.adb  s-taprob.ali
+W system.tasking.stages%s  s-tassta.adb		s-tassta.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-calend.ads		20141120112812 d986d312 ada.calendar%s
+D a-caldel.ads		20140120152337 9f20b83d ada.calendar.delays%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-flteio.ads		20070406091342 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20070406091342 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-reatim.ads		20151026154432 428ef5f7 ada.real_time%s
+D a-retide.ads		20090409150019 081cdaa4 ada.real_time.delays%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-tiflio.ads		20140717063513 56fbda09 ada.text_io.float_io%s
+D a-tiinio.ads		20140717063513 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D control2.adb		20190302224034 bef674d2 control2%b
+D devices_a.ads		20190302235506 6123df59 devices_a%s
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D i-c.ads		20110801143639 5421119b interfaces.c%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D system.ads		20151123113124 2a1dd890 system%s
+D s-atacco.ads		20120515093410 4c36d12f system.address_to_access_conversions%s
+D s-conca2.ads		20140225151544 02a0d7d0 system.concat_2%s
+D s-conca3.ads		20140225151544 0b705ca5 system.concat_3%s
+D s-conca4.ads		20140225151544 7e642b20 system.concat_4%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-imgint.ads		20090409150019 02dbe0c2 system.img_int%s
+D s-imgrea.ads		20090409150019 c7a851e2 system.img_real%s
+D s-linux.ads		20150107101203 2fda6ad1 system.linux%s
+D s-multip.ads		20101011073009 38ac9f73 system.multiprocessors%s
+D s-oscons.ads		20180301000302 fd5f68f9 system.os_constants%s
+D s-osinte.ads		20151016132500 64f6e3c7 system.os_interface%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stausa.ads		20110804134155 017a0a05 system.stack_usage%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-tasinf.ads		20140613095942 2b3f8252 system.task_info%s
+D s-taspri.ads		20141120144719 368bb592 system.task_primitives%s
+D s-taprop.ads		20140521131406 1dd2e1b6 system.task_primitives.operations%s
+D s-taskin.ads		20151023124846 0766baa7 system.tasking%s
+D s-taprob.ads		20110927094500 502249e3 system.tasking.protected_objects%s
+D s-tassta.ads		20121029110946 70812003 system.tasking.stages%s
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 16|1r6 1r32 2r6 2r32 3r6 3r32 4r6 4r32
+X 5 a-flteio.ads
+20K13*Float_Text_IO[13|46] 16|3w10 3r36
+X 6 a-inteio.ads
+18K13*Integer_Text_IO[14|46] 16|2w10 2r36
+X 8 a-reatim.ads
+39K13*Real_Time 186e18 16|4w10 4r36
+50O9*Time<duration> 16|422r19 444r19 485r19 516r19 539r19 554r19
+55O9*Time_Span<duration> 16|30r33 31r33 32r33 33r33 34r33
+62V13*Clock{50O9} 16|422s27 444s27 485s27 516s27 539s27 554s27
+66V14*"+"{50O9} 16|433s33 447s32 488s32 519s32 542s32 557s32
+120V13*Milliseconds{55O9} 16|30s46 31s46 32s46 33s46 34s46 433s35
+X 12 a-textio.ads
+49K13*Text_IO 471e16 16|1w10 1r36
+166U14*New_Line 16|627s56
+242U14*Put 16|627s4
+263U14*Put_Line 16|359s10 394s10 592s13 593s13 594s13 595s13 596s13 597s13
+. 598s13 599s13 600s13 601s13 602s13 603s13 612s7 623s4
+X 14 a-tiinio.ads
+66U14*Put 16|627s45[6|18]
+X 16 control2.adb
+7U11*control2 7b11 640l5 640t13
+18I12 Pitch_Samples_Type{integer} 38r33 39r33 48r26 55r33 66r33 268r30 274r18
+. 522r24 563r18
+19I12 Roll_Samples_Type{integer} 40r32 41r32 49r26 71r32 82r32 292r29 356r11
+. 523r24 564r18
+20I12 Altitude_Samples_Type{integer} 42r36 43r36 50r26 87r36 98r36 104r20
+. 106r21 331r13 399r19 450r22 559r19
+21I12 Speed_Samples_Type{integer} 45r33 46r33 51r26 115r33 126r33 303r22
+. 304r22 366r14 560r19
+22I12 Power_Samples_Type{integer} 133r39 134r39 154r25 164r39 169r39 300r39
+. 521r24 561r19
+23I12 Light_Samples_Type{integer} 136r38 137r38 155r25 174r38 179r38 367r14
+. 566r19
+24I12 Joystick_Samples_Type{integer} 139r39 140r40 156r25 184r39 190r40 449r22
+. 490r22 562r22
+25F12 Distance_Samples_Type{float} 148r36 149r36 159r25 219r36 224r36 365r14
+. 567r19
+27E9 Mode_Type 27e41 152r32 160r25 238r32 369r14 451r22 565r18
+27n23 Automatic{27E9} 160r38 231r28 234r29 397r14 578r20
+27n34 Manual{27E9} 232r29
+30o4 Pitch_Alt_Period{8|55O9} 447r34
+31o4 Roll_Period{8|55O9} 488r34
+32o4 Speed_Period{8|55O9} 519r34
+33o4 Obstacle_Period{8|55O9} 542r34
+34o4 Display_Period{8|55O9} 557r34
+37W19 Aircraft_State 48E7 52l8 52e22 54b19 130l8 130t22 244r14
+38U17 Set_Pitch 38>27 55b17 64l11 64t20 271s15
+38i27 P{18I12} 55b27 57r13 59r16 62r30
+39V16 Get_Pitch{18I12} 66b16 69l11 69t20 274s48 522s54 563s48
+40U17 Set_Roll 40>26 71b17 80l11 80t19 295s15
+40i26 R{19I12} 71b26 73r13 75r16 78r29
+41V16 Get_Roll{19I12} 82b16 85l11 85t19 356s40 523s53 564s47
+42U17 Set_Altitude 42>30 87b17 96l11 96t23
+42i30 A{20I12} 87b30 89r13 91r16 94r33
+43V16 Get_Altitude{20I12} 98b16 101l11 101t23 331s46 399s52 450s55 559s52
+44U17 Increment_Altitude 44>36 103b17 113l11 113t29 277s21 279s21 281s21
+. 283s21 285s21 287s21
+44i36 D{integer} 103b36 106r71
+45U17 Set_Speed 45>27 115b17 124l11 124t20 320s15
+45i27 S{21I12} 115b27 117r13 119r16 122r30
+46V16 Get_Speed{21I12} 126b16 129l11 129t20 303s52 366s47 560s49
+48i7 Current_Pitch{18I12} 58r13 60r13 62r13 68r17
+49i7 Current_Roll{19I12} 74r13 76r13 78r13 84r17
+50i7 Current_Altitude{20I12} 90r13 92r13 94r13 100r17 106r51 112r10
+51i7 Current_Speed{21I12} 118r13 120r13 122r13 128r17
+104i10 New_Alt{20I12} 106m10 107r13 108m13 109r16 110m13 112r30
+132W19 Global_State 154E7 161l8 161e20 163b19 242l8 242t20 245r14
+133U17 Set_Pilot_Power 133>33 164b17 167l11 167t26 427s18
+133i33 P{22I12} 164b33 166r25
+134V16 Get_Pilot_Power{22I12} 169b16 172l11 172t26 521s54 561s49
+136U17 Set_Visibility 136>32 174b17 177l11 177t25 428s18
+136i32 V{23I12} 174b32 176r24
+137V16 Get_Visibility{23I12} 179b16 182l11 182t25 367s47 566s49
+139U17 Set_Joystick 139>30 139>33 184b17 188l11 188t23 432s18
+139i30 X{24I12} 184b30 186r16
+139i33 Y{24I12} 184b33 187r16
+140U17 Get_Joystick 140<30 140<33 190b17 194l11 194t23 453s21 492s21 575s21
+140i30 X{24I12} 190b30 192m10
+140i33 Y{24I12} 190b33 193m10
+142U17 Set_Pilot_Button 142>34 196b17 202l11 202t27 429s18
+142i34 B{integer} 196b34 198r13 201r26
+143V16 Get_Pilot_Button{integer} 204b16 207l11 207t27
+145U17 Set_Pilot_Presence 145>36 209b17 212l11 212t29 430s18
+145i36 P{integer} 209b36 211r28
+146V16 Get_Pilot_Presence{integer} 214b16 217l11 217t29 368s33 568s38
+148U17 Set_Distance 148>30 219b17 222l11 222t23 431s18
+148f30 D{25F12} 219b30 221r26
+149V16 Get_Distance{25F12} 224b16 227l11 227t23 365s47 567s52
+151U17 Toggle_Mode 199s13 229b17 236l11 236t22
+152V16 Get_Mode{27E9} 238b16 241l11 241t19 369s35 451s43 565s39
+154i7 Pilot_Power{22I12} 166r10 171r17
+155i7 Visibility{23I12} 176r10 181r17
+156i7 JX{24I12} 186r10 192r15
+156i11 JY{24I12} 187r10 193r15
+157i7 Pilot_Button{integer} 198r23 201r10 206r17
+158i7 Pilot_Presence{integer} 211r10 216r17
+159f7 Distance_Obs{25F12} 221r10 226r17
+160e7 Current_Mode{27E9} 231r13 232r13 234r13 240r17
+244w4 A_State{37W19} 271r7 274r40 277r13 279r13 281r13 283r13 285r13 287r13
+. 295r7 303r44 320r7 331r38 356r32 366r39 399r44 450r47 522r46 523r45 559r44
+. 560r41 563r40 564r39
+245w4 G_State{132W19} 365r39 367r39 368r25 369r27 427r10 428r10 429r10 430r10
+. 431r10 432r10 451r35 453r13 492r13 521r46 561r41 565r31 566r41 567r44 568r30
+. 575r13
+247U14 Set_LED_1 247b14 247>24 255l8 255t17 334s10 336s10 344s10 346s10
+247b24 On_Off{boolean} 250r10
+248i7 aux{integer} 251m10 253m10
+257U14 Set_LED_2 257b14 257>24 265l8 265t17 323s10 325s10
+257b24 On_Off{boolean} 260r10
+258i7 aux{integer} 261m10 263m10
+268U14 Adjust_Pitch 268b14 268>27 290l8 290t20 340s10 350s10 402s16 404s16
+. 456s16 458s16 461s19 463s19 466s22 468s22
+268i27 P{18I12} 271r25 272r34
+269i7 aux{integer} 272m7
+274i10 p_val{18I12} 276r13 276r27 278r16 278r32 280r16 282r16 282r31 284r16
+. 284r33 286r16
+292U14 Adjust_Roll 292b14 292>26 297l8 297t19 406s16 408s16 494s16 496s16
+. 499s19 501s19
+292i26 R{19I12} 295r24 296r34
+293i7 aux{integer} 296m7
+300U14 Adjust_Speed 300b14 300>27 300>59 300>83 327l8 327t20 527s13
+300i27 PilotPower{22I12} 302r47
+300b59 IncreasePitch{boolean} 306r10 308r13
+300b83 IncreaseRoll{boolean} 306r28 310r13
+301f7 Factor{float} 302r59
+302i7 DesiredSpeed{integer} 304r44 307r22 309r22 311r22
+303i7 CurrentSpeed{21I12} 306r46 308r32 310r31
+304i7 NewSpeed{21I12} 307m10 309m10 311m10 314r10 315m10 316r13 317m10 320r25
+. 322r10 322r30
+330U14 Check_Altitude_Conditions 330b14 352l8 352t33 473s13
+331i7 Alt{20I12} 333r10 339r10 343r10 349r10
+355U14 Check_Roll_Conditions 355b14 361l8 361t29 504s13
+356i7 R{19I12} 358r10 358r20
+364U14 Check_Obstacle_And_Act 364b14 412l8 412t30 543s10
+365f7 Dist{25F12} 375r10 390r31
+366i7 Sp{21I12} 385r36
+367i7 Vis{23I12} 379r10
+368i7 PP{integer} 379r23
+369e7 M{27E9} 397r10
+371f7 Time_To_Collision{float} 390m10 393r10 394r62 397r28
+372f7 Threshold_Alarm{float} 380m10 393r30
+373f7 Threshold_Manoeuv{float} 381m10 397r48
+385f10 Speed_ms{float} 387r13 390r38
+399i13 Alt{20I12} 401r16
+417t9 Sensors_Reading 421b14 436l8 436t23
+422o7 Next_Time{8|50O9} 433m10 433r23 434r22
+423a7 ADCs{17|12A7} 426m33 427r34 428r33
+439t9 Pitch_Altitude_Control 443b14 477l8 477t30
+444o7 Next_Time{8|50O9} 447m10 447r23 475r22
+449i13 Jx{24I12} 453m34
+449i17 Jy{24I12} 453m38 455r32 457r36 460r19 462r22 465r22 465r34 468r35
+450i13 Alt{20I12} 455r16 457r19
+451e13 M{27E9}
+480t9 Roll_Control 484b14 508l8 508t20
+485o7 Next_Time{8|50O9} 488m10 488r23 506r22
+490i13 Jx{24I12} 492m34 493r16 495r19 498r19 498r31 501r31
+490i17 Jy{24I12} 492m38
+511t9 Speed_Control 515b14 531l8 531t21
+516o7 Next_Time{8|50O9} 519m10 519r23 529r22
+521i13 P{22I12} 527r26
+522i13 PitchVal{18I12} 524r36
+523i13 RollVal{19I12} 525r36
+524b13 IncPitch{boolean} 527r29
+525b13 IncRoll{boolean} 527r39
+534t9 Obstacle_Control 538b14 546l8 546t24
+539o7 Next_Time{8|50O9} 542m10 542r23 544r22
+549t9 Display_Control 553b14 607l8 607t23
+554o7 Next_Time{8|50O9} 557m10 557r23 605r22
+559i13 Alt{20I12} 594r50
+560i13 Spd{21I12} 596r52
+561i13 Pwr{22I12} 595r64
+562i13 Jx{24I12} 575m34 597r53
+562i17 Jy{24I12} 575m38 597r81
+563i13 Pt{18I12} 598r48
+564i13 Rl{19I12} 599r47
+565e13 M{27E9} 578r16
+566i13 Vis{23I12} 600r60
+567f13 Dist{25F12} 601r57
+568i13 Pres{integer} 585r16
+571a13 Mode_String{string} 579m16 581m16 593r33
+572a13 Pres_String{string} 586m16 588m16 602r45
+610U14 Lanza_Tareas 610b14 614l8 614t20 630s4
+617i4 n{integer} 626m4 627r49
+618i4 aux{integer}
+619i4 Dummy_Close{integer} 638m4
+X 17 devices_a.ads
+6K9*devices_a 16|5w6 5r32 17|58e14
+12A7*Sensor_Vector(integer)<integer> 16|423r14
+14V11*Init_Devices_A{integer} 16|626s9
+17U12*read_all_ADC_sensors_A 16|426s10
+24V11*read_button_A{integer} 16|429s35
+27V11*read_infrared_A{integer} 16|430s37
+31V11*set_led_1_A{integer} 16|251s17 253s17
+34V11*set_led_2_A{integer} 16|261s17 263s17
+38V11*moveServo_A{integer} 16|272s14 296s14
+42V11*Read_Gyroscope_X_A{integer} 16|432s31
+45V11*Read_Gyroscope_Y_A{integer} 16|432s51
+48V11*getDistance_A{float} 16|431s31
+52V11*close_devices_A{integer} 16|638s19
+X 38 s-stausa.ads
+203U14*Initialize 204i<c,__gnat_stack_usage_initialize>22
+268U14*Output_Results 272i<c,__gnat_stack_usage_output_results>22
+

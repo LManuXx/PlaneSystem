@@ -1,0 +1,69 @@
+V "GNAT Lib v6"
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV SPARK_05
+
+U devices_a%s		devices_a.ads		4e8fe489 NE OO PK IL KM
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-except.ads		20151016123252 291912d5 ada.exceptions%s
+D a-flteio.ads		20070406091342 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20070406091342 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-tags.ads		20151016130316 01f5e3ef ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-tiflio.ads		20140717063513 56fbda09 ada.text_io.float_io%s
+D a-tiinio.ads		20140717063513 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D devices_a.ads		20190302235506 6123df59 devices_a%s
+D interfac.ads		20151118101227 4be8ce1b interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D system.ads		20151123113124 2a1dd890 system%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-soflin.ads		20151020124036 14e1eb6c system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20151112104907 09bd3940 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 12|2r6 2r23 3r6 3r31 4r6 4r29
+X 3 a-flteio.ads
+20K13*Float_Text_IO[9|46] 12|4w10 4r33
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|46] 12|3w10 3r35
+X 8 a-textio.ads
+49K13*Text_IO 471e16 12|2w10 2r27
+X 12 devices_a.ads
+6K9*devices_a 58l5 58e14
+12A7*Sensor_Vector(integer)<integer> 17r52
+14V11*Init_Devices_A{integer} 15b<c,init_devices>20
+17U12*read_all_ADC_sensors_A 17<36 18b<c,read_all_ADC_sensors>20
+17a36 ADCsensors{12A7}
+20V11*read_single_ADC_sensor_A{integer} 20>37 21b<c,read_single_ADC_sensor>20
+20i37 channel_number{integer}
+24V11*read_button_A{integer} 25b<c,read_button>20
+27V11*read_infrared_A{integer} 28b<c,read_infrared>20
+31V11*set_led_1_A{integer} 31>24 32b<c,set_led_1>20
+31i24 Led_1{integer}
+34V11*set_led_2_A{integer} 34>24 35b<c,set_led_2>20
+34i24 Led_2{integer}
+38V11*moveServo_A{integer} 38>24 39b<c,moveServo>20
+38i24 angle{integer}
+42V11*Read_Gyroscope_X_A{integer} 43b<c,Read_Gyroscope_X>20
+45V11*Read_Gyroscope_Y_A{integer} 46b<c,Read_Gyroscope_Y>20
+48V11*getDistance_A{float} 49b<c,getDistance>20
+52V11*close_devices_A{integer} 53b<c,close_devices>20
+
